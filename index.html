@@ -1,88 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-    <!-- DevWorld -->
-    <link href="css/devworld.css" rel="stylesheet">
+  <title>/dev/world/2018</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/devworld.css" rel="stylesheet">
+
+  <!-- MapBox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    
-    <nav class="navbar navbar-default">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            
-            <a class="navbar-brand" href="#">DevWorld</a>
-          </div>
+</head>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">Speakers</a></li>
-              <li><a href="#">Venue</a></li>
-              <li><a href="#">Register</a></li>
-              
-            </ul>
-          </div><!-- /.navbar-collapse -->
-    </nav>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">/dev/world</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
 
-    <div class="container">
-        <div class="row">
-                <div class="col">
-                    <h1>/dev/world</h1>
-                    <h2>14-18 Octuberary</h2>
-                    <h2>Melbournydney</h2>
-                </div>
-                <div class="col">                        
-                        <h1>/dev/world</h1>
-                        <h2>14-18 Octuberary</h2>
-                        <h2>Melbournydney</h2>
-                </div>                
-        </div>
-        
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#speakers">Speakers</a>
+          </li>
+          <li>
+            <a href="#venue">Venue</a>
+          </li>
+          <li>
+            <a href="#partners">Partners</a>
+          </li>
+          <li>
+            <a href="#register">Register</a>
+          </li>
+          <li>
+            <a href="#schedule">Schedule</a>
+          </li>
+          <li>
+            <a href="#info">Info</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
     </div>
+    <!--/.container-fluid -->
+  </nav>
 
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron" id="hero">
+      <video id="video-background" preload muted autoplay loop>
+          <source src="images/032248676-yarra-river-morning.mp4" type="video/mp4">
+          
+        </video>
     <div class="container">
-            <div class="row">
-              <div class="col">
-                1 of 2
-              </div>
-              <div class="col">
-                2 of 2
-              </div>
+      <img src="images/DevWorldLogo.png" />
+      <h1>/dev/world</h1>
+      <h2>13-18 Octuberary</h2>
+      <h2>Melbournydney</h2>
+      
+    </div>
+  </div>
+
+  <div class="container-fluid block" id="conf-description">
+    <p>Authentic e-commerce user-centric e-enable e-services applications, back-end authentic design, disintermediate integrate?
+      ROI, cross-media exploit virtual A-list long-tail partnerships customized synergize, e-tailers vortals. Extend; user-contributed
+      cultivate efficient deploy paradigms partnerships integrate mesh value-added, end-to-end, networks architectures.
+      </p>
+  </div>
+  
+  <a name="speakers"></a>
+  <!-- Speakers -->
+  <div class="container-fluid block">
+    <div class="container">
+    <div class="row" id="speakers">
+      <div class="col-md-4 col-sm-6 speaker">
+        <img class="speaker-image" src="images/Speaker1.png" />
+        <div class="speaker-name">Speaker Name</div>
+        <div class="speaker-organisation">Speaker Org</div>
+      </div>
+      <div class="col-md-4 col-sm-6 speaker">
+        <img class="speaker-image" src="images/Speaker2.png" />
+        <div class="speaker-name">Speaker Name</div>
+        <div class="speaker-organisation">Speaker Org</div>
+      </div>
+      <div class="col-md-4 col-sm-6 speaker">
+        <img class="speaker-image" src="images/Speaker3.png" />
+        <div class="speaker-name">Speaker Name</div>
+        <div class="speaker-organisation">Speaker Org</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Venue -->
+  <a name="venue"></a>
+  <div class="container-fluid block">
+  <div class="container">
+    <div class="row align-items-start" id="venue">
+      <div class="col-md-6 col-sm-12">
+        <h1>Venue</h1>
+        <p>Info on the venue</p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        
+        <div id='map' style='width: 100%; height: 300px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGVzcGxlc2RhIiwiYSI6ImNqZml5aXNyczBqbXoyenBndW1lZ3BzbnoifQ.63mMG4EF4O_GaXJItKtaDA';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10'
+        });
+        </script>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  <!-- Sponsors -->
+  <a name="partners"></a>
+  <div class="container-fluid block">
+  <div class="container">
+    <h1>Partners</h1>
+    <div class="row align-items-start justify-content-center" id="sponsors">
+      <div class="col col-md-6">
+        <h2>Platinum Sponsor</h2>
+        <img src="images/SnackFalcon.png" />
+      </div>
+      <div class="col col-md-6">
+        <h2>Gold Sponsor</h2>
+        <img src="images/SecretLab.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Registration -->
+  <a name="register"></a>
+  <div class="container-fluid block">
+  <div class="container" id="register">
+    <h1>Register</h1>
+    <div style="width: 100%; height: 200px; background-color: lightgray"></div>
+  </div></div>
+
+  <div class="container-fluid"><div class="container" id="cfp">
+    <h1>Call for Presentations</h1>
+    <p>
+      Come and speak at /dev/world! Here's a block of text explaining why you should submit your talks, blah blah blah blah blah
+      blah blah blah blah blah should be no longer than three lines.
+    </p>
+    <p id="submit-btn">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Submit Your Talk</a>
+    </p>
+  </div></div>
+
+  <!-- Schedule -->
+  <a name="schedule"></a>
+  <div class="container-fluid block"><div class="container" id="schedule">
+    <h1>Schedule</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Room A</th>
+          <th scope="col">Room B</th>
+          <th scope="col">Room C</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">9:30</th>
+          <td>
+            <div class="talk-name">
+              <a href="#">Talk A Name</a>
             </div>
-            <div class="row">
-              <div class="col">
-                1 of 3
-              </div>
-              <div class="col">
-                2 of 3
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
+            <div class="talk-speaker">Talk A Speaker</div>
+          </td>
+          <td>
+            <div class="talk-name">
+              <a href="#">Talk B Name</a>
             </div>
-          </div>
+            <div class="talk-speaker">Talk B Speaker</div>
+          </td>
+          <td>
+            <div class="talk-name">
+              <a href="#">Talk C Name</a>
+            </div>
+            <div class="talk-speaker">Talk C Speaker</div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">10:30</th>
+          <td>
+            <div class="talk-name">
+              <a href="#">Talk A Name</a>
+            </div>
+            <div class="talk-speaker">Talk A Speaker</div>
+          </td>
+          <td>
+            <div class="talk-name">
+              <a href="#">Talk B Name</a>
+            </div>
+            <div class="talk-speaker">Talk B Speaker</div>
+          </td>
+          <td>
+            <div class="talk-name">
+              <a href="#">Talk C Name</a>
+            </div>
+            <div class="talk-speaker">Talk C Speaker</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div></div>
+
+  <!-- Legalese -->
+  <a name="info"></a>
+  <div class="container-fluid block">
+  <div class="container" id="legal">
+
+      <p>/dev/world is Australia's longest running conference for OS X and iOS developers and designers, and returns to Melbourne 28-30 August 2017.</p>
+
+    <p>
+      /dev/world sponsors and supporters are highly valued members of the community, and the event would not be possible without
+      them. Please note that our sponsors do not necessarily endorse each other.
+    </p>
 
     
+<p>Apple, Mac, iOS, macOS, AppleTV, iPhone, and iPad are trademarks of Apple Inc. For the avoidance of doubt, Apple Inc. has no association with this conference.</p>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<p>All attendees, speakers, and organisers are expected to abide by the <a href="http://auc.edu.au/policies/code-of-conduct/">AUC Code of Conduct</a>. Questions? Email us at <a href="mailto:devworld@auc.edu.au">devworld@auc.edu.au</a>  or <a href="https://twitter.com/AUC_ANZ">tweet at us</a>.</p>
+    
+  </div>
+
+</div>
+
+  <div class="container block">
+    <footer>
+      <p>&copy; 2018 AUC.</p>
+    </footer>
+  </div>
+  <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
