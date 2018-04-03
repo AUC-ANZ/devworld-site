@@ -139,3 +139,11 @@ footer {
 .wasp-eggs {
     letter-spacing: 4px
 }
+
+/* adjust anchors to account for the height of the navbar */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+}
