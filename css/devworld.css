@@ -20,6 +20,10 @@ body {
     padding-top: 80px;
 }
 
+#hero img {
+    max-width: 80%;
+}
+
 #hero h1 {
     font-size: 60px;
 }
@@ -76,6 +80,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
 .speaker-name {
     font-weight: bold;
 }
+
 
 
 #sponsors .col {
