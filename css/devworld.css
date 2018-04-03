@@ -130,3 +130,7 @@ footer {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: rgba(100%,100%,100%,0.25);
 }
+
+.wasp-eggs {
+    letter-spacing: 2em
+}
