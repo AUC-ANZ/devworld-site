@@ -11,6 +11,11 @@ body {
     padding: 20px;    
 }
 
+.offset-block {
+    padding: 20px;
+    margin-top: 40px;
+}
+
 #hero, #conf-description, #legal {
     text-align: center;
 }
@@ -146,4 +151,10 @@ a.anchor {
     position: relative;
     top: -40px;
     visibility: hidden;
+}
+
+#session-speaker {
+    font-style: italic;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
