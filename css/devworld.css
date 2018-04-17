@@ -188,3 +188,11 @@ a.anchor {
 #footer-text {
     text-align: left;
 }
+
+h1 {
+    margin-top: 0 !important;
+}
+
+p#submit-btn {
+    margin-top: 20px;
+}
