@@ -157,6 +157,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     font-size: 25px;
 }
 
+.navbar-default .navbar-nav {
+    font-size: 20px;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: white;
 }
