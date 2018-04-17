@@ -46,6 +46,11 @@ body {
     #hero h2 {
         font-size: 30px;
     }
+
+    #sponsors .col img {
+        max-width: 250px;
+        max-height: 150px;
+    }
 }
 
 @media only screen and (min-width: 400px) {
@@ -56,6 +61,13 @@ body {
     #hero h2 {
         font-size: 40px;
     }
+
+    #sponsors .col img {
+        max-width: 400px;
+        max-height: 300px;
+    }
+
+    
 }
 
 #hero h2 {
@@ -117,10 +129,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     text-align: center;
 }
 
-#sponsors .col img {
-    max-width: 250px;
-    max-height: 150px;
-}
+
 
 #cfp #submit-btn {
     text-align: center;
