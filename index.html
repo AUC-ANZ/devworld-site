@@ -126,11 +126,8 @@
     <div class="row align-items-start" id="venue">
       <div class="col-md-6 col-sm-12">
         <h1>Venue</h1>
-        <p>We're thrilled to be hosting /dev/world/2018 at <span class="wasp-eggs">the collossal pillar of wasp eggs.</span> Let's go do not bring weapons</p>
-          <p>132 Place Street</p>
-          <p>Melbournydney</p>
-          <p>Australiatron</p>
-        
+        <p>We're thrilled to be hosting /dev/world/2018 at <strong style="white-space: nowrap">RMIT University</strong>, 
+          right in the middle of Melbourne.        
       </div>
       <div class="col-md-6 col-sm-12">
         
@@ -139,8 +136,20 @@
         mapboxgl.accessToken = 'pk.eyJ1IjoiZGVzcGxlc2RhIiwiYSI6ImNqZml5aXNyczBqbXoyenBndW1lZ3BzbnoifQ.63mMG4EF4O_GaXJItKtaDA';
         var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v10'
+        center: [144.9627511, -37.808201], // long, lat (not lat-long!)
+        zoom: 12,
+        interactive: false,
+        style: 'mapbox://styles/mapbox/light-v9'
+
         });
+
+        var popup = new mapboxgl.Popup({
+          closeOnClick: false, 
+          closeButton: false, 
+          anchor:'bottom'})
+        .setLngLat([144.9627511, -37.808201])
+        .setHTML('<h1>RMIT University</h1><h2>Melbourne, Victoria, Australia</h2>')
+        .addTo(map);
         </script>
 
       </div>
