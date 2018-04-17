@@ -126,6 +126,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     color: white;
 }
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-brand:hover {
+    color: #333;
+    background-color: rgba(100%,100%,100%,0.25);
+}
+
 footer {
     text-align: center;
 }
