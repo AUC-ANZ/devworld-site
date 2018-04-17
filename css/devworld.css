@@ -94,7 +94,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
 }
 
 #sponsors .col img {
-    max-width: 100%;
+    max-width: 50%;
+    max-height: 150px;
 }
 
 #cfp #submit-btn {
