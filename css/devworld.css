@@ -162,3 +162,7 @@ a.anchor {
 #sponsors .col {
     padding-bottom: 40px;
 }
+
+.navbar #call-to-action {
+    background-color: #05aaff;
+}
