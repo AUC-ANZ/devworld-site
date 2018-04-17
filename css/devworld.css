@@ -34,6 +34,10 @@ body {
     padding-top: 80px;
 }
 
+#hero h1, #hero h2 {
+    font-weight: normal;
+}
+
 #hero img {
     max-width: 80%;
 }
