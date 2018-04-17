@@ -3,7 +3,7 @@ body {
     font-family: "Helvetica Neue", Arial, sans-serif
 }
 
-.block:nth-of-type(odd) {
+.block:nth-of-type(even) {
     background-color: #E7F9FF;
 }
 
@@ -51,6 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
 .jumbotron{
     position: relative;
     z-index:-101;
+    margin-bottom: 0;
   }
   
 #video-background { 
