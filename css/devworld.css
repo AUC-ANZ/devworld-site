@@ -178,3 +178,7 @@ a.anchor {
     text-align: center;
     font-size: 12pt;
 }
+
+#footer-text {
+    text-align: left;
+}
