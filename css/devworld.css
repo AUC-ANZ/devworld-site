@@ -116,6 +116,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     border: none;
     color: white;
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .navbar-default .navbar-brand {
