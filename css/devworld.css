@@ -259,3 +259,13 @@ p#submit-btn {
 .nowrap {
     white-space: nowrap;
 }
+
+.venue-address p {
+    line-height: 1.5em;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.venue-address {
+    margin-bottom: 20px;
+}
