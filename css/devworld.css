@@ -46,7 +46,7 @@ body {
     max-width: 80%;
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 449px) {
     #hero h1 {
         font-size: 35px;
     }
@@ -66,7 +66,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 450px) {
     #hero h1 {
         font-size: 50px;
     }
