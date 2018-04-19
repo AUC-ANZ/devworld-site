@@ -255,8 +255,24 @@
           </div>
         </div>
         <div class="col col-md-4">
-          <a class="twitter-timeline" data-height="300" data-dnt="true" data-link-color="#0B596C" href="https://twitter.com/AUC_ANZ?ref_src=twsrc%5Etfw">Tweets by AUC_ANZ</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script>
+            function disableFallback() {
+              document.getElementById("twitter-timeline").style = "display: block";
+              document.getElementById("twitter-fallback").style = "display: none";
+            }
+          </script>
+          <a id="twitter-timeline" class="twitter-timeline" data-height="300" data-dnt="true" data-link-color="#0B596C" href="https://twitter.com/AUC_ANZ?ref_src=twsrc%5Etfw">Tweets by AUC_ANZ</a>
+          <div id="twitter-fallback">
+            <p>
+            <font>
+            <a href="https://twitter.com/AUC_ANZ">
+              <i class="fa fa-twitter-square" alt="Button link to AUC's Twitter" title="Button link to AUC's Twitter"></i>
+            </a>
+          </font> Follow the AUC on Twitter!
+          </p>
+          </div>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" onload="disableFallback()"></script>
+
         </div>
       </div>
 
