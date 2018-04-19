@@ -2,14 +2,18 @@ body {
     color: #0B596C;
     /*font-family: 'Vollkorn', serif;*/
     font-size: 18px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.8em;
     
     
 }
 
-#conf-description, h1, h2, .navbar {
+#hero h1 {
     font-family: "Helvetica Neue", Arial, sans-serif
+}
+
+#conf-description, h1, h2, .navbar {
+    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif
 }
 
 .block:nth-of-type(even) {
