@@ -286,3 +286,8 @@ p#submit-btn {
 footer p {
     font-size: 13px;
 }
+
+p.cfp-note {
+    font-size: 15px;
+    text-align: center;
+}
