@@ -273,3 +273,7 @@ p#submit-btn {
 .venue-address {
     margin-bottom: 20px;
 }
+
+#conf-description p:last-child {
+    margin-bottom: -10px;
+}
