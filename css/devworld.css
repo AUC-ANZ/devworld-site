@@ -240,3 +240,8 @@ h1 {
 p#submit-btn {
     margin-top: 20px;
 }
+
+.small-print {
+    font-size: 11pt;
+    color: rgb(115, 137, 159);
+}
