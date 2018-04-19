@@ -291,3 +291,8 @@ p.cfp-note {
     font-size: 15px;
     text-align: center;
 }
+
+.gallery img {
+    max-width: 100%;
+    margin: 10px;
+}
