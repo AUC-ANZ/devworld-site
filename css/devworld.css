@@ -245,3 +245,8 @@ p#submit-btn {
     font-size: 11pt;
     color: rgb(115, 137, 159);
 }
+
+.sponsor-note {
+    font-size: 15px;
+    color: #8da8b2;
+}
