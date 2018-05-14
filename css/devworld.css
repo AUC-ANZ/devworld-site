@@ -135,8 +135,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
 
 .speaker-name {
     font-weight: bold;
+    font-size: 0.8em;
 }
 
+.speaker-image {
+    max-width: 100%;
+    border-radius: 50%;
+}
 
 
 #sponsors .col {
