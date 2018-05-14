@@ -297,3 +297,8 @@ p.cfp-note {
     max-width: 100%;
     margin: 10px;
 }
+
+span.old-cfp-date {
+    text-decoration: line-through;
+    opacity: 0.25;
+}
