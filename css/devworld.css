@@ -16,7 +16,7 @@ body {
     font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif
 }
 
-.block:nth-of-type(odd) {
+.block:nth-of-type(even) {
     background-color: #E7F9FF;
 }
 
