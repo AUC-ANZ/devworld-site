@@ -138,6 +138,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     font-size: 0.8em;
 }
 
+.speaker-organisation {
+    font-size: 0.8em;
+}
+
+.speaker-description {
+    font-size: 0.8em;
+}
+
+.speaker-description-title {
+    font-weight: bold;
+}
+
+.speaker-description-title::after {
+    content: ": ";
+    
+    
+}
+
 .speaker-image {
     max-width: 100%;
     border-radius: 50%;
