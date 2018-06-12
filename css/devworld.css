@@ -56,7 +56,7 @@ body {
         font-size: 30px;
     }
 
-    #sponsors .col img {
+    #sponsors-wide .col img, #sponsors .col img {
         max-width: 250px;
         max-height: 150px;
     }
@@ -76,8 +76,13 @@ body {
         font-size: 40px;
     }
 
-    #sponsors .col img {
+    #sponsors-wide .col img {
         max-width: 400px;
+        max-height: 300px;
+    }
+
+    #sponsors .col img {
+        max-width: 200px;
         max-height: 300px;
     }
 
@@ -162,7 +167,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
 }
 
 
-#sponsors .col {
+#sponsors .col , #sponsors-wide .col {
     text-align: center;
 }
 
