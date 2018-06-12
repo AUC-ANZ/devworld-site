@@ -335,3 +335,8 @@ span.old-cfp-date {
 #sessions li {
     font-size: 0.8em;
 }
+
+#sessions #moretocome {
+    font-style: italic;
+    opacity: 0.5;
+}
