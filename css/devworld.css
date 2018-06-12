@@ -59,6 +59,7 @@ body {
     #sponsors-wide .col img, #sponsors .col img {
         max-width: 250px;
         max-height: 150px;
+        margin-bottom: 20px;
     }
 
     p.blurb {
