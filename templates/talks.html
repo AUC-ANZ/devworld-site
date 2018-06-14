@@ -1,0 +1,35 @@
+<div class="container-fluid block">
+    <div class="container">
+      <h1>Sessions</h1>
+      <div class="row" id="sessions">
+      {% for column in talks|slice(2) %}
+        <div class="col-md-6 col-sm-6">
+          <ul>
+          {% for item in column %}
+            <li>{{item}}</li>
+          {% endfor %}
+          {% if loop.last %}
+            <li id="moretocome">And more to come!</li>
+          {% endif %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+  
+      <h1>Workshops</h1>
+  
+      <div class="row" id="sessions">
+        {% for column in workshops|slice(2) %}
+        <div class="col-md-6 col-sm-6">
+          <ul>
+          {% for item in column %}<li>{{item}}</li>{% endfor %}
+          {% if loop.last %}
+          <li id="moretocome">And more to come!</li>
+          {% endif %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  </div>
