@@ -1,0 +1,197 @@
+{
+    "talks":[
+        {
+            "title": "Liquid Performance",
+            "speaker": {
+                "name": "Michael Shaw",
+                "image": "michael-shaw.jpg",
+                "organisation": "Savage Interactive",
+                "url": "http://savage.si"
+            },
+            "description": "Performance is an essential quality and founding principle of Procreate, affording the artist a natural and fluid connection with their creation. We'll explore our principles, techniques, and sacrifices on the road to minimal latency and 120 frames a second.",
+            "type":"keynote"
+        },
+        {
+            "title": "From Idea to ADA",
+            "speaker": {
+                "name": "Quentin Zervaas",
+                "image": "quentin-zervaas.jpg",
+                "organisation": "Crunchy Bagel",
+                "url": "http://crunchybagel.com"
+            },
+            "description": "[Streaks](https://itunes.apple.com/us/app/streaks/id963034692) won a coveted Apple Design Award at WWDC in 2016. Learn from the creator about the story of the app, including why it was chosen as a winner.",
+            "type":"keynote"
+        },
+        {
+            "title": "Tales from the Golden Age of Mac Gaming",
+            "speaker": {
+                "name": "Richard Moss",
+                "image": "richard-moss.jpg"
+            },
+            "type": "keynote",
+            "description": "Macs were at various points in the 1980s and 90s a great bastion of innovation and creativity in game design, a place where genres were born and thinking differently was a doctrine — not a tagline. Journalist and historian Richard Moss will share the biggest lessons, insights, and tales of developer wizardry from the era that he found while writing his book [The Secret History of Mac Gaming](http://secrethistoryofmacgaming.com/)."
+        },
+        {
+            "title": "Dinner Keynote",
+            "speaker": {
+                "name": "Paul Fenwick",
+                "image": "paul-fenwick.jpg"                
+            },
+            "description": "Join Paul at the /dev/world/2018 conference dinner, and have your mind blasted with knowledge that you didn't expect, may faintly resent, and will be sure to delight in.",
+            "type":"special_event"
+        },
+        {
+            "title": "The /dev/world/2018 Quiz",
+            "speaker": {
+                "image": "devworld.jpg"
+            },
+            "description": "That's right. It's happening again. We refuse to apologise for last time.",
+            "type":"special_event"
+        },
+        {
+            "title": "Designing for iOS: Resources You Gotta Know",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "State Machines are your friend",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Push Notifications and the Limits of Innovation",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Machine Learning ...without the Machine",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "How to go from bad practice to best practice",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "The State of MVC",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Build your own synthesiser",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "<samp>xcodebuild</samp> for fun and profit",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Fun with fudge factors: prototyping vague things",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Batteries and Locks: Modern Tech from Ancient Times",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Ada on an iPad?",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Decoding Codable",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Swift, for Objective-C OGs",
+            "speaker": {},
+            "description": "<blah>"
+        },
+        {
+            "title": "Quality assurance and testing fundamentals for small teams",
+            "speaker": {},
+            "description": "<blah>",
+            "type": "workshop"
+        },
+        {
+            "title": "Refactoring an horrible codebase guided by tests",
+            "speaker": {},
+            "description": "<blah>",
+            "type": "workshop"
+        },
+        {
+            "title": "Adding AI to your applications with TensorFlow Lite for iOS",
+            "speaker": {},
+            "description": "<blah>",
+            "type": "workshop"
+        }
+    ],
+    "images": [
+        {
+            "img":"gallery-0.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/36358054774/"
+        },
+        {
+            "img":"gallery-1.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/36358056014/"
+        },
+        {
+            "img":"gallery-2.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/37004802166/"
+        },
+        {
+            "img":"gallery-3.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/37023046622/"
+        },
+        {
+            "img":"gallery-4.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/37052754321/"
+        },
+        {
+            "img":"gallery-5.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/37052762211/"
+        },
+        {
+            "img":"gallery-6.jpg",
+            "url":"https://www.flickr.com/photos/154890106@N06/36358047354/"
+        },
+        {
+            "img":"gallery-7.jpg",        
+            "url":"/images/gallery/original/IMG_3659.JPG.jpeg"
+        }
+    ],
+    "team": [
+        {
+            "url": "http://twitter.com/parisba",
+            "image": "paris.jpg",
+            "name": "Paris BA"
+        },
+        {
+            "url": "http://twitter.com/The_McJones",
+            "image": "tim.jpg",
+            "name": "Tim Nugent"
+        },
+        {
+            "url": "http://twitter.com/TheMartianLife",
+            "image": "mars.jpg",
+            "name": "Mars Geldard"
+        },
+        {
+            "url": "http://twitter.com/tonygray",
+            "image": "tony.jpg",
+            "name": "Tony Gray"
+        },
+        {
+            "url": "http://twitter.com/desplesda",
+            "image": "jon.jpg",
+            "name": "Jon Manning"
+        }
+          
+    ]
+}

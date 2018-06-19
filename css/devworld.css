@@ -16,7 +16,7 @@ body {
     font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif
 }
 
-.block:nth-of-type(odd) {
+.block:nth-of-type(even) {
     background-color: #E7F9FF;
 }
 
@@ -148,6 +148,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     font-size: 0.8em;
 }
 
+.speaker-name a {
+    font-weight: normal;
+}
+
+
 .speaker-organisation {
     font-size: 0.8em;
 }
@@ -160,11 +165,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aebc7', end
     font-weight: bold;
 }
 
+.speaker-description p {
+    display: inline;
+}
+
+
+
 .speaker-description-title::after {
     content: ": ";
     
     
 }
+
+
+
 
 .speaker-image {
     max-width: 100%;

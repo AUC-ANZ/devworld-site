@@ -40,7 +40,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/devworld.css?v=6411714" rel="stylesheet">
+  <link href="css/devworld.css?v={{css_version}}" rel="stylesheet">
 
   <!-- MapBox -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
@@ -160,49 +160,26 @@
     <div class="container" id="speakers">
       
       <h1>Keynotes</h1>
+      {% for talk in talks|selectattr("type", "eq", "keynote") %}
       <div class="row">
         <div class="col-md-2 col-sm-6">
-<a href="http://savage.si">            <img class="speaker-image" src="images/speakers/michael-shaw.jpg" />
-</a>        </div>
+            {% if "url" in talk.speaker %}<a href="{{talk.speaker.url}}">{%endif%}
+            <img class="speaker-image" src="images/speakers/{{talk.speaker.image}}" />
+            {% if "url" in talk.speaker %}</a>{%endif%}
+        </div>
         <div class="col-md-10 col-sm-6 ">
+          {% if "name" in talk.speaker %}
           <div class="speaker-name">
-          Michael Shaw, <a href="http://savage.si">Savage Interactive</a>          
+          {{talk.speaker.name}}{% if "url" in talk.speaker %}, <a href="{{talk.speaker.url}}">{{talk.speaker.organisation}}</a>{% endif %}          
           </div>
+          {% endif %}
           <div class="speaker-description">
-            <span class="speaker-description-title">Liquid Performance</span>
-            <p>Performance is an essential quality and founding principle of Procreate, affording the artist a natural and fluid connection with their creation. We'll explore our principles, techniques, and sacrifices on the road to minimal latency and 120 frames a second.</p> 
+            <span class="speaker-description-title">{{talk.title}}</span>
+            {{talk.description|markdown}} 
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2 col-sm-6">
-<a href="http://crunchybagel.com">            <img class="speaker-image" src="images/speakers/quentin-zervaas.jpg" />
-</a>        </div>
-        <div class="col-md-10 col-sm-6 ">
-          <div class="speaker-name">
-          Quentin Zervaas, <a href="http://crunchybagel.com">Crunchy Bagel</a>          
-          </div>
-          <div class="speaker-description">
-            <span class="speaker-description-title">From Idea to ADA</span>
-            <p><a href="https://itunes.apple.com/us/app/streaks/id963034692">Streaks</a> won a coveted Apple Design Award at WWDC in 2016. Learn from the creator about the story of the app, including why it was chosen as a winner.</p> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2 col-sm-6">
-            <img class="speaker-image" src="images/speakers/richard-moss.jpg" />
-        </div>
-        <div class="col-md-10 col-sm-6 ">
-          <div class="speaker-name">
-          Richard Moss          
-          </div>
-          <div class="speaker-description">
-            <span class="speaker-description-title">Tales from the Golden Age of Mac Gaming</span>
-            <p>Macs were at various points in the 1980s and 90s a great bastion of innovation and creativity in game design, a place where genres were born and thinking differently was a doctrine — not a tagline. Journalist and historian Richard Moss will share the biggest lessons, insights, and tales of developer wizardry from the era that he found while writing his book <a href="http://secrethistoryofmacgaming.com/">The Secret History of Mac Gaming</a>.</p> 
-          </div>
-        </div>
-      </div>
-      
+      {% endfor %}      
     </div>
   </div>
 
@@ -211,30 +188,27 @@
   <div class="container-fluid block">
     <div class="container" id="speakers">      
       <h1>Special Events</h1>
+      {% for talk in talks|selectattr("type", "eq", "special_event") %}
       <div class="row">
         <div class="col-md-2 col-sm-6">
-          <img class="speaker-image" src="images/speakers/paul-fenwick.jpg" />
+          <img class="speaker-image" src="images/speakers/{{talk.speaker.image}}" />
         </div>
         <div class="col-md-10 col-sm-6 ">
-          <div class="speaker-name">Paul Fenwick</div>
+          {% if "name" in talk.speaker %}
+          <div class="speaker-name">{{talk.speaker.name}}</div>
+          {% if "url" in talk.speaker %}
+          <div class="speaker-organisation">
+            <a href="{{talk.speaker.url}}">{{talk.speaker.organisation}}</a>
+          </div>
+          {% endif %}
+          {% endif %}
           <div class="speaker-description">
-            <span class="speaker-description-title">Dinner Keynote</span>
-            <p>Join Paul at the /dev/world/2018 conference dinner, and have your mind blasted with knowledge that you didn't expect, may faintly resent, and will be sure to delight in.</p> 
+            <span class="speaker-description-title">{{talk.title}}</span>
+            {{talk.description|markdown}} 
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2 col-sm-6">
-          <img class="speaker-image" src="images/speakers/devworld.jpg" />
-        </div>
-        <div class="col-md-10 col-sm-6 ">
-          <div class="speaker-description">
-            <span class="speaker-description-title">The /dev/world/2018 Quiz</span>
-            <p>That's right. It's happening again. We refuse to apologise for last time.</p> 
-          </div>
-        </div>
-      </div>
-      
+      {% endfor %}      
     </div>
   </div>
 
@@ -244,45 +218,35 @@
     <div class="container">
       <h1>Sessions</h1>
       <div class="row" id="sessions">
+      {% for column in talks|selectattr("type", "undefined")|slice(2) %}
         <div class="col-md-6 col-sm-6">
           <ul>
-            <li>Designing for iOS: Resources You Gotta Know</li>
-            <li>State Machines are your friend</li>
-            <li>Push Notifications and the Limits of Innovation</li>
-            <li>Machine Learning ...without the Machine</li>
-            <li>How to go from bad practice to best practice</li>
-            <li>The State of MVC</li>
-            <li>Build your own synthesiser</li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <ul>
-            <li><samp>xcodebuild</samp> for fun and profit</li>
-            <li>Fun with fudge factors: prototyping vague things</li>
-            <li>Batteries and Locks: Modern Tech from Ancient Times</li>
-            <li>Ada on an iPad?</li>
-            <li>Decoding Codable</li>
-            <li>Swift, for Objective-C OGs</li>
+          {% for item in column %}
+            <li>{{item.title}}</li>
+          {% endfor %}
+          {% if loop.last %}
             <li id="moretocome">And more to come!</li>
+          {% endif %}
           </ul>
         </div>
+        {% endfor %}
       </div>
   
       <h1>Workshops</h1>
   
       <div class="row" id="sessions">
+        {% for column in talks|selectattr("type", "equalto", "workshop")|slice(2) %}
         <div class="col-md-6 col-sm-6">
           <ul>
-            <li>Quality assurance and testing fundamentals for small teams</li>
-            <li>Refactoring an horrible codebase guided by tests</li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <ul>
-            <li>Adding AI to your applications with TensorFlow Lite for iOS</li>
+            {% for item in column %}
+            <li>{{item.title}}</li>
+            {% endfor %}
+            {% if loop.last %}
             <li id="moretocome">And more to come!</li>
+            {% endif %}
           </ul>
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -345,54 +309,21 @@
 
  <h1>Gallery</h1>
 
-    <div class="col col-md-3 col-sm-12 d-sm-none">
+{% for image in images %}
+    {% if loop.index < 4 %}
+    {% set display_class = "d-sm-none" %}
+    {% endif %}
+    <div class="col col-md-3 col-sm-12 {{display_class}}">
 
-    <a href="https://www.flickr.com/photos/154890106@N06/36358054774/">
-    <img src="images/gallery/final/gallery-0.jpg" />
+    {% if "url" in image %}
+    <a href="{{image.url}}">
+    {% endif %}
+    <img src="images/gallery/final/{{image.img}}" />
+    {% if "url" in image %}
     </a>
+    {% endif %}
     </div>
-    <div class="col col-md-3 col-sm-12 d-sm-none">
-
-    <a href="https://www.flickr.com/photos/154890106@N06/36358056014/">
-    <img src="images/gallery/final/gallery-1.jpg" />
-    </a>
-    </div>
-    <div class="col col-md-3 col-sm-12 d-sm-none">
-
-    <a href="https://www.flickr.com/photos/154890106@N06/37004802166/">
-    <img src="images/gallery/final/gallery-2.jpg" />
-    </a>
-    </div>
-    <div class="col col-md-3 col-sm-12 ">
-
-    <a href="https://www.flickr.com/photos/154890106@N06/37023046622/">
-    <img src="images/gallery/final/gallery-3.jpg" />
-    </a>
-    </div>
-    <div class="col col-md-3 col-sm-12 ">
-
-    <a href="https://www.flickr.com/photos/154890106@N06/37052754321/">
-    <img src="images/gallery/final/gallery-4.jpg" />
-    </a>
-    </div>
-    <div class="col col-md-3 col-sm-12 ">
-
-    <a href="https://www.flickr.com/photos/154890106@N06/37052762211/">
-    <img src="images/gallery/final/gallery-5.jpg" />
-    </a>
-    </div>
-    <div class="col col-md-3 col-sm-12 ">
-
-    <a href="https://www.flickr.com/photos/154890106@N06/36358047354/">
-    <img src="images/gallery/final/gallery-6.jpg" />
-    </a>
-    </div>
-    <div class="col col-md-3 col-sm-12 ">
-
-    <a href="/images/gallery/original/IMG_3659.JPG.jpeg">
-    <img src="images/gallery/final/gallery-7.jpg" />
-    </a>
-    </div>
+{% endfor %}
 
      
      
@@ -436,31 +367,14 @@
     <div class="container">
       <div class="row" id="team">
         <h1>The Team</h1>
-            <div class="col-md-2 col-md-offset-1 col-sm-3 speaker">
-                <a href="http://twitter.com/parisba">
-                <img class="speaker-image" src="images/team/paris.jpg" />
-                <div class="speaker-name">Paris BA</div></a>
+        {% for member in team %}
+            {% set offset = "col-md-offset-1" if loop.first == true %}
+            <div class="col-md-2 {{offset}} col-sm-3 speaker">
+                <a href="{{member.url}}">
+                <img class="speaker-image" src="images/team/{{member.image}}" />
+                <div class="speaker-name">{{member.name}}</div></a>
             </div>
-            <div class="col-md-2  col-sm-3 speaker">
-                <a href="http://twitter.com/The_McJones">
-                <img class="speaker-image" src="images/team/tim.jpg" />
-                <div class="speaker-name">Tim Nugent</div></a>
-            </div>
-            <div class="col-md-2  col-sm-3 speaker">
-                <a href="http://twitter.com/TheMartianLife">
-                <img class="speaker-image" src="images/team/mars.jpg" />
-                <div class="speaker-name">Mars Geldard</div></a>
-            </div>
-            <div class="col-md-2  col-sm-3 speaker">
-                <a href="http://twitter.com/tonygray">
-                <img class="speaker-image" src="images/team/tony.jpg" />
-                <div class="speaker-name">Tony Gray</div></a>
-            </div>
-            <div class="col-md-2  col-sm-3 speaker">
-                <a href="http://twitter.com/desplesda">
-                <img class="speaker-image" src="images/team/jon.jpg" />
-                <div class="speaker-name">Jon Manning</div></a>
-            </div>
+        {% endfor %}
         
       </div>
     </div>
