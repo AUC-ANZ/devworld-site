@@ -43,9 +43,9 @@
         {
             "title": "The /dev/world/2018 Quiz",
             "speaker": {
-                "image": "devworld.jpg"
+                "image": "quiz.jpg"
             },
-            "description": "That's right. It's happening again. We refuse to apologise for last time.",
+            "description": "Finally, all those nights of reading Wikipedia are going to pay off! Join us at the dinner quiz, a decade-old /dev/world institution. Non-technical, welcoming, and a great way to mark the middle of the conference.",
             "type":"special_event"
         },
         {
