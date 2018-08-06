@@ -59,6 +59,7 @@ body {
     #sponsors-wide .col img, #sponsors .col img {
         max-width: 250px;
         max-height: 150px;
+        
         margin-bottom: 20px;
     }
 
@@ -77,12 +78,18 @@ body {
         font-size: 40px;
     }
 
+    #sponsors, #sponsors-wide {
+        min-height: 100px;
+    }
+
     #sponsors-wide .col img {
         max-width: 400px;
         max-height: 300px;
+        
     }
 
     #sponsors .col img {
+        
         max-width: 200px;
         max-height: 300px;
     }
@@ -360,4 +367,8 @@ span.old-cfp-date {
 #sessions #moretocome {
     font-style: italic;
     opacity: 0.5;
+}
+
+#buy-tickets-button {
+    font-size: 2em;
 }

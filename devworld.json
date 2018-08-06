@@ -1,169 +1,299 @@
 {
-    "talks":[
+    "talks": [
         {
-            "title": "Liquid Performance",
             "speaker": {
-                "name": "Michael Shaw",
-                "image": "michael-shaw.jpg",
-                "organisation": "Savage Interactive",
-                "url": "http://savage.si"
+                "image": "paul-fenwick.jpg",
+                "name": "Paul Fenwick"
             },
-            "description": "Performance is an essential quality and founding principle of Procreate, affording the artist a natural and fluid connection with their creation. We'll explore our principles, techniques, and sacrifices on the road to minimal latency and 120 frames a second.",
-            "type":"keynote"
-        },
-        {
-            "title": "From Idea to ADA",
-            "speaker": {
-                "name": "Quentin Zervaas",
-                "image": "quentin-zervaas.jpg",
-                "organisation": "Crunchy Bagel",
-                "url": "http://crunchybagel.com"
-            },
-            "description": "[Streaks](https://itunes.apple.com/us/app/streaks/id963034692) won a coveted Apple Design Award at WWDC in 2016. Learn from the creator about the story of the app, including why it was chosen as a winner.",
-            "type":"keynote"
-        },
-        {
-            "title": "Tales from the Golden Age of Mac Gaming",
-            "speaker": {
-                "name": "Richard Moss",
-                "image": "richard-moss.jpg"
-            },
-            "type": "keynote",
-            "description": "Macs were at various points in the 1980s and 90s a great bastion of innovation and creativity in game design, a place where genres were born and thinking differently was a doctrine — not a tagline. Journalist and historian Richard Moss will share the biggest lessons, insights, and tales of developer wizardry from the era that he found while writing his book [The Secret History of Mac Gaming](http://secrethistoryofmacgaming.com/)."
-        },
-        {
-            "title": "Dinner Keynote",
-            "speaker": {
-                "name": "Paul Fenwick",
-                "image": "paul-fenwick.jpg"                
-            },
+            "type": "special_event",
             "description": "Join Paul at the /dev/world/2018 conference dinner, and have your mind blasted with knowledge that you didn't expect, may faintly resent, and will be sure to delight in.",
-            "type":"special_event"
+            "title": "Dinner Keynote"
         },
         {
-            "title": "The /dev/world/2018 Quiz",
             "speaker": {
                 "image": "quiz.jpg"
             },
+            "type": "special_event",
             "description": "Finally, all those nights of reading Wikipedia are going to pay off! Join us at the dinner quiz, a decade-old /dev/world institution. Non-technical, welcoming, and a great way to mark the middle of the conference.",
-            "type":"special_event"
+            "title": "The /dev/world/2018 Quiz"
         },
         {
-            "title": "Designing for iOS: Resources You Gotta Know",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "url": "http://savage.si",
+                "image": "michael-shaw.jpg",
+                "organisation": "Savage Interactive",
+                "name": "Michael Shaw"
+            },
+            "type": "keynote",
+            "description": "Performance is an essential quality and founding principle of Procreate, affording the artist a natural and fluid connection with their creation. We'll explore our principles, techniques, and sacrifices on the road to minimal latency and 120 frames a second.\n",
+            "title": "Liquid Performance"
         },
         {
-            "title": "State Machines are your friend",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "image": "richard-moss.jpg",
+                "name": "Richard Moss"
+            },
+            "type": "keynote",
+            "description": "Macs were at various points in the 1980s and 90s a great bastion of innovation and creativity in game design, a place where genres were born and thinking differently was a doctrine \u2014 not a tagline. Journalist and historian Richard Moss will share the biggest lessons, insights, and tales of developer wizardry from the era that he found while writing his book [The Secret History of Mac Gaming](http://secrethistoryofmacgaming.com/).",
+            "title": "Tales from the Golden Age of Mac Gaming"
         },
         {
-            "title": "Push Notifications and the Limits of Innovation",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Jason Imms"
+            },
+            "type": "workshop",
+            "title": "Quality assurance and testing fundamentals for small teams"
         },
         {
-            "title": "Machine Learning ...without the Machine",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Giovanni Lodi"
+            },
+            "type": "workshop",
+            "title": "Refactoring an horrible codebase guided by tests"
         },
         {
-            "title": "How to go from bad practice to best practice",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Patrick Haralabidis"
+            },
+            "type": "workshop",
+            "title": "Adding AI to your applications with TensorFlow Lite for iOS."
         },
         {
-            "title": "The State of MVC",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Sebastian Grail"
+            },
+            "type": "workshop",
+            "title": "Property Based Testing in Swift"
         },
         {
-            "title": "Build your own synthesiser",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Laura Summers"
+            },
+            "type": "workshop",
+            "title": "UX for Developers"
         },
         {
-            "title": "<samp>xcodebuild</samp> for fun and profit",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "James White"
+            },
+            "type": "talk",
+            "title": "Let\u2019s settle this UI/UX thing once and for all"
         },
         {
-            "title": "Fun with fudge factors: prototyping vague things",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Heidi Helen Pilypas"
+            },
+            "type": "talk",
+            "title": "Designing for iOS: Resources You Gotta Know"
         },
         {
-            "title": "Batteries and Locks: Modern Tech from Ancient Times",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Matthew Delves"
+            },
+            "type": "talk",
+            "title": "State Machines are your friend"
         },
         {
-            "title": "Ada on an iPad?",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Thomas Karpiniec"
+            },
+            "type": "talk",
+            "title": "Push Notifications and the Limits of Innovation"
         },
         {
-            "title": "Decoding Codable",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Mars Geldard"
+            },
+            "type": "talk",
+            "title": "Machine Learning ...without the Machine"
         },
         {
-            "title": "Swift, for Objective-C OGs",
-            "speaker": {},
-            "description": "<blah>"
+            "speaker": {
+                "name": "Louis Cremen"
+            },
+            "type": "talk",
+            "title": "How to go from bad practice to best practice"
         },
         {
-            "title": "Quality assurance and testing fundamentals for small teams",
-            "speaker": {},
-            "description": "<blah>",
-            "type": "workshop"
+            "speaker": {
+                "name": "Sande Harsa, Gavan Chan"
+            },
+            "type": "talk",
+            "title": "The State of MVC"
         },
         {
-            "title": "Refactoring an horrible codebase guided by tests",
-            "speaker": {},
-            "description": "<blah>",
-            "type": "workshop"
+            "speaker": {
+                "name": "Sebastian Beswick"
+            },
+            "type": "talk",
+            "title": "Build your own synthesiser"
         },
         {
-            "title": "Adding AI to your applications with TensorFlow Lite for iOS",
-            "speaker": {},
-            "description": "<blah>",
-            "type": "workshop"
+            "speaker": {
+                "name": "Patrick Quinn-Graham"
+            },
+            "type": "talk",
+            "title": "<samp>xcodebuild</samp> for fun and profit"
+        },
+        {
+            "speaker": {
+                "name": "Keith Lang"
+            },
+            "type": "talk",
+            "title": "Fun with fudge factors: prototyping vague things"
+        },
+        {
+            "speaker": {
+                "name": "Claire Manning"
+            },
+            "type": "talk",
+            "title": "Batteries and Locks: Modern Tech from Ancient Times"
+        },
+        {
+            "speaker": {
+                "name": "Josh Deprez"
+            },
+            "type": "talk",
+            "title": "Making a visual novel in HyperCard"
+        },
+        {
+            "speaker": {
+                "name": "Maya Kerr"
+            },
+            "type": "talk",
+            "title": "Performance Tips &amp; Tricks with Unity on iOS"
+        },
+        {
+            "speaker": {
+                "name": "Patrick Murray"
+            },
+            "type": "talk",
+            "title": "Accelerated App Development Using CloudKit: Idea to Featured in a Week"
+        },
+        {
+            "speaker": {
+                "name": "Simon Rofe"
+            },
+            "type": "talk",
+            "title": "Ada on an iPad?"
+        },
+        {
+            "speaker": {
+                "name": "Joel Rennich"
+            },
+            "type": "talk",
+            "title": "Building Frameworks Natively in Swift"
+        },
+        {
+            "speaker": {
+                "name": "Timirah James"
+            },
+            "type": "talk",
+            "title": "Swift, for Objective-C OGs"
+        },
+        {
+            "speaker": {
+                "name": "Duncan Babbage"
+            },
+            "type": "talk",
+            "title": "Mis-using Bluetooth wristbands to enhance cognitive accessibility of an app for inpatients with severe brain injuries"
+        },
+        {
+            "speaker": {
+                "name": "Jeames Bone"
+            },
+            "type": "talk",
+            "title": "Dancing with Attitude - Building experiences with CoreMotion"
+        },
+        {
+            "speaker": {
+                "name": "Tim Oliver"
+            },
+            "type": "talk",
+            "title": "Solving the Massive App Problem: Rearchitecting a 5 year old codebase"
+        },
+        {
+            "speaker": {
+                "name": "Jon Shier"
+            },
+            "type": "talk",
+            "title": "Rewriting Alamofire: Into the Core"
+        },
+        {
+            "speaker": {
+                "name": "Matt Gray"
+            },
+            "type": "talk",
+            "title": "Tools for testing, logging, and analytics-ing your code"
+        },
+        {
+            "speaker": {
+                "name": "Sam Jarman"
+            },
+            "type": "talk",
+            "title": "Structuring Your Code with the Model-View-Presenter pattern"
+        },
+        {
+            "speaker": {
+                "name": "Yusuke Kita"
+            },
+            "type": "talk",
+            "title": "SIL for First Time Learners"
+        },
+        {
+            "speaker": {
+                "name": "Nic Wittison"
+            },
+            "type": "talk",
+            "title": "How To Make It Look Like You Know What You Are Doing"
+        },
+        {
+            "speaker": {
+                "name": "Jimmy Ti"
+            },
+            "type": "talk",
+            "title": "There And Back Again with the Roundtrip App"
+        },
+        {
+            "speaker": {
+                "name": "Thomas Verbeek"
+            },
+            "type": "talk",
+            "title": "VIPER for iOS"
         }
     ],
     "images": [
         {
-            "img":"gallery-0.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/36358054774/"
+            "img": "gallery-0.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/36358054774/"
         },
         {
-            "img":"gallery-1.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/36358056014/"
+            "img": "gallery-1.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/36358056014/"
         },
         {
-            "img":"gallery-2.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/37004802166/"
+            "img": "gallery-2.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/37004802166/"
         },
         {
-            "img":"gallery-3.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/37023046622/"
+            "img": "gallery-3.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/37023046622/"
         },
         {
-            "img":"gallery-4.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/37052754321/"
+            "img": "gallery-4.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/37052754321/"
         },
         {
-            "img":"gallery-5.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/37052762211/"
+            "img": "gallery-5.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/37052762211/"
         },
         {
-            "img":"gallery-6.jpg",
-            "url":"https://www.flickr.com/photos/154890106@N06/36358047354/"
+            "img": "gallery-6.jpg",
+            "url": "https://www.flickr.com/photos/154890106@N06/36358047354/"
         },
         {
-            "img":"gallery-7.jpg",        
-            "url":"/images/gallery/original/IMG_3659.JPG.jpeg"
+            "img": "gallery-7.jpg",
+            "url": "/images/gallery/original/IMG_3659.JPG.jpeg"
         }
     ],
     "team": [
@@ -192,6 +322,5 @@
             "image": "jon.jpg",
             "name": "Jon Manning"
         }
-          
     ]
 }

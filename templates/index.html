@@ -141,14 +141,12 @@
   <a class="anchor" id="tickets"></a>
   <div class="container-fluid block">
     <div class="container" id="cfp">
-      <h1>Get Your Ticket</h1>
-      <p>
-        Early-bird tickets are now available.
+        <p id="submit-btn">
+            <a class="btn btn-primary btn-lg" href="https://devworld.eventbrite.com/?aff=mainsite" role="button" style="
+    font-size: 1.5em;">Get Your Ticket</a>
+        </p>       
       </p>
-      <p id="submit-btn">
-        <a class="btn btn-primary btn-lg" href="https://devworld.eventbrite.com/?aff=mainsite" role="button">Get Tickets</a>
-      </p>
-      <p class="cfp-note">Students get discounted tickets, and student <a href="https://auc.edu.au/membership/">AUC members</a> are eligible for complimentary tickets. Group discounts are also available.</p>
+      <p class="cfp-note" style="margin-top:20px">Students get discounted tickets, and student <a href="https://auc.edu.au/membership/">AUC members</a> are eligible for complimentary tickets. Group discounts are also available.</p>
       
 
     </div>
@@ -218,7 +216,7 @@
     <div class="container">
       <h1>Sessions</h1>
       <div class="row" id="sessions">
-      {% for column in talks|selectattr("type", "undefined")|slice(2) %}
+      {% for column in talks|selectattr("type", "equalto", "talk")|sort(attribute='title')|slice(2) %}
         <div class="col-md-6 col-sm-6">
           <ul>
           {% for item in column %}
@@ -240,10 +238,7 @@
           <ul>
             {% for item in column %}
             <li>{{item.title}}</li>
-            {% endfor %}
-            {% if loop.last %}
-            <li id="moretocome">And more to come!</li>
-            {% endif %}
+            {% endfor %}            
           </ul>
         </div>
         {% endfor %}
@@ -340,6 +335,14 @@
         <div class="col col-md-12">
           <img src="images/sponsors/auc_rmit_large.png" />
         </div>
+      </div>
+      <h1>Sponsors</h1>
+      <div class="row align-items-start justify-content-center" id="sponsors">
+        <div class="col col-md-12">
+          <a href="http://mercari.com/jp">
+            <img src="images/sponsors/mercari.png" />
+          </a>
+        </div>        
       </div>
       <h1>Supporters</h1>
       <div class="row align-items-start justify-content-center" id="sponsors">
