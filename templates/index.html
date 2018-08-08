@@ -156,7 +156,7 @@
   <!-- Keynote -->
   <div class="container-fluid block">
     <div class="container" id="speakers">
-      
+
       <h1>Keynotes</h1>
       {% for talk in talks|selectattr("type", "eq", "keynote") %}
       <div class="row">
@@ -214,6 +214,23 @@
   <a class="anchor" id="sessions"></a>
   <div class="container-fluid block">
     <div class="container">
+
+        <h1>Outline</h1>
+        <div class="row schedule-outline">
+            <div class="col-md-4 col-sm-1 col-md-offset-1"><strong>Sunday, August 26th</strong></div>
+            <div class="col-md-6 col-sm-1">Workshops</div>
+        </div>
+        <div class="row schedule-outline">
+            <div class="col-md-4 col-sm-1 col-md-offset-1"><strong>Monday, August 27th</strong></div>
+            <div class="col-md-6 col-sm-1">Keynote, Sessions, Dinner Keynote</div>
+        </div>
+        <div class="row schedule-outline">
+            <div class="col-md-4 col-sm-1 col-md-offset-1"><strong>Tuesday, August 28th</strong></div>
+            <div class="col-md-6 col-sm-1">Keynote and Sessions</div>
+        </div>
+        
+        
+
       <h1>Sessions</h1>
       <div class="row" id="sessions">
       {% for column in talks|selectattr("type", "equalto", "talk")|sort(attribute='title')|slice(2) %}

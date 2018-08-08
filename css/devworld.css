@@ -372,3 +372,9 @@ span.old-cfp-date {
 #buy-tickets-button {
     font-size: 2em;
 }
+
+.schedule-outline {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
