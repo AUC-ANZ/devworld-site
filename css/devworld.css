@@ -8,6 +8,22 @@ body {
     
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+a {
+    color: #337ab7;
+}
+
+.btn-primary {
+    background-color: #337ab7;
+}
+
+.btn-primary:hover {
+    background-color: #2d6ca3;
+}
+
 #hero h1 {
     font-family: "Helvetica Neue", Arial, sans-serif
 }
@@ -281,6 +297,7 @@ a.anchor {
 
 .navbar #call-to-action {
     background-color: #05aaff;
+    border-radius: 10px;
 }
 
 /* Map popup */
@@ -377,4 +394,12 @@ span.old-cfp-date {
     font-size: 1.1em;
     margin-bottom: 1em;
     text-align: center;
+}
+
+#session-info {
+    margin-top: 40px;
+}
+
+#speaker-about-heading {
+    font-size: 18px;
 }

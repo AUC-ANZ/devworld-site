@@ -1,101 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-  <link rel="canonical" href="http://www.devworld.com.au/" />
-  <meta property="og:site_name" content="/dev/world" />
-  <meta property="og:title" content="/dev/world/2018" />
-  <meta property="og:url" content="http://www.devworld.com.au/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://www.devworld.com.au/images/DevWorld-Logo_Banner_2100x1100_1.png" />
-  <meta property="og:image:width" content="2100" />
-  <meta property="og:image:height" content="1100" />
-  <meta property="og:image:alt" content="The /dev/world logo." />
-  <meta itemprop="name" content="/dev/world/2018" />
-  <meta itemprop="url" content="http://www.devworld.com.au/" />
-  <meta itemprop="thumbnailUrl" content="http://www.devworld.com.au/images/DevWorld-Logo-Colour_256.png" />
-  <link rel="image_src" href="http://www.devworld.com.au/images/DevWorld-Logo-Colour_1024.png" />
-  <meta itemprop="image" content="http://www.devworld.com.au/images/DevWorld-Logo-Colour_1024.png" />
-  <meta name="twitter:title" content="/dev/world/2018" />
-  <meta name="twitter:image" content="http://www.devworld.com.au/images/DevWorld-Logo-Colour_1024.png" />
-  <meta name="twitter:url" content="http://www.devworld.com.au/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="description" content="/dev/world/2018 is Australia's longest running conference for macOS and iOS developers and designers."
-  />
-
-
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <title>/dev/world/2018</title>
-
-  <!-- Font Awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/devworld.css?v={{css_version}}" rel="stylesheet">
-
-  <!-- MapBox -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">/dev/world/2018</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#venue">Venue</a>
-          </li>
-          <li>
-            <a href="#partners">Partners</a>
-          </li>
-          <li>
-            <a href="#info">Info</a>
-          </li>
-          <li id="call-to-action">
-            <a href="#tickets">Get Your Ticket</a>
-          </li>
-
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-  </nav>
-
+{% block content %}
   <div class="jumbotron" id="hero">
     <video id="video-background" preload muted autoplay loop>
-      <source src="images/Melbourne.mp4" type="video/mp4">
+      <source src="/images/Melbourne.mp4" type="video/mp4">
 
     </video>
     <div class="container">
-      <img src="images/DevWorldLogo.png" />
+      <img src="/images/DevWorldLogo.png" />
       <h1>/dev/world/2018</h1>
       <h2>26-28 August</h2>
       <h2>Melbourne</h2>
@@ -162,7 +74,7 @@
       <div class="row">
         <div class="col-md-2 col-sm-6">
             {% if "url" in talk.speaker %}<a href="{{talk.speaker.url}}">{%endif%}
-            <img class="speaker-image" src="images/speakers/{{talk.speaker.image}}" />
+            <img class="speaker-image" src="/images/speakers/{{talk.speaker.image}}" />
             {% if "url" in talk.speaker %}</a>{%endif%}
         </div>
         <div class="col-md-10 col-sm-6 ">
@@ -189,7 +101,7 @@
       {% for talk in talks|selectattr("type", "eq", "special_event") %}
       <div class="row">
         <div class="col-md-2 col-sm-6">
-          <img class="speaker-image" src="images/speakers/{{talk.speaker.image}}" />
+          <img class="speaker-image" src="/images/speakers/{{talk.speaker.image}}" />
         </div>
         <div class="col-md-10 col-sm-6 ">
           {% if "name" in talk.speaker %}
@@ -237,11 +149,8 @@
         <div class="col-md-6 col-sm-6">
           <ul>
           {% for item in column %}
-            <li>{{item.title}}</li>
+            <li><a href="/sessions/{{item.id}}.html">{{item.title | escape}}</a></li>
           {% endfor %}
-          {% if loop.last %}
-            <li id="moretocome">And more to come!</li>
-          {% endif %}
           </ul>
         </div>
         {% endfor %}
@@ -254,7 +163,7 @@
         <div class="col-md-6 col-sm-6">
           <ul>
             {% for item in column %}
-            <li>{{item.title}}</li>
+            <li><a href="/sessions/{{item.id}}.html">{{item.title | escape}}</a></li>
             {% endfor %}            
           </ul>
         </div>
@@ -321,22 +230,24 @@
 
  <h1>Gallery</h1>
 
+ <div class="row">
+
 {% for image in images %}
-    {% if loop.index < 4 %}
-    {% set display_class = "d-sm-none" %}
+    {% if loop.index <= 4 %}
+    {% set display_class = "d-none d-md-inline-block" %}
     {% endif %}
-    <div class="col col-md-3 col-sm-12 {{display_class}}">
+    <div class="col-6 col-md-3 {{display_class}}">
 
     {% if "url" in image %}
     <a href="{{image.url}}">
     {% endif %}
-    <img src="images/gallery/final/{{image.img}}" />
+    <img src="/images/gallery/final/{{image.img}}" />
     {% if "url" in image %}
     </a>
     {% endif %}
     </div>
 {% endfor %}
-
+</div>
      
      
 
@@ -350,14 +261,14 @@
       <h1>Presented By</h1>
       <div class="row align-items-center" id="sponsors-wide">
         <div class="col col-md-12">
-          <img src="images/sponsors/auc_rmit_large.png" />
+          <img src="/images/sponsors/auc_rmit_large.png" />
         </div>
       </div>
       <h1>Sponsors</h1>
       <div class="row align-items-start justify-content-center" id="sponsors">
         <div class="col col-md-12">
           <a href="http://mercari.com/jp">
-            <img src="images/sponsors/mercari.png" />
+            <img src="/images/sponsors/mercari.png" />
           </a>
         </div>        
       </div>
@@ -365,17 +276,17 @@
       <div class="row align-items-start justify-content-center" id="sponsors">
         <div class="col col-md-12">
           <a href="http://secretlab.com.au">
-            <img src="images/sponsors/SecretLab.png" />
+            <img src="/images/sponsors/SecretLab.png" />
           </a>
         </div>
         <div class="col col-md-12">
           <a href="http://oreilly.com">
-            <img src="images/sponsors/OReilly.png" />
+            <img src="/images/sponsors/OReilly.png" />
           </a>
         </div>
         <div class="col col-md-12">
           <a href="http://www.themachine-qa.com">
-            <img src="images/sponsors/TMQA_Logo_Colorued_RGB.png" />
+            <img src="/images/sponsors/TMQA_Logo_Colorued_RGB.png" />
           </a>
         </div>
       </div>
@@ -392,106 +303,17 @@
     <div class="container">
       <div class="row" id="team">
         <h1>The Team</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
         {% for member in team %}
-            {% set offset = "col-md-offset-1" if loop.first == true %}
-            <div class="col-md-2 {{offset}} col-sm-3 speaker">
+            <div class="col-md-2  col-sm-3 speaker">
                 <a href="{{member.url}}">
-                <img class="speaker-image" src="images/team/{{member.image}}" />
+                <img class="speaker-image" src="/images/team/{{member.image}}" />
                 <div class="speaker-name">{{member.name}}</div></a>
             </div>
         {% endfor %}
-        
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Legalese -->
-  <a class="anchor" id="info"></a>
-  <div class="container-fluid block">
-    <div class="container" id="legal">
-      <div class="row">
-        <div class="col col-md-8" id="footer-text">
-          <p>
-            <img src="images/FooterLogo.png">
-          </p>
-
-          <p>/dev/world is Australia's longest running conference for OS X and iOS developers and designers, and returns to
-            Melbourne 26-28 August 2018.</p>
-
-          <div class="small-print">
-            <p>All attendees, speakers, and organisers are expected to abide by the
-              <a href="http://auc.edu.au/policies/code-of-conduct/">AUC Code of Conduct</a>.</p>
-
-            <p> Questions? Email us at
-              <a href="mailto:devworld@auc.edu.au">devworld@auc.edu.au</a> or
-              <a href="https://twitter.com/AUC_ANZ">tweet at us</a>.</p>
-
-          </div>
-        </div>
-        <div class="col col-md-4">
-          <script>
-            function disableFallback() {
-              // Called when the Twitter timeline loads.
-              // Hides the fallback element.
-              document.getElementById("twitter-fallback").style = "display: none";
-              document.getElementById("twitter-timeline").style = "display: block";
-            }
-          </script>
-          <a style="display:none" id="twitter-timeline" class="twitter-timeline" data-height="350" data-dnt="true" data-link-color="#0B596C"
-            href="https://twitter.com/AUC_ANZ?ref_src=twsrc%5Etfw">Tweets by AUC_ANZ</a>
-          <div id="twitter-fallback">
-            <p>
-              <a href="https://twitter.com/AUC_ANZ">
-                <font>
-                  <i class="fab fa-twitter-square" alt="Button link to AUC's Twitter" title="Button link to AUC's Twitter"></i>
-                </font> Follow the AUC on Twitter!
-              </a>
-            </p>
-          </div>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" onload="disableFallback()"></script>
-
         </div>
       </div>
-
     </div>
   </div>
-
-  <div class="container-fluid block">
-    <div class="container">
-      <footer>
-        <p>Apple, Mac, iOS, macOS, AppleTV, iPhone, and iPad are trademarks of Apple Inc. For the avoidance of doubt, Apple
-          Inc. has no association with this conference.</p>
-
-        <p>Melbourne footage by
-          <a href="https://www.videezy.com/urban/66-melbourne-city-lights-stock-video-montage">Brandon Kensington</a>, available under a
-          <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution license</a>.</p>
-
-        <p>/dev/world is an
-          <a href="https://auc.edu.au/">AUC</a> event.</p>
-      </footer>
-    </div>
-  </div>
-  <!-- /container -->
-
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29220759-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-29220759-2');
-  </script>
-
-</body>
-
-</html>
+{% endblock %}

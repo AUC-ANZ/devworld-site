@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <link rel="canonical" href="http://www.devworld.com.au/" />
   <meta property="og:site_name" content="/dev/world" />
@@ -29,7 +28,7 @@
   />
 
 
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
 
   <title>/dev/world/2018</title>
 
@@ -37,10 +36,10 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/devworld.css?v=b68a560" rel="stylesheet">
+  <link href="/css/devworld.css?v=7665ea0" rel="stylesheet">
 
   <!-- MapBox -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
@@ -54,7 +53,32 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top">
+        <a class="navbar-brand" href="/">/dev/world/2018</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right ml-auto">
+                <li>
+                  <a  class="nav-link" href="/#venue">Venue</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/#partners">Partners</a>
+                </li>
+                <li>
+                  <a class="nav-link"  href="/#info">Info</a>
+                </li>
+                <li class="nav-link" id="call-to-action">
+                  <a href="/#tickets">Get Your Ticket</a>
+                </li>
+      
+              </ul>
+          
+        </div>
+      </nav>
+  <!-- <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -64,38 +88,38 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">/dev/world/2018</a>
+        <a class="navbar-brand" href="/">/dev/world/2018</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#venue">Venue</a>
+            <a href="/#venue">Venue</a>
           </li>
           <li>
-            <a href="#partners">Partners</a>
+            <a href="/#partners">Partners</a>
           </li>
           <li>
-            <a href="#info">Info</a>
+            <a href="/#info">Info</a>
           </li>
           <li id="call-to-action">
-            <a href="#tickets">Get Your Ticket</a>
+            <a href="/#tickets">Get Your Ticket</a>
           </li>
 
         </ul>
       </div>
-      <!--/.nav-collapse -->
+      <!--/.nav-collapse -/->
     </div>
-    <!--/.container-fluid -->
-  </nav>
+    <!--/.container-fluid -/->
+  </nav> -->
 
   <div class="jumbotron" id="hero">
     <video id="video-background" preload muted autoplay loop>
-      <source src="images/Melbourne.mp4" type="video/mp4">
+      <source src="/images/Melbourne.mp4" type="video/mp4">
 
     </video>
     <div class="container">
-      <img src="images/DevWorldLogo.png" />
+      <img src="/images/DevWorldLogo.png" />
       <h1>/dev/world/2018</h1>
       <h2>26-28 August</h2>
       <h2>Melbourne</h2>
@@ -160,7 +184,7 @@
       <h1>Keynotes</h1>
       <div class="row">
         <div class="col-md-2 col-sm-6">
-<a href="http://savage.si">            <img class="speaker-image" src="images/speakers/michael-shaw.jpg" />
+<a href="http://savage.si">            <img class="speaker-image" src="/images/speakers/michael-shaw.jpg" />
 </a>        </div>
         <div class="col-md-10 col-sm-6 ">
           <div class="speaker-name">
@@ -174,7 +198,7 @@
       </div>
       <div class="row">
         <div class="col-md-2 col-sm-6">
-            <img class="speaker-image" src="images/speakers/richard-moss.jpg" />
+            <img class="speaker-image" src="/images/speakers/richard-moss.jpg" />
         </div>
         <div class="col-md-10 col-sm-6 ">
           <div class="speaker-name">
@@ -197,7 +221,7 @@
       <h1>Special Events</h1>
       <div class="row">
         <div class="col-md-2 col-sm-6">
-          <img class="speaker-image" src="images/speakers/paul-fenwick.jpg" />
+          <img class="speaker-image" src="/images/speakers/paul-fenwick.jpg" />
         </div>
         <div class="col-md-10 col-sm-6 ">
           <div class="speaker-name">Paul Fenwick</div>
@@ -209,7 +233,7 @@
       </div>
       <div class="row">
         <div class="col-md-2 col-sm-6">
-          <img class="speaker-image" src="images/speakers/quiz.jpg" />
+          <img class="speaker-image" src="/images/speakers/quiz.jpg" />
         </div>
         <div class="col-md-10 col-sm-6 ">
           <div class="speaker-description">
@@ -247,38 +271,40 @@
       <div class="row" id="sessions">
         <div class="col-md-6 col-sm-6">
           <ul>
-            <li><samp>xcodebuild</samp> for fun and profit</li>
-            <li>Accelerated App Development Using CloudKit: Idea to Featured in a Week</li>
-            <li>Ada on an iPad?</li>
-            <li>Batteries and Locks: Modern Tech from Ancient Times</li>
-            <li>Build your own synthesiser</li>
-            <li>Building Frameworks Natively in Swift</li>
-            <li>Dancing with Attitude - Building experiences with CoreMotion</li>
-            <li>Designing for iOS: Resources You Gotta Know</li>
-            <li>Fun with fudge factors: prototyping vague things</li>
-            <li>How to go from bad practice to best practice</li>
-            <li>How To Make It Look Like You Know What You Are Doing</li>
-            <li>Let’s settle this UI/UX thing once and for all</li>
-            <li>Machine Learning ...without the Machine</li>
-            <li>Making a visual novel in HyperCard</li>
+            <li><a href="/sessions/24.html">Accelerated App Development Using CloudKit: Idea to Featured in a Week</a></li>
+            <li><a href="/sessions/25.html">Ada on an iPad?</a></li>
+            <li><a href="/sessions/21.html">Batteries and Locks: Modern Tech from Ancient Times</a></li>
+            <li><a href="/sessions/18.html">Build your own synthesiser</a></li>
+            <li><a href="/sessions/26.html">Building Frameworks Natively in Swift</a></li>
+            <li><a href="/sessions/29.html">Dancing with Attitude - Building experiences with CoreMotion</a></li>
+            <li><a href="/sessions/12.html">Designing for iOS: Resources You Gotta Know</a></li>
+            <li><a href="/sessions/20.html">Fun with fudge factors: prototyping vague things</a></li>
+            <li><a href="/sessions/16.html">How to Git Good: A Primer</a></li>
+            <li><a href="/sessions/35.html">How To Make It Look Like You Know What You Are Doing</a></li>
+            <li><a href="/sessions/10.html">In App Purchases with StoreKit</a></li>
+            <li><a href="/sessions/11.html">Let’s settle this UI/UX thing once and for all</a></li>
+            <li><a href="/sessions/15.html">Machine Learning ...without the Machine</a></li>
+            <li><a href="/sessions/22.html">Making a visual novel in HyperCard</a></li>
+            <li><a href="/sessions/28.html">Mis-using Bluetooth wristbands to enhance cognitive accessibility of an app for inpatients with severe brain injuries</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-sm-6">
           <ul>
-            <li>Mis-using Bluetooth wristbands to enhance cognitive accessibility of an app for inpatients with severe brain injuries</li>
-            <li>Performance Tips &amp; Tricks with Unity on iOS</li>
-            <li>Push Notifications and the Limits of Innovation</li>
-            <li>Rewriting Alamofire: Into the Core</li>
-            <li>SIL for First Time Learners</li>
-            <li>Solving the Massive App Problem: Rearchitecting a 5 year old codebase</li>
-            <li>State Machines are your friend</li>
-            <li>Structuring Your Code with the Model-View-Presenter pattern</li>
-            <li>Swift, for Objective-C OGs</li>
-            <li>The State of MVC</li>
-            <li>There And Back Again with the Roundtrip App</li>
-            <li>Tools for testing, logging, and analytics-ing your code</li>
-            <li>VIPER for iOS</li>
-            <li id="moretocome">And more to come!</li>
+            <li><a href="/sessions/23.html">Performance Tips &amp; Tricks with Unity on iOS</a></li>
+            <li><a href="/sessions/14.html">Push Notifications and the Limits of Innovation</a></li>
+            <li><a href="/sessions/31.html">Rewriting Alamofire: Into the Core</a></li>
+            <li><a href="/sessions/39.html">Sending Better Notifications</a></li>
+            <li><a href="/sessions/34.html">SIL for First Time Learners</a></li>
+            <li><a href="/sessions/30.html">Solving the Massive App Problem: Rearchitecting a 5 year old codebase</a></li>
+            <li><a href="/sessions/13.html">State Machines are your friend</a></li>
+            <li><a href="/sessions/33.html">Structuring Your Code with the Model-View-Presenter pattern</a></li>
+            <li><a href="/sessions/38.html">Supercharge your app with Siri Shortcuts</a></li>
+            <li><a href="/sessions/27.html">Swift, for Objective-C OGs</a></li>
+            <li><a href="/sessions/17.html">The State of MVC</a></li>
+            <li><a href="/sessions/36.html">There And Back Again with the Roundtrip App</a></li>
+            <li><a href="/sessions/32.html">Tools for testing, logging, and analytics-ing your code</a></li>
+            <li><a href="/sessions/37.html">VIPER for iOS</a></li>
+            <li><a href="/sessions/19.html">xcodebuild for fun and profit</a></li>
           </ul>
         </div>
       </div>
@@ -288,16 +314,16 @@
       <div class="row" id="sessions">
         <div class="col-md-6 col-sm-6">
           <ul>
-            <li>Quality assurance and testing fundamentals for small teams</li>
-            <li>Refactoring an horrible codebase guided by tests</li>
-            <li>Adding AI to your applications with TensorFlow Lite for iOS.</li>
+            <li><a href="/sessions/5.html">Quality assurance and testing fundamentals for small teams</a></li>
+            <li><a href="/sessions/6.html">Refactoring an horrible codebase guided by tests</a></li>
+            <li><a href="/sessions/7.html">Adding AI to your applications with TensorFlow Lite for iOS.</a></li>
             
           </ul>
         </div>
         <div class="col-md-6 col-sm-6">
           <ul>
-            <li>Property Based Testing in Swift</li>
-            <li>UX for Developers</li>
+            <li><a href="/sessions/8.html">Property Based Testing in Swift</a></li>
+            <li><a href="/sessions/9.html">UX for Developers</a></li>
             
           </ul>
         </div>
@@ -363,55 +389,57 @@
 
  <h1>Gallery</h1>
 
-    <div class="col col-md-3 col-sm-12 d-sm-none">
+ <div class="row">
+
+    <div class="col-6 col-md-3 d-none d-md-inline-block">
 
     <a href="https://www.flickr.com/photos/154890106@N06/36358054774/">
-    <img src="images/gallery/final/gallery-0.jpg" />
+    <img src="/images/gallery/final/gallery-0.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 d-sm-none">
+    <div class="col-6 col-md-3 d-none d-md-inline-block">
 
     <a href="https://www.flickr.com/photos/154890106@N06/36358056014/">
-    <img src="images/gallery/final/gallery-1.jpg" />
+    <img src="/images/gallery/final/gallery-1.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 d-sm-none">
+    <div class="col-6 col-md-3 d-none d-md-inline-block">
 
     <a href="https://www.flickr.com/photos/154890106@N06/37004802166/">
-    <img src="images/gallery/final/gallery-2.jpg" />
+    <img src="/images/gallery/final/gallery-2.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 ">
+    <div class="col-6 col-md-3 d-none d-md-inline-block">
 
     <a href="https://www.flickr.com/photos/154890106@N06/37023046622/">
-    <img src="images/gallery/final/gallery-3.jpg" />
+    <img src="/images/gallery/final/gallery-3.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 ">
+    <div class="col-6 col-md-3 ">
 
     <a href="https://www.flickr.com/photos/154890106@N06/37052754321/">
-    <img src="images/gallery/final/gallery-4.jpg" />
+    <img src="/images/gallery/final/gallery-4.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 ">
+    <div class="col-6 col-md-3 ">
 
     <a href="https://www.flickr.com/photos/154890106@N06/37052762211/">
-    <img src="images/gallery/final/gallery-5.jpg" />
+    <img src="/images/gallery/final/gallery-5.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 ">
+    <div class="col-6 col-md-3 ">
 
     <a href="https://www.flickr.com/photos/154890106@N06/36358047354/">
-    <img src="images/gallery/final/gallery-6.jpg" />
+    <img src="/images/gallery/final/gallery-6.jpg" />
     </a>
     </div>
-    <div class="col col-md-3 col-sm-12 ">
+    <div class="col-6 col-md-3 ">
 
     <a href="/images/gallery/original/IMG_3659.JPG.jpeg">
-    <img src="images/gallery/final/gallery-7.jpg" />
+    <img src="/images/gallery/final/gallery-7.jpg" />
     </a>
     </div>
-
+</div>
      
      
 
@@ -425,14 +453,14 @@
       <h1>Presented By</h1>
       <div class="row align-items-center" id="sponsors-wide">
         <div class="col col-md-12">
-          <img src="images/sponsors/auc_rmit_large.png" />
+          <img src="/images/sponsors/auc_rmit_large.png" />
         </div>
       </div>
       <h1>Sponsors</h1>
       <div class="row align-items-start justify-content-center" id="sponsors">
         <div class="col col-md-12">
           <a href="http://mercari.com/jp">
-            <img src="images/sponsors/mercari.png" />
+            <img src="/images/sponsors/mercari.png" />
           </a>
         </div>        
       </div>
@@ -440,17 +468,17 @@
       <div class="row align-items-start justify-content-center" id="sponsors">
         <div class="col col-md-12">
           <a href="http://secretlab.com.au">
-            <img src="images/sponsors/SecretLab.png" />
+            <img src="/images/sponsors/SecretLab.png" />
           </a>
         </div>
         <div class="col col-md-12">
           <a href="http://oreilly.com">
-            <img src="images/sponsors/OReilly.png" />
+            <img src="/images/sponsors/OReilly.png" />
           </a>
         </div>
         <div class="col col-md-12">
           <a href="http://www.themachine-qa.com">
-            <img src="images/sponsors/TMQA_Logo_Colorued_RGB.png" />
+            <img src="/images/sponsors/TMQA_Logo_Colorued_RGB.png" />
           </a>
         </div>
       </div>
@@ -467,36 +495,37 @@
     <div class="container">
       <div class="row" id="team">
         <h1>The Team</h1>
-            <div class="col-md-2 col-md-offset-1 col-sm-3 speaker">
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-2  col-sm-3 speaker">
                 <a href="http://twitter.com/parisba">
-                <img class="speaker-image" src="images/team/paris.jpg" />
+                <img class="speaker-image" src="/images/team/paris.jpg" />
                 <div class="speaker-name">Paris BA</div></a>
             </div>
             <div class="col-md-2  col-sm-3 speaker">
                 <a href="http://twitter.com/The_McJones">
-                <img class="speaker-image" src="images/team/tim.jpg" />
+                <img class="speaker-image" src="/images/team/tim.jpg" />
                 <div class="speaker-name">Tim Nugent</div></a>
             </div>
             <div class="col-md-2  col-sm-3 speaker">
                 <a href="http://twitter.com/TheMartianLife">
-                <img class="speaker-image" src="images/team/mars.jpg" />
+                <img class="speaker-image" src="/images/team/mars.jpg" />
                 <div class="speaker-name">Mars Geldard</div></a>
             </div>
             <div class="col-md-2  col-sm-3 speaker">
                 <a href="http://twitter.com/tonygray">
-                <img class="speaker-image" src="images/team/tony.jpg" />
+                <img class="speaker-image" src="/images/team/tony.jpg" />
                 <div class="speaker-name">Tony Gray</div></a>
             </div>
             <div class="col-md-2  col-sm-3 speaker">
                 <a href="http://twitter.com/desplesda">
-                <img class="speaker-image" src="images/team/jon.jpg" />
+                <img class="speaker-image" src="/images/team/jon.jpg" />
                 <div class="speaker-name">Jon Manning</div></a>
             </div>
-        
+        </div>
       </div>
     </div>
   </div>
-
 
   <!-- Legalese -->
   <a class="anchor" id="info"></a>
@@ -505,7 +534,7 @@
       <div class="row">
         <div class="col col-md-8" id="footer-text">
           <p>
-            <img src="images/FooterLogo.png">
+            <img src="/images/FooterLogo.png">
           </p>
 
           <p>/dev/world is Australia's longest running conference for OS X and iOS developers and designers, and returns to
@@ -572,7 +601,7 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29220759-2"></script>

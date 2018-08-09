@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}} - /dev/world/2018{% endblock %}
+{% block content %}
+
+
+
+<!-- Session -->
+  <div class="container-fluid offset-block block">
+      <div class="container">
+      <div class="row" id="session-info">
+        
+              
+        <div class="col col-md-12 col-sm-6">
+          <h1>{{title}}</h1>
+          <div id="session-speaker">{{speaker.name}}{% if "organisation" in speaker %}, {{speaker.organisation}}{% endif %}</div>
+          {{description | markdown}}
+          {% if "bio" in speaker %}
+        </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-12 col-sm-6">
+            <h4 id="speaker-about-heading">About {{speaker.name}}</h4>
+          </div>
+        </div>
+        <div class="row">
+          {% if "image" in speaker %}
+          <div class="col-md-3 order-2 order-md-2 col-sm-6">
+            <img class="speaker-image" src="/images/speakers/{{speaker.image}}" />
+          </div>
+          <div class="col-md-9 order-1 order-md-1 col-sm-6">
+            <div id="session-speaker-bio">{{speaker.bio | markdown | urlize}}</div>
+          </div>
+          {% else %}
+          <div class="col">
+            <div id="session-speaker-bio">{{speaker.bio | markdown | urlize}}</div>
+          </div>
+          {% endif %}
+          
+          {% endif %}
+        </div>
+        
+        {#<div class="col col-md-2 col-sm-6">
+          <h2>Info</h2>
+          <p>Room A</p>
+          <p>Monday, 9:30 AM</p>
+          
+        </div>#}
+          
+      </div>
+    </div>
+    </div>
+
+
+{% endblock %}
