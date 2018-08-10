@@ -20,7 +20,7 @@ CSS_PATH="css/devworld.css"
 
 INDEX_PATH="index.html"
 TALKS_DIR_PATH="sessions"
-TIMETABLE_PATH="timetable.html"
+SCHEDULE_PATH="schedule.html"
 
 def main():
 
@@ -61,9 +61,9 @@ def main():
     
     data["css_version"] = sha1.hexdigest()[:7]
 
-    timetable_data = generate_timetable(data["talks"])
+    schedule_data = generate_schedule(data["talks"])
 
-    data["timetable"] = timetable_data
+    data["schedule"] = schedule_data
 
     # render the template
     index_template = templateEnv.get_template( "index.html" )
@@ -89,16 +89,16 @@ def main():
             f.write(talk_document)
             print("Wrote {} for talk {}".format(path, talk["title"]))
     
-    timetable_template = templateEnv.get_template("timetable.html")
+    schedule_template = templateEnv.get_template("schedule.html")
 
-    timetable_document = timetable_template.render(data)
+    schedule_document = schedule_template.render(data)
 
-    with open(TIMETABLE_PATH, "w") as f:
-        f.write(timetable_document)
+    with open(SCHEDULE_PATH, "w") as f:
+        f.write(schedule_document)
 
-    print("Wrote timetable to {}".format(TIMETABLE_PATH))
+    print("Wrote schedule to {}".format(SCHEDULE_PATH))
 
-def generate_timetable(events):
+def generate_schedule(events):
 
     def group_events_by_day(events):
         d = defaultdict(list)

@@ -6,10 +6,10 @@
 <div class="container-fluid offset-block block">
     <div class="container" id="timetable">
     <div class="row">
-    <h1>Timetable</h1>
+    <h1>Schedule</h1>
     </div>
 
-        {% for item in timetable|dictsort %}
+        {% for item in schedule|dictsort %}
         <div class="row row-equal">
             <h2>{{item[0]|parsedate("%A, %d %B")}}</h2>            
         </div>
