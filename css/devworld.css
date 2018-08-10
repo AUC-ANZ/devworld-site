@@ -408,6 +408,10 @@ span.old-cfp-date {
     margin-top: 40px;
 }
 
+.timetable-time {
+    padding: 15px;
+}
+
 .timetable-time-group {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -415,6 +419,8 @@ span.old-cfp-date {
 
 .timetable-event {
     background-color: #d8ebf4;
+    margin: 10px;
+    padding: 5px;
 }
 
 .timetable-event[data-type="session"] {
@@ -431,5 +437,9 @@ span.old-cfp-date {
 
 .timetable-event[data-type="admin"] {
     background-color: #DAE3F5;
+}
+
+.timetable-event-vertical-offset-column {
+    margin-top: 20px;
 }
 
