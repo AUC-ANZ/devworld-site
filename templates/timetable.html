@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Timetable - /dev/world/2018{% endblock %}
+{% block content %}
+
+<div class="container-fluid offset-block block">
+    <div class="container" id="timetable">
+    <div class="row">
+    <h1>Timetable</h1>
+    </div>
+
+        {% for item in timetable|dictsort %}
+        <div class="row">
+            <h2>{{item[0]|parsedate("%A, %d %B")}}</h2>            
+        </div>
+
+        {# Time Blocks #}
+        {% for group in item[1]|dictsort %}
+        <div class="row timetable-time-group">
+            <div class="col-2 timetable-time">{{group[0]|parsedate("%-I:%M %p")}}</div>
+       
+        {# Events at this time #}
+        {% for event in group[1] if not event.id == 3%}
+        
+            {% if event.type == "talk" or event.type == "workshop" %}
+            {% set col = "col-5"%}
+            {% else %}
+            {% set col = "col-10"%}
+            {% endif %}
+            <div class="timetable-event {{col}} text-center">
+            {% if "description" in event %}
+            <a href="/sessions/{{event.id}}.html">
+            <div class="timetable-event-name">{{event.title}}</div>
+            </a>
+            {% else %}
+            <div class="timetable-event-name">{{event.title}}</div>
+            {% endif %}
+            {% if "speaker" in event %}
+            <div class="timetable-event-speaker">{{event.speaker.name}}</div>
+            {% endif %}
+            </div>
+        {% endfor %}
+        </div>
+        
+        {% endfor %}
+
+        {% endfor %}
+    
+    </div>
+</div>
+{% endblock %}

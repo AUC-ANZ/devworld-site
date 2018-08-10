@@ -61,6 +61,10 @@ def main():
     
     data["css_version"] = sha1.hexdigest()[:7]
 
+    timetable_data = generate_timetable(data["talks"])
+
+    data["timetable"] = timetable_data
+
     # render the template
     index_template = templateEnv.get_template( "index.html" )
     
@@ -85,11 +89,9 @@ def main():
             f.write(talk_document)
             print("Wrote {} for talk {}".format(path, talk["title"]))
     
-    timetable_data = generate_timetable(data["talks"])
-
     timetable_template = templateEnv.get_template("timetable.html")
 
-    timetable_document = timetable_template.render({"timetable":timetable_data})
+    timetable_document = timetable_template.render(data)
 
     with open(TIMETABLE_PATH, "w") as f:
         f.write(timetable_document)
