@@ -236,7 +236,8 @@
             "speaker": {
                 "bio": "Marina Rose Geldard, more commonly known as Mars, is a Computing Student from Tasmania. Entering the world of technology relatively late as a mature-aged student, she has found her place in the world: an industry where she can apply her lifelong love of mathematics and optimisation. \n\nA compulsive volunteer at industry events, Mars also teaches artificial intelligence to first-year ICT students, hikes around in the Tasmanian wilderness, dabbles in research, and builds Game of Thrones in Minecraft.\n\nMars has been awarded the MJ Rees Prize (for excellence in Information Systems academia) at the University of Tasmania, and was an Apple WWDC Scholarship recipient for 2018. Mars is on the organising committee for /dev/world, after running the registration desk in 2016/17, and serves on the board for her state's branch of the Australian Computer Society (ACS).\n\nMars can be found on Twitter (@TheMartianLife) and at http://www.themartianlife.com ", 
                 "organisation": "University of Tasmania", 
-                "name": "Mars Geldard"
+                "name": "Mars Geldard",
+                "image": "mars_geldard.jpg"
             }, 
             "location": "Room 1", 
             "duration": "30m", 
@@ -332,7 +333,9 @@
             "date": "Tuesday, 28 August 2018", 
             "speaker": {
                 "bio": "Claire is an archaeologist and historian with an interest in mobile tech and game development. She currently works as a historical consultant with Melbourne's growing game development community, and for some reason won't shut up about history.", 
-                "name": "Claire Manning"
+                "name": "Claire Manning",
+                "image": "claire_manning.jpg"
+
             }, 
             "location": "Room 2", 
             "duration": "30m", 
