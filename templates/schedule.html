@@ -20,7 +20,7 @@
             <div class="col-12 col-md-2 text-md-right text-center timetable-time">{{group[0]|parsedate("%-I:%M %p")}}</div>
        
         {# Events at this time #}
-        {% for event in group[1] %}
+        {% for event in group[1]|sort(attribute="location") %}
         
             {% if event.type == "talk" or event.type == "workshop" %}
             {% set col = "col-md-5"%}
