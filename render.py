@@ -84,7 +84,7 @@ def main():
         if talk["type"] == "admin":
             continue
         path = op.join(TALKS_DIR_PATH, "{0}.html".format(talk["id"]))
-        talk_document = talk_template.render(talk)
+        talk_document = talk_template.render({"css_version": data["css_version"], **talk})
         with open(path, "w") as f:
             f.write(talk_document)
             print("Wrote {} for talk {}".format(path, talk["title"]))

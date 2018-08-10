@@ -421,6 +421,7 @@ span.old-cfp-date {
     background-color: #d8ebf4;
     margin: 10px;
     padding: 5px;
+    height: 90%;
 }
 
 .timetable-event[data-type="session"] {
