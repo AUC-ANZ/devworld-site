@@ -403,3 +403,12 @@ span.old-cfp-date {
 #speaker-about-heading {
     font-size: 18px;
 }
+
+.timetable-time-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.timetable-event {
+    background-color: #d8ebf4;
+}

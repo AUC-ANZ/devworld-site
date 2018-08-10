@@ -9,11 +9,18 @@ from os import path as op
 
 from jinja2 import Template
 
+import dateutil
+
+from collections import defaultdict
+
+from  dateutil.parser import parse as parsedate
+
 DATA_PATH="devworld.json"
 CSS_PATH="css/devworld.css"
 
 INDEX_PATH="index.html"
 TALKS_DIR_PATH="sessions"
+TIMETABLE_PATH="timetable.html"
 
 def main():
 
@@ -29,6 +36,14 @@ def main():
     templateEnv.filters['markdown'] = lambda text: jinja2.Markup(md.convert(text))
     templateEnv.trim_blocks = True
     templateEnv.lstrip_blocks = True
+
+    def _jinja2_filter_datetime(date, fmt=None):
+        date = dateutil.parser.parse(date)
+        native = date.replace(tzinfo=None)
+        format= fmt or '%b %d, %Y'
+        return native.strftime(format) 
+    
+    templateEnv.filters['parsedate'] = _jinja2_filter_datetime
 
     # load the data we got
 
@@ -69,7 +84,38 @@ def main():
         with open(path, "w") as f:
             f.write(talk_document)
             print("Wrote {} for talk {}".format(path, talk["title"]))
+    
+    timetable_data = generate_timetable(data["talks"])
+
+    timetable_template = templateEnv.get_template("timetable.html")
+
+    timetable_document = timetable_template.render({"timetable":timetable_data})
+
+    with open(TIMETABLE_PATH, "w") as f:
+        f.write(timetable_document)
+
+    print("Wrote timetable to {}".format(TIMETABLE_PATH))
+
+def generate_timetable(events):
+
+    def group_events_by_day(events):
+        d = defaultdict(list)
+        for event in events:
+            date = parsedate(event["date"])
+            d[date.isoformat()].append(event)
         
+        return d
+    
+    def group_day_by_time(events):
+        d = defaultdict(list)
+        for event in events:
+            date = parsedate(event["date"] + " " + event["start"])
+            d[date.isoformat()].append(event)
+        return d
+    
+    final_groups = {day: group_day_by_time(day_events) for day, day_events in group_events_by_day(events).items()}
+
+    return final_groups
 
 
 if __name__ == '__main__':

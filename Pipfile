@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 "jinja2" = "*"
 markdown = "*"
+python-dateutil = "*"
 
 [dev-packages]
 

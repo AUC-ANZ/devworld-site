@@ -97,9 +97,10 @@
             "id": 6
         }, 
         {
-            "end": "3h", 
+            "end": "12:00", 
             "description": "The recent developer confrences from Google and Microsoft were dominated with news and new capabilities around Artificial Intelligence.\nOne of the most popular tools for developing and evaluating machine learning models is Google's TensorFlow.\n\nThis workshop provides developers with an introduction to Tensorflow Lite, a TensorFlow library designed for mobile, that will allow them to add Artificial Intelligence into \ntheir applications using exist Machine Learning models or by developing their own.\nThe workshop will cover TensorFlow Lite for iOS and demonstrate how the generated models can be utilised with Core ML. \n\nSession outline:\n\n* Introduction to TensorFlow and TensorFlow Lite\n* Setting up the development environment\n* Using pre-trained models\n* Creating your own models\n* Using CoreML with TensorFlow\n* Next steps\n* Questions? ", 
             "title": "Adding AI to your applications with TensorFlow Lite for iOS.", 
+            "start": "9:00", 
             "date": "Sunday, 26 August 2018", 
             "speaker": {
                 "bio": "Patrick is a software engineer at NAB living in Melbourne, Australia.\n\nHe spends most of his time building applications and POCs in a number of languages and technologies. \nHe is really passionate about Artificial Intelligence and Augmented Reality and loves creating technical content, contributing to Open Source Software and supporting developer communities.\nHe is also the organiser of the Melbourne TensorFlow meetup.\n\nWhen he is not coding in front of his laptop he can be found training youth teams at a football pitch (or soccer, depending on which part of the world you live in) or trying to play tennis.", 
@@ -112,9 +113,10 @@
             "id": 7
         }, 
         {
-            "end": "3h", 
+            "end": "15:30", 
             "description": "Automated tests are important to maintaing a robust code base. However, conventional unit tests are often overly specific and only test an arbitrary subset of possible scenarios. Furthermore, they rarely serve as good documentation. Property based tests can help mitigage some of these issues by focusing on describing the relationship between inputs and outputs, and running those tests with a randomly generated set of values. It has been used successfully in functional programming languages for two decades and is now easily achievable in Swift using SwiftCheck, a pure Swift port of one of Haskell's most prominent testing libraries.\n\nIn this talk, Sebastian gives an introduction to property based testing using the SwiftCheck library. The focus is on familiarising the audience with the concepts of properties, generators and shrinking, and how to apply them to their own code to achieve more meaningful tests and better code coverage. Examples are given in Swift using the SwiftCheck library, but apply to other languages and QuickCheck-style libraries as well.\n\nSlides with speaker notes and sample code will be made available after the talk for further study.", 
             "title": "Property Based Testing in Swift", 
+            "start": "12:30", 
             "date": "Sunday, 26 August 2018", 
             "speaker": {
                 "bio": "Sebastian is a mobile developer at Canva, empowering the world to design on the go. He is passionate about writing robust code and believes that better developer tools are essential in delivering better user experiences. As a long time Mac and iOS developer, he now gladly sacrifices compile speed and ABI stability for a type system that actually helps him write better code.\nBefore joining Canva, Sebastian worked on award winning education apps for children, which have been featured both in the App Store and on devices in Apple Stores around the world.", 
@@ -128,9 +130,10 @@
             "id": 8
         }, 
         {
-            "end": "3h", 
+            "end": "18:30", 
             "description": "Everyone has great design ideas! (Seriously)! But not everyone has the vocabulary to communicate them. This session is for devs who are curious to learn more about UX Research and Design, so you can work more effectively and collaboratively with your design peers. Join me for a crash course on UX terminology, methodologies and outputs as well as fun hands-on activities.", 
             "title": "UX for Developers", 
+            "start": "15:30", 
             "date": "Sunday, 26 August 2018", 
             "speaker": {
                 "bio": "Laura is a multi-disciplinary designer working across user experience research, design and front-end development for startups. Asking questions, unpacking assumptions and trying to get to the bottom of things are some of her favourite activities - supported by methodologies all the cool kids are using, such as Lean, Agile and Design Thinking. She's a passionate advocate for improving diversity in technology and ensuring our workplaces are welcoming and inclusive. Also: cats rule, dogs drool.", 
