@@ -13,11 +13,17 @@
               
         <div class="col col-md-12 col-sm-6">
           <h1>{{title}}</h1>
+          {% if speaker %}
           <div id="session-speaker">{{speaker.name}}{% if "organisation" in speaker %}, {{speaker.organisation}}{% endif %}</div>
+          {% endif %}
+          {% if description %}
           {{description | markdown}}
+          {% endif %}
           {% if "bio" in speaker %}
         </div>
         </div>
+        {% if speaker %}
+        
         <div class="row">
           <div class="col col-md-12 col-sm-6">
             <h4 id="speaker-about-heading">About {{speaker.name}}</h4>
@@ -39,6 +45,7 @@
           
           {% endif %}
         </div>
+        {% endif %}
         
         {#<div class="col col-md-2 col-sm-6">
           <h2>Info</h2>

@@ -98,7 +98,7 @@
   <div class="container-fluid block">
     <div class="container" id="speakers">      
       <h1>Special Events</h1>
-      {% for talk in talks|selectattr("type", "eq", "special_event") %}
+      {% for talk in talks|selectattr("type", "eq", "special_event")|selectattr("speaker", "defined") %}
       <div class="row">
         <div class="col-md-2 col-sm-6">
           <img class="speaker-image" src="/images/speakers/{{talk.speaker.image}}" />

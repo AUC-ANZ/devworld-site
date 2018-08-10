@@ -4,11 +4,16 @@ import json
 import jinja2
 import hashlib
 import markdown
+import os
+from os import path as op
 
 from jinja2 import Template
 
 DATA_PATH="devworld.json"
 CSS_PATH="css/devworld.css"
+
+INDEX_PATH="index.html"
+TALKS_DIR_PATH="sessions"
 
 def main():
 
@@ -42,10 +47,30 @@ def main():
     data["css_version"] = sha1.hexdigest()[:7]
 
     # render the template
+    index_template = templateEnv.get_template( "index.html" )
+    
+    document = index_template.render (data)
+    
+    with open(INDEX_PATH, "w") as f:
+        f.write(document)
+        print("Wrote {}".format(INDEX_PATH))
+    
+    talks = data["talks"]
 
-    template = templateEnv.get_template( "index.html" )
-    document = template.render (data)
-    print(document)
+    talk_template = templateEnv.get_template("talk.html")
+
+    os.makedirs(TALKS_DIR_PATH, exist_ok=True)
+
+    for talk in talks:
+        if talk["type"] == "admin":
+            continue
+        path = op.join(TALKS_DIR_PATH, "{0}.html".format(talk["id"]))
+        talk_document = talk_template.render(talk)
+        with open(path, "w") as f:
+            f.write(talk_document)
+            print("Wrote {} for talk {}".format(path, talk["title"]))
+        
+
 
 if __name__ == '__main__':
     main()
