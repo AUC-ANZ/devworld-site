@@ -13,6 +13,7 @@
               
         <div class="col col-md-12 col-sm-6">
           <h1>{{title}}</h1>
+          <div id="talk-time">{{date|parsedate("<strong>%A</strong>, %d %B")}}, <strong>{{start|parsedate("%-I:%M %p")}}</strong> to {{end|parsedate("%-I:%M %p")}}</div>
           {% if speaker %}
           <div id="session-speaker">{{speaker.name}}{% if "organisation" in speaker %}, {{speaker.organisation}}{% endif %}</div>
           {% endif %}
