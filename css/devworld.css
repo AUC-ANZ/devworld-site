@@ -416,3 +416,20 @@ span.old-cfp-date {
 .timetable-event {
     background-color: #d8ebf4;
 }
+
+.timetable-event[data-type="session"] {
+    background-color: #ADCFDF;
+}
+
+.timetable-event[data-type="workshop"] {
+    background-color: #FFF1E0;
+}
+
+.timetable-event[data-type="special_event"], .timetable-event[data-type="panel"] {
+    background-color: #D7F5ED;
+}
+
+.timetable-event[data-type="admin"] {
+    background-color: #DAE3F5;
+}
+

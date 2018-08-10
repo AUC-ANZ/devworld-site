@@ -187,12 +187,14 @@
             "speaker": {
                 "bio": "Heidi Helen has been designing apps for the last 4 years, including Stamp Pack, Boomerang: Double-Check Translations, and Capsicum. She previously studied a Bachelor of Visual Arts at the University of South Australia. Considering herself a creative soul, she finds delight in the small details and pushing her designs to be the best user experience they can be.", 
                 "organisation": "Illuminated Bits", 
-                "name": "Heidi Helen Pilypas"
+                "name": "Heidi Helen Pilypas",
+                "image": "heidi_helen_pilypas.jpeg"
             }, 
             "location": "Room 2", 
             "duration": "30m", 
             "type": "talk", 
             "id": 12
+            
         }, 
         {
             "end": "15:20", 
@@ -544,7 +546,8 @@
             "speaker": {
                 "bio": "Nic has been working at Canva for 4 years now where he works on making the Canva iOS experience the best it can be. He has several qualifications, including but not limited to: emails, sending emails, receiving emails, deleting emails, the web, using mice, clicking, double clicking, the computer screen of course, keyboard and the bit that goes on the floor.", 
                 "organisation": "Canva", 
-                "name": "Nic Wittison"
+                "name": "Nic Wittison",
+                "image": "nic_winton.jpeg"
             }, 
             "location": "Room 1", 
             "duration": "30m", 
@@ -594,7 +597,8 @@
             "speaker": {
                 "bio": "Zach is a student at the University of Technology, Sydney studying Economics and I.T. He works part-time as an iOS developer, and helps run the Sydney CocoaHeads Meetup. When not in front of a screen, he can usually be found out on a run, or at the footy cheering on the Dragons. ", 
                 "organisation": "University of Technology Sydney", 
-                "name": "Zach Simone"
+                "name": "Zach Simone",
+                "image": "zach_simone.jpeg"
             }, 
             "location": "Room 1", 
             "duration": "30m", 
@@ -734,7 +738,11 @@
             "date": "Monday, 27 August 2018", 
             "location": "Room 1", 
             "duration": "40m", 
-            "type": "special_event", 
+            "type": "panel", 
+
+            "speaker": {
+                "name": "Peter Wells"
+            },
             "id": 51
         }, 
         {
