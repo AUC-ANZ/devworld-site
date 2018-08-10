@@ -17,27 +17,50 @@
         {# Time Blocks #}
         {% for group in item[1]|dictsort %}
         <div class="row timetable-time-group">
-            <div class="col-2 timetable-time">{{group[0]|parsedate("%-I:%M %p")}}</div>
+            <div class="col-12 col-md-2 text-md-right text-center timetable-time">{{group[0]|parsedate("%-I:%M %p")}}</div>
        
         {# Events at this time #}
-        {% for event in group[1] if not event.id == 3%}
+        {% for event in group[1] %}
         
             {% if event.type == "talk" or event.type == "workshop" %}
-            {% set col = "col-5"%}
+            {% set col = "col-md-5"%}
             {% else %}
-            {% set col = "col-10"%}
+            {% set col = "col-md-10"%}
             {% endif %}
-            <div class="timetable-event {{col}} text-center">
-            {% if "description" in event %}
-            <a href="/sessions/{{event.id}}.html">
-            <div class="timetable-event-name">{{event.title}}</div>
-            </a>
+
+            {% if not loop.first and "merge_key" in event %}
+            {% set offset = "offset-md-2" %}
             {% else %}
-            <div class="timetable-event-name">{{event.title}}</div>
+            {% set offset = "" %}
             {% endif %}
+            <div class="col-12 {{col}} {{offset}} text-center" >
+
+            <div class="timetable-event" data-type="{{event.type}}">
+
+                <div class="timetable-event-name">
+
+                {# Show labels for all events that aren't regular talks or admin #}
+                {% if event.type != "talk" and event.type != "admin" %}
+                {{event.type | replace("_", " ") | title}}:
+                {% endif %}
+                
+                {% if "description" in event %}
+                <a href="/sessions/{{event.id}}.html">
+                {% endif %}
+            
+                {{event.title}}
+
+                {% if "description" in event %}
+                </a>
+                {% endif %}
+
+                </div>
+            
             {% if "speaker" in event %}
             <div class="timetable-event-speaker">{{event.speaker.name}}</div>
             {% endif %}
+
+            </div>
             </div>
         {% endfor %}
         </div>
