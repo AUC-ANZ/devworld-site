@@ -439,6 +439,13 @@ span.old-cfp-date {
     background-color: #DAE3F5;
 }
 
+/* Vertically center panels, special events, admin */
+.timetable-event[data-type="special_event"], .timetable-event[data-type="panel"], .timetable-event[data-type="admin"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .timetable-event-vertical-offset-column {
     margin-top: 20px;
 }
