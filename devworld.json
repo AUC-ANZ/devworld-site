@@ -1,84 +1,30 @@
 {
     "talks": [
         {
-            "end": "10:00", 
-            "description": "Performance is an essential quality and founding principle of Procreate, affording the artist a natural and fluid connection with their creation. We'll explore our principles, techniques, and sacrifices on the road to minimal latency and 120 frames a second.\n", 
-            "title": "Liquid Performance", 
-            "start": "9:15", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "url": "http://savage.si", 
-                "image": "michael-shaw.jpg", 
-                "organisation": "Savage Interactive", 
-                "name": "Michael Shaw"
-            }, 
-            "location": "Room 1", 
+            "end": "9:00", 
+            "start": "8:15", 
+            "title": "Registration", 
+            "date": "Sunday, 26 August 2018", 
+            "location": "Hallway", 
             "duration": "45m", 
-            "type": "keynote", 
-            "id": 1
+            "type": "admin", 
+            "id": 40
         }, 
         {
-            "end": "10:50", 
-            "description": "Macs were at various points in the 1980s and 90s a great bastion of innovation and creativity in game design, a place where genres were born and thinking differently was a doctrine \u2014 not a tagline. Journalist and historian Richard Moss will share the biggest lessons, insights, and tales of developer wizardry from the era that he found while writing his book [The Secret History of Mac Gaming](http://secrethistoryofmacgaming.com/).", 
-            "title": "Tales from the Golden Age of Mac Gaming", 
-            "start": "10:05", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "image": "richard-moss.jpg", 
-                "name": "Richard Moss"
-            }, 
-            "location": "Room 1", 
-            "duration": "45m", 
-            "type": "keynote", 
-            "id": 2
-        }, 
-        {
-            "end": "23:00", 
-            "description": "Join Paul at the /dev/world/2018 conference dinner, and have your mind blasted with knowledge that you didn't expect, may faintly resent, and will be sure to delight in.", 
-            "title": "Dinner Keynote", 
-            "start": "19:30", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "image": "paul-fenwick.jpg", 
-                "name": "Paul Fenwick"
-            }, 
-            "location": "Quiz", 
-            "duration": "3h 30m", 
-            "merge_key": "quiz", 
-            "type": "special_event", 
-            "id": 3
-        }, 
-        {
-            "end": "23:00", 
-            "description": "Finally, all those nights of reading Wikipedia are going to pay off! Join us at the dinner quiz, a decade-old /dev/world institution. Non-technical, welcoming, and a great way to mark the middle of the conference.", 
-            "title": "The /dev/world/2018 Quiz", 
-            "start": "19:30", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "image": "quiz.jpg"
-            }, 
-            "location": "Quiz", 
-            "duration": "3h 30m", 
-            "merge_key": "quiz", 
-            "type": "special_event", 
-            "id": 4
-        }, 
-        {
-            "end": "15:30", 
-            "description": "Most software developers will agree they could be doing more around testing and quality assurance, but struggle to justify the cost or time. This workshop will cover the fundamentals of the functional testing process, providing attendees with knowledge and skills to fill QA-related gaps in their team's processes, without breaking the bank. This will result in more QA being done, higher quality products, and a great foundation for employing QA personnel in the future.\n\nTake-homes:\n\n* Tool suggestions\n* Scoping and prioritising test effort for your project\n* Identifying areas of high defect likelihood\n* Making QA everyone's responsibility\n* Demystifying QA terminology\n* Fitting QA into your project management methodology", 
-            "title": "Quality assurance and testing fundamentals for small teams", 
-            "start": "12:30", 
+            "end": "12:00", 
+            "description": "The recent developer confrences from Google and Microsoft were dominated with news and new capabilities around Artificial Intelligence.\nOne of the most popular tools for developing and evaluating machine learning models is Google's TensorFlow.\n\nThis workshop provides developers with an introduction to Tensorflow Lite, a TensorFlow library designed for mobile, that will allow them to add Artificial Intelligence into \ntheir applications using exist Machine Learning models or by developing their own.\nThe workshop will cover TensorFlow Lite for iOS and demonstrate how the generated models can be utilised with Core ML. \n\nSession outline:\n\n* Introduction to TensorFlow and TensorFlow Lite\n* Setting up the development environment\n* Using pre-trained models\n* Creating your own models\n* Using CoreML with TensorFlow\n* Next steps\n* Questions? ", 
+            "title": "Adding AI to your applications with TensorFlow Lite for iOS.", 
+            "start": "9:00", 
             "date": "Sunday, 26 August 2018", 
             "speaker": {
-                "bio": "Jason Imms is the managing director of The Machine QA, a quality assurance contracting and consulting firm based in Hobart, Tasmania. Jason has more than a decade of experience working in software and games QA, as well as six years working as a freelance games and technology journalist for some of Australia and the USA's premier publications. He is a father of five, enjoys cooking over charcoal, and still tries to find joy in playing video games, despite testing them for a living.", 
-                "image": "jason_imms.jpg", 
-                "organisation": "The Machine QA", 
-                "name": "Jason Imms"
+                "bio": "Patrick is a software engineer at NAB living in Melbourne, Australia.\n\nHe spends most of his time building applications and POCs in a number of languages and technologies. \nHe is really passionate about Artificial Intelligence and Augmented Reality and loves creating technical content, contributing to Open Source Software and supporting developer communities.\nHe is also the organiser of the Melbourne TensorFlow meetup.\n\nWhen he is not coding in front of his laptop he can be found training youth teams at a football pitch (or soccer, depending on which part of the world you live in) or trying to play tennis.", 
+                "organisation": "NAB", 
+                "name": "Patrick Haralabidis"
             }, 
             "location": "Room 1", 
             "duration": "3h", 
             "type": "workshop", 
-            "id": 5
+            "id": 7
         }, 
         {
             "end": "12:00", 
@@ -97,20 +43,31 @@
             "id": 6
         }, 
         {
-            "end": "12:00", 
-            "description": "The recent developer confrences from Google and Microsoft were dominated with news and new capabilities around Artificial Intelligence.\nOne of the most popular tools for developing and evaluating machine learning models is Google's TensorFlow.\n\nThis workshop provides developers with an introduction to Tensorflow Lite, a TensorFlow library designed for mobile, that will allow them to add Artificial Intelligence into \ntheir applications using exist Machine Learning models or by developing their own.\nThe workshop will cover TensorFlow Lite for iOS and demonstrate how the generated models can be utilised with Core ML. \n\nSession outline:\n\n* Introduction to TensorFlow and TensorFlow Lite\n* Setting up the development environment\n* Using pre-trained models\n* Creating your own models\n* Using CoreML with TensorFlow\n* Next steps\n* Questions? ", 
-            "title": "Adding AI to your applications with TensorFlow Lite for iOS.", 
-            "start": "9:00", 
+            "end": "12:30", 
+            "start": "12:00", 
+            "title": "Lunch", 
+            "date": "Sunday, 26 August 2018", 
+            "location": "Hallway", 
+            "duration": "30m", 
+            "type": "admin", 
+            "id": 43
+        }, 
+        {
+            "end": "15:30", 
+            "description": "Most software developers will agree they could be doing more around testing and quality assurance, but struggle to justify the cost or time. This workshop will cover the fundamentals of the functional testing process, providing attendees with knowledge and skills to fill QA-related gaps in their team's processes, without breaking the bank. This will result in more QA being done, higher quality products, and a great foundation for employing QA personnel in the future.\n\nTake-homes:\n\n* Tool suggestions\n* Scoping and prioritising test effort for your project\n* Identifying areas of high defect likelihood\n* Making QA everyone's responsibility\n* Demystifying QA terminology\n* Fitting QA into your project management methodology", 
+            "title": "Quality assurance and testing fundamentals for small teams", 
+            "start": "12:30", 
             "date": "Sunday, 26 August 2018", 
             "speaker": {
-                "bio": "Patrick is a software engineer at NAB living in Melbourne, Australia.\n\nHe spends most of his time building applications and POCs in a number of languages and technologies. \nHe is really passionate about Artificial Intelligence and Augmented Reality and loves creating technical content, contributing to Open Source Software and supporting developer communities.\nHe is also the organiser of the Melbourne TensorFlow meetup.\n\nWhen he is not coding in front of his laptop he can be found training youth teams at a football pitch (or soccer, depending on which part of the world you live in) or trying to play tennis.", 
-                "organisation": "NAB", 
-                "name": "Patrick Haralabidis"
+                "bio": "Jason Imms is the managing director of The Machine QA, a quality assurance contracting and consulting firm based in Hobart, Tasmania. Jason has more than a decade of experience working in software and games QA, as well as six years working as a freelance games and technology journalist for some of Australia and the USA's premier publications. He is a father of five, enjoys cooking over charcoal, and still tries to find joy in playing video games, despite testing them for a living.", 
+                "image": "jason_imms.jpg", 
+                "organisation": "The Machine QA", 
+                "name": "Jason Imms"
             }, 
             "location": "Room 1", 
             "duration": "3h", 
             "type": "workshop", 
-            "id": 7
+            "id": 5
         }, 
         {
             "end": "15:30", 
@@ -145,383 +102,41 @@
             "id": 9
         }, 
         {
-            "end": "14:35", 
-            "description": "This will cover in app purchases. Specifically:\n\n* Setting up promoted in app purchases\n* Debugging in app purchases - some tips and tricks I learnt around this\n* Getting in app purchases approved - such as providing an option for the user to restore purchases\n* Tips like: don\u2019t cache in app purchases, make sure you use the currency of the current user, etc\n* UX tips around In App Purchases", 
-            "title": "In App Purchases with StoreKit", 
-            "start": "13:55", 
+            "end": "9:00", 
+            "start": "8:00", 
+            "title": "Registration", 
+            "date": "Monday, 27 August 2018", 
+            "location": "Hallway", 
+            "duration": "1h", 
+            "type": "admin", 
+            "id": 41
+        }, 
+        {
+            "end": "9:15", 
+            "start": "9:00", 
+            "title": "Welcome and Opening", 
+            "date": "Monday, 27 August 2018", 
+            "location": "Room 1", 
+            "duration": "15m", 
+            "type": "admin", 
+            "id": 49
+        }, 
+        {
+            "end": "10:00", 
+            "description": "Performance is an essential quality and founding principle of Procreate, affording the artist a natural and fluid connection with their creation. We'll explore our principles, techniques, and sacrifices on the road to minimal latency and 120 frames a second.\n", 
+            "title": "Liquid Performance", 
+            "start": "9:15", 
             "date": "Monday, 27 August 2018", 
             "speaker": {
-                "bio": "Jane is an iOS developer at Canva in the Product Growth team. She has previously worked as an iOS developer at Atlassian and CommBank. ", 
-                "image": "jane_abernethy.jpg", 
-                "organisation": "Canva", 
-                "name": "Jane Abernethy"
+                "url": "http://savage.si", 
+                "image": "michael-shaw.jpg", 
+                "organisation": "Savage Interactive", 
+                "name": "Michael Shaw"
             }, 
             "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 10
-        }, 
-        {
-            "end": "16:55", 
-            "description": "Is it cool these days to say there\u2019s a difference between UI and UX? Or cool to say that there isn\u2019t? It\u2019s so hard to keep up.\n\nIn this session James White dips into the history of UX as a discipline, pop psychology from the noughties, unpop psychology from the thirties, dank memes and a deep well of personal opinion to explore user experience and where it fits in modern development workflows. You\u2019ll learn how designers and developers can benefit from both subjectivity and objectivity in their design decisions, and most importantly, how we can help users to love our apps.", 
-            "title": "Let\u2019s settle this UI/UX thing once and for all", 
-            "start": "16:15", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "James White is a designer and mobile developer who likes to think and talk about the middle part of that particular Venn diagram. He's from Perth and, a bit further back, from New Zealand.", 
-                "image": "james_white.jpeg", 
-                "organisation": "Colourfool Creative", 
-                "name": "James White"
-            }, 
-            "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 11
-        }, 
-        {
-            "end": "12:00", 
-            "description": "This talk covers design resources every new and experienced iOS developer and designer should know. Where can you get the best icons, fonts, vector assets, and images for your project? What kits are available to help mock up your UI? What software is there to use and what guides can help you perfect your design? Where do you even begin? Learn from South Australian designer, Heidi Helen, who has been designing apps for the last 4 years.", 
-            "title": "Designing for iOS: Resources You Gotta Know", 
-            "start": "11:30", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Heidi Helen has been designing apps for the last 4 years, including Stamp Pack, Boomerang: Double-Check Translations, and Capsicum. She previously studied a Bachelor of Visual Arts at the University of South Australia. Considering herself a creative soul, she finds delight in the small details and pushing her designs to be the best user experience they can be.", 
-                "organisation": "Illuminated Bits", 
-                "name": "Heidi Helen Pilypas",
-                "image": "heidi_helen_pilypas.jpeg"
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 12
-            
-        }, 
-        {
-            "end": "15:20", 
-            "description": "State Machines are an amazingly powerful but often underutilized tool amongst iOS developers. As iOS apps become more and more complex, the business rules and logic introduced into the apps grows. There's a need to be able to handle all of the rules in an app and make sure that the user experience is amazing and delightful. State Machines are a great tool to use when approaching problems that have intricite rules for navigation between parts of the app. This talk aims to equip the listeners with the knowledge around what a state machine is, how it solves problems and what it looks like in an iOS app.\n\nA State Machine is a pattern that allows for navigation between a finite list of states that are defined. By using a finite list of states, we are able to define precisely the users interaction with a part of an app and make sure that the user doesn't reach a point where they shouldn't be. The State Machine is then responsible for defining the possible transitions between the states. What happens before a state transition and what happens after a state transition. To achieve this, I will demonstrate the code that drives a State Machine and how it allows for and prevents the interactions. There'll be demonstration around how the state machines can be tested. There'll also be discussion around the tradeoffs between compile time and run time checks with regard to the usage of state machines and what the alternatives are.\n\nIn the end, I hope that the listeners will be able to take some of the following away from the talk:\n\n* Knowledge of what a state machine is\n* Knowledge of when a state machine should be used\n* Knowledge of when a state machine shouldn't be used\n* Ability to define a state machine in swift\n* Ability to translate theoretical ideas into solvable problems in iOS apps by using a state machine\n\nThis talk will encourage people to use the pattern appropriately and not be frightened when encountering them in the wild. My existing thoughts on the topic are written up as a blog post at https://mattdelves.com/technical/2018/05/05/state-machines.html\n", 
-            "title": "State Machines are your friend", 
-            "start": "14:40", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Matt is a macOS and iOS developer based in Melbourne Australia. He has a propensity towards creating apps that are magical and delightful to use. His experiences ranges from backend to front end and feels that such breadth grants the ability to understand the intricacies involved in creating apps.", 
-                "image": "matt_delves.jpeg", 
-                "name": "Matthew Delves"
-            }, 
-            "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 13
-        }, 
-        {
-            "end": "12:10", 
-            "description": "Many types of app demand push notifications, such as messengers and social networks. Push notifications are also one of the most tightly controlled functions on Apple's platforms. For \"normal\" development companies everything works fine. For volunteer developers or authors of decentralised software, the assumptions baked into push notifications limit the types of technology that we can create on iOS mobile devices. This talk discusses why push notifications are unusually crucial for new uses, provides examples of real-world workarounds, and invites the audience to see the mobile app ecosystem as more than the specific services Apple provides.", 
-            "title": "Push Notifications and the Limits of Innovation", 
-            "start": "11:30", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Tom is a generalist software developer who worked primarily on the enterprise mobile apps AsdeqDocs and AsdeqForms in the past few years. Before that he was a system administrator and programmed embedded automation systems. He is now working in computer security.", 
-                "name": "Thomas Karpiniec"
-            }, 
-            "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 14
-        }, 
-        {
-            "end": "16:10", 
-            "description": "This talk covers some key Machine Learning concepts including classification, clustering and regression methods that are used in applications such as recommendation, detection and prediction systems. \n\nSound dense? Don't worry. We'll be doing simple demonstrations, and performing tasks on paper. It's crucial to understand the steps being done by a computer when you use tools like CoreML and CreateML in order to make informed decisions in the human-driven design and data selection stages that come before model training.\n\nPen and paper--or Apple Pencil and iPad--recommended. Enthusiasm for mathematics optional.", 
-            "title": "Machine Learning \u2026minus the Machine", 
-            "start": "15:40", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Marina Rose Geldard, more commonly known as Mars, is a Computing Student from Tasmania. Entering the world of technology relatively late as a mature-aged student, she has found her place in the world: an industry where she can apply her lifelong love of mathematics and optimisation. \n\nA compulsive volunteer at industry events, Mars also teaches artificial intelligence to first-year ICT students, hikes around in the Tasmanian wilderness, dabbles in research, and builds Game of Thrones in Minecraft.\n\nMars has been awarded the MJ Rees Prize (for excellence in Information Systems academia) at the University of Tasmania, and was an Apple WWDC Scholarship recipient for 2018. Mars is on the organising committee for /dev/world, after running the registration desk in 2016/17, and serves on the board for her state's branch of the Australian Computer Society (ACS).\n\nMars can be found on Twitter (@TheMartianLife) and at http://www.themartianlife.com ", 
-                "organisation": "University of Tasmania", 
-                "name": "Mars Geldard",
-                "image": "mars_geldard.jpg"
-            }, 
-            "location": "Room 1", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 15
-        }, 
-        {
-            "end": "13:55", 
-            "description": "What is Git? Who is Git? I\u2019ll do you one better\u2026 Why is Git? How do I commit to wrangling this beast? What is a master branch and why do I always feel like a slave? How do I sooth the merge conflicts inside of me and why am I always missing my head? What information will I fetch and cherry pick, and what will I push remotely? Does everyone find it this hard, or do they achieve this with some sort of git flow? Whether you\u2019re a beginner using a Git GUI (SourceTree, Github Desktop, GitKraken) or an intermediate with a CLI, join Louis (@proxyblue) as we look at the foundations, best practices, cheeky tips and additional resources to help us Git good.", 
-            "title": "How to Git Good: A Primer", 
-            "start": "13:25", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Louis is an AUC and /dev/world veteran, one of three \"Devery-worlders\" who loves the Apple iOS development community. For the past ten years, he has galavanted around the world making apps, implementing mobile security systems and teaching development and security. He regularly tours the internet, helping hackers in The Many Hats Club, behind the scenes on a security podcast,  and can frequently be found on Twitter retweeting new defence and attack tools making the world simultaneously safer and more dangerous.", 
-                "organisation": "tappON", 
-                "name": "Louis Cremen"
-            }, 
-            "location": "Room 1", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 16
-        }, 
-        {
-            "end": "10:50", 
-            "description": "MVC is known for being an architectural pattern taught in universities that doesn't scale well in the face of iOS Development; in many situations, teams will quickly jump into using architectures that have become known by buzzwords, such as MVVM, VIPER, or Clean. This session will have everyone look at an existing project which is based on MVC, and explore some code changes and ideas whilst on the journey to discussing a wider-scale architecture shift/decision.", 
-            "title": "The State of MVC", 
-            "start": "10:10", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Sande has worked as an iOS developer since January 2015. He started his career at Outware Mobile, working on various projects for many clients. Currently, he\u2019s a mobile developer at REA Group, responsible for iOS and Android apps. He\u2019s really keen on sharing his knowledge and looks forward to do so at dev/world.\n\nRecently graduating from RMIT, Gavan has been a mobile developer from the get-go. Initially a developer consulting on multiple projects, and now working with a team on a single project, he is always keen to discuss neat ways to design architecture used in software which encourage resilience, scalability and ease of development.", 
-                "organisation": "REA Group", 
-                "name": "Sande Harsa, Gavan Chan"
-            }, 
-            "location": "Room 2", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 17
-        }, 
-        {
-            "end": "11:25", 
-            "description": "Algorithmic sound is a fascinating field! It's ubiquitous in everyday life, but not many people understand how it works. It's actually quite simple, and the lightswitch moment of understanding something that you previously took to be black magic is glorious.\n\nThis talk focuses primarily on computer sound representation and synthesis, which is relatively simple to implement regardless of language. As such, this talk will be suitable for attendees of all levels of iOS experience. In this session we\u2019ll go back to basics and take a look at the core components of sound, including how we perceive sounds, and how we can represent them within a computer. We\u2019ll go on to look at the theory behind the CoreAudio Framework, and finish up with a live demo, where we use audio units to create our own simple synthesiser.", 
-            "title": "Build your own synthesiser", 
-            "start": "10:55", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Sebastian loves sound. He graduated from the University of Tasmania with Honours in Computing, focusing on artistic computing via evolutionary sound synthesis. He loves listening to and making sounds, and has been played with many ensembles including the Grainger Wind Symphony, Zelman Symphony Orchestra, and Ochre Trio. He has spoken at a number of programming and artistic computing conferences, notably TEDx Hobart and every /dev/world since 2012, and is currently an iOS Developer at Art Processors.", 
-                "organisation": "Art Processors", 
-                "name": "Sebastian Beswick"
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 18
-        }, 
-        {
-            "end": "11:25", 
-            "description": "This talk shows the amazing things you can do when you build outside of Xcode. Let\u2019s go through a journey of building an application and testing it all without launching Xcode. Bonus: complimentary tools, so xcodebuild isn\u2019t the only command line we\u2019ll be using. ", 
-            "title": "xcodebuild for fun and profit", 
-            "start": "10:55", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Patrick is a Staff Devops Engineer at Tokbox and has a passion for automating everything. If he could he\u2019d automate writing his own bio. ", 
-                "image": "patrick_quinn-graham.jpeg", 
-                "organisation": "Tokbox", 
-                "name": "Patrick Quinn-Graham"
-            }, 
-            "location": "Room 1", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 19
-        }, 
-        {
-            "end": "16:10", 
-            "description": "This talk covers the design of fuzzy things. We\u2019re all familiar with designing for default, typical, and error states. But how do we design for our users\u2019 state of mind? Or, physical state? Or the state of the art in machine vision? Two powerful trends are pushing design into fuzzier areas: ubiquitous sensors and Machine Learning. Our iPhones and Watches capture more and more about our physical activity and environment. How can we use this data when designing great experiences? The first half of this talk looks at the design of heuristics, with common approaches and tools for fast prototyping. The second half of the talk contains strategies for wrestling with machine vision or machine learning results in your UI design. This includes strategies on mapping \u201cconfidence levels\" to UI, and avoiding Clippy-isms like \u201cIt looks like you\u2019re writing a letter\u201d. It concludes with some real-world app examples to inspire new levels of ML integration.", 
-            "title": "Fun with fudge factors: prototyping vague things", 
-            "start": "15:40", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "I'm an interaction designer and new developer! Previously co-founded plasq (makers of Comic Life) and Skitch, acquired by Evernote. Have designed for all manner of things including iOT, drones. :-)", 
-                "organisation": "Teampurr.com", 
-                "name": "Keith Lang"
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 20
-        }, 
-        {
-            "end": "12:35", 
-            "description": "Every day functions of your iPhone were first utilised thousands of years ago. Navigation systems were drastically improved by Vikings, who used a \u201csunstone\u201d to tell the location of the sun even on overcast days. Heron of Alexandria is credited for creating is essentially the first reprogrammable robot, programmed by weights and pulleys. The first version of locks, used today as 6 digit codes and fingerprint ID, is first seen in Mesopotamia over 6000 years ago. \n\nIn the past 5000 years, the way that people use technology has not changed. The primary use of phones today - communication, photography, education, games - is a reflection on how people have always utilised technology. Within this talk I am going to be looking at the most common ways that every day people use their devices, and talking about how these patterns of behaviour is reflected in ancient forms of technology. Stretching from the Baghdad Battery to early signalling, I will explore forms of innovation that humanity has developed from our beginnings and comparing them to functions on the average smartphone. \n", 
-            "title": "Batteries and Locks: Modern Tech from Ancient Times", 
-            "start": "12:05", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Claire is an archaeologist and historian with an interest in mobile tech and game development. She currently works as a historical consultant with Melbourne's growing game development community, and for some reason won't shut up about history.", 
-                "name": "Claire Manning",
-                "image": "claire_manning.jpg"
-
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 21
-        }, 
-        {
-            "end": "16:55", 
-            "description": "This session is a detailed how-to on getting started with Mini vMac and HyperCard, setting up a HyperCard stack with different backgrounds and cards, and some basic scripting in HyperTalk.", 
-            "title": "Making a visual novel in HyperCard", 
-            "start": "16:15", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Josh is a Senior Site Reliability Engineer at Google Australia. His current side-project is Shenzhen Go (https://github.com/google/shenzhen-go), a visual Go programming environment. In 2014, Josh graduated with a PhD in mathematics from the University of Tasmania. ", 
-                "image": "josh_deprez.jpg", 
-                "organisation": "Google Australia", 
-                "name": "Josh Deprez"
-            }, 
-            "location": "Room 2", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 22
-        }, 
-        {
-            "end": "15:15", 
-            "description": "Unity is and extremely popular tool for iOS development in part due to it's extensive built-in functionality and ease of development. However, the complexity of the underlying frameworks necessary to provide that functionality can make for unintuitive performance quirks, especially when used to developing in Objective C, Swift, or targeting desktop devices.\nThis talk covers how to identify & correct performance issues in Unity apps targeting iOS, examples of common performance pitfalls and how to mitigate them.\nThis talk mixes a presentation of a variety of tips and tricks learned over almost a decade of iOS development in Unity with live demonstration of various profiling tools.", 
-            "title": "Performance Tips & Tricks with Unity on iOS", 
-            "start": "14:35", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Maya is a freelance Developer & Technical Artist with almost a decade of experience focused on graphics development & performance optimisation for mobile games and apps. She's been squeezing performance out of Unity on iOS since the original iPhone and lead development on multiple award-winning iOS games.", 
-                "name": "Maya Kerr"
-            }, 
-            "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 23
-        }, 
-        {
-            "end": "17:30", 
-            "description": "This talk covers taking an app from inception to Featured on the App Store in a week. Covering both technical and design decisions, this talk allows you to spearhead your app's success. We look at using rapid and continuous releases, participatory design, and CloudKit to accelerate the development of your next project. CloudKit is a simple yet powerful service that grows with your app. However, some pitfalls need addressing; we cover allowing your app to scale unconstrained despite these. We explore working with your customers and community to test ideas in public and release continuously to accelerate your next side project. Let's turn that app idea into a reality today!", 
-            "title": "Accelerated App Development Using CloudKit: Idea to Featured in a Week", 
-            "start": "17:00", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "After he started hacking together iOS apps at age fifteen, Patrick has gone on to be a two-time Apple \u2018World Wide Developer Conference\u2019 Scholarship recipient. Patrick is a prize-winning hacker, challenging the best of the best at US collegiate hackathons. He\u2019s a recent marketing and computing graduate of the University of Technology, Sydney and a co-founder of the open source initiative Pride Codes. While not programming, Patrick can either be seen skiing too fast, trying to vlog, or globetrotting; often all three simultaneously.", 
-                "name": "Patrick Murray"
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 24
-        }, 
-        {
-            "end": "11:25", 
-            "description": "This talk covers our experiences with porting Ada code to an iPad using a Third Party cross-compiler from AdaCore in conjunction with Xcode and Swift. The aim is to develop a simulator for existing avionics equipment to be used for training aircrew.", 
-            "title": "Ada on an iPad?", 
-            "start": "10:55", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Simon's early career began in shearing sheds in Western NSW - nothing to do with Apple's or software. He is now a Senior Software Engineer with Airbus Australia Pacific. After gaining a degree and PhD in Electrical Engineering, he worked as a Research Scientist at DSTO in Melbourne and a Vibration Engineer in Brisbane. For the last 18 years he has been involved in software engineering for avionics systems with Boeing and Airbus. More recently establishing an iOS software capability for developing training tools and electronic flight bag apps at Airbus.", 
-                "image": "simon_rofe.jpeg", 
-                "organisation": "Airbus Australia Pacific", 
-                "name": "Simon Rofe"
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 25
-        }, 
-        {
-            "end": "12:00", 
-            "description": "You've got a number of projects? You like working natively in Swift? You have code being re-used between projects? This talk will cover how to put your native Swift code into a framework that can then be shared between other projects and even other developers. The session will cover the drop bears that live in Swift frameworks and the potential benefits of doing this. \n\nTopics to be covered include: why do this as a framework, how to use a Swift framework within an Xcode Workspace, distributing your framework to others, and, most importantly, how a framework could save you you lots of work on your own projects.\n\nA sample Swift framework that you can build on will also be included.", 
-            "title": "Building Frameworks Natively in Swift", 
-            "start": "11:30", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Joel is the General Manager for Orchard & Grove in Austin,Texas the developers of NoMAD and other tools that strive to make Mac admin's lives easier. Previously he was an Enterprise Systems Engineering Manager at Apple doing all kinds of fun things with lots of cool people and solving crazy problems to allow for integrating Macs and iOS devices into enterprise environments.\n\nRecently Joel has been greatly enjoying himself working on projects to help people get into a casual binding environment and removing the need for binding to AD at all. \n\nPrior to Apple Joel was frequently seen speaking at Macworld, WWDC and other conferences and gatherings of Apple-minded admins. Joel has traveled the world helping customers adopt OS X and in 2002 he setup afp548.com and had a lot of fun with that too.", 
-                "image": "joel_rennich.jpeg", 
-                "organisation": "Orchard & Grove", 
-                "name": "Joel Rennich"
-            }, 
-            "location": "Room 1", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 26
-        }, 
-        {
-            "end": "15:20", 
-            "description": "This talk covers the implementation of a novel authentication mechanism using inexpensive Bluetooth wristbands for an iPad app being developed in partnership with an inpatient brain injury rehabilitation service. The Inpatient Portal app was developed and trialed to provide a mechanism for clients with recent severe brain injuries to independently view videos they had made with their clinicians regarding why they were in rehabilitation, and what their rehabilitation goals were. The authentication mechanism was trialed over several months with a series of six clients of the brain injury service who were part of the initial pilot of the Inpatient Portal app. Using signal strength as an indicator of proximity provided the ability to implement a staged authentication process that would enable a client with a serious brain injury to be firstly identified when they were in the vicinity of the iPad (c. 3-5m) and then automatically logged in to their account within the app when they approached closer to the device (c. 1m). This talk will cover the implementation of this using Core Bluetooth, discuss the pros (accessibility, ease of use) and potential cons (security, reliability) of this approach. The primary take-home message from this presentation is to highlight cognitive accessibility opportunities in the design of mobile apps. The project described in this presentation was supported by a seed grant (#3705718 / A582) from the Medical Technologies Centre of Research Excellence (MedTech CoRE), funded by the Tertiary Education Commission of New Zealand.", 
-            "title": "Mis-using Bluetooth wristbands to enhance cognitive accessibility of an app for inpatients with severe brain injuries", 
-            "start": "14:40", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Duncan Babbage, PhD is Director of the Centre for eHealth and an Associate Professor in Rehabilitation at Auckland University of Technology. Duncan is a recovering clinical psychologist and self-taught iOS developer. He was both developer of the Inpatient Portal app for iPad discussed in this presentation and principal investigator of the underlying research project. Duncan is also developer of Intro, a contacts app on steroids for iPhone (https://intro.app). Intro has a particular focus on helping people learn names, recognize people, and recall information about people you\u2019ve met.", 
-                "organisation": "Auckland University of Technology, Centre for eHealth", 
-                "name": "Duncan Babbage"
-            }, 
-            "location": "Room 2", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 28
-        }, 
-        {
-            "end": "15:15", 
-            "description": "The devices in our pockets and on our wrists are full of a vast array of sensors that are rarely used to their full potential.\n\nThis talk will deep dive in to creating a fun experience with Apple's CoreMotion framework on iOS and watchOS through the example of a rhythm game that uses real world movements in time to music.\n\nIn this talk you'll learn the basics of core motion, how to convert sensor data to actual movements and get to see me make a fool of myself on stage (and maybe even have a go yourself!).\n\nThis talk is aimed at developers with basic knowledge of iOS and Swift, but no prior CoreMotion experience is required.", 
-            "title": "Dancing with Attitude - Building experiences with CoreMotion", 
-            "start": "14:35", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Jeames has been developing for iOS devices for the better part of the last decade, and is currently helping the world create beautiful designs at Canva. He has a passion for things that start with the letter C including Climbing, Circus, Calisthenics and Coding.", 
-                "organisation": "Canva", 
-                "name": "Jeames Bone"
-            }, 
-            "location": "Room 2", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 29
-        }, 
-        {
-            "end": "14:35", 
-            "description": "As a tech company grows over time, so too does the codebase for its products. As much as we can try to avoid it, this can lead to growing technical debt, spaghetti code, and of course, the classic massive view controller problem.\n\nThis talk covers how we're solving these problems at Mercari for the company's flagship iOS app. This includes gradually migrating from Objective-C to Swift, network API architectural design, siloing code in frameworks, and a new spin on breaking up large view controllers.", 
-            "title": "Solving the Massive App Problem: Rearchitecting a 5 year old codebase", 
-            "start": "13:55", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Tim's been an iOS fanboy since the iPhone 3G and a full-time iOS engineer since the iPhone 5. He currently works at Mercari out of Tokyo, Japan, and has previously worked at Realm and pixiv. In his free time, he enjoys contributing to the open source iOS community, and playing the occasional game of Splatoon.", 
-                "image": "tim_oliver.jpeg", 
-                "organisation": "Mercari Inc", 
-                "name": "Tim Oliver"
-            }, 
-            "location": "Room 2", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 30
-        }, 
-        {
-            "end": "16:25", 
-            "description": "Since its first release in 2015, Alamofire has become one of the most popular Swift frameworks. In the three years since that 1.0.0 release, it has gained more and more features, and the internal complexity to go along with them. For version 5, however, we realized it was time to rewrite the core of the library to enable further growth, new features, and greater scalability. In this presentation I will explore the reasoning behind this risky decision and how we were able to use our existing test suite to replace the core of the framework while largely maintaining compatibility for existing Alamofire users.", 
-            "title": "Rewriting Alamofire: Into the Core", 
-            "start": "15:45", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Jon has been programming on Apple platforms since learning Objective-C on the Mac OS X Public Beta. He joined Detroit Labs in Detroit, Michigan in 2013, where he works with smart and talented people to bring app ideas to life. Outside of work he is a contributor to the Alamofire networking library, among others, and sits on the board of directors of the Alamofire Foundation.", 
-                "image": "jon_shier.jpeg", 
-                "organisation": "Detroit Labs", 
-                "name": "Jon Shier"
-            }, 
-            "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 31
-        }, 
-        {
-            "end": "13:55", 
-            "description": "So, you\u2019ve submitted your app to the App Store, and you\u2019re sitting back waiting for the fame and fortune to roll in.  Maybe now\u2019s a good time to do all that boring stuff, like adding proper logging, analytics, and testing to your code.  This session will cover some tools that you can use to make your app more resilient once the real users arrive.  We\u2019ll talk about Splunk, Jenkins, Test Fairy and TestFlight among others.  ", 
-            "title": "Tools for testing, logging, and analytics-ing your code", 
-            "start": "13:25", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Matt works part time as an iOS, Android and Java developer in Canberra. He spends the rest of his time in Hyrule.", 
-                "image": "matt_gray.jpeg", 
-                "organisation": "Vix Verify", 
-                "name": "Matt Gray"
-            }, 
-            "location": "Room 2", 
-            "duration": "30m", 
-            "type": "talk", 
-            "id": 32
-        }, 
-        {
-            "end": "12:10", 
-            "description": "MVC or Model View Controller has been the tried and true way for iOS programmers for years, but nowadays developers find it hard to test, structure and that it violates a few key architecture principles. Enter Model-View-Presenter, a much cleaner architecture that allows for separation of concerns, easier testing, and greater programmer happiness. This talk covers programming a standard iOS use case putting data from the server onto a screen, with the MVP pattern, plus a few other patterns to allow for maintainable and scalable iOS development. ", 
-            "title": "Structuring Your Code with the Model-View-Presenter pattern", 
-            "start": "11:30", 
-            "date": "Monday, 27 August 2018", 
-            "speaker": {
-                "bio": "Sam Jarman is an iOS developer at BNZ in Wellington, New Zealand. Sam has been a long time iOS dev since the early days. Sam is passionate about creating products with engaging and delightful user experiences and building those products in large teams. Outside of code, Sam enjoys improvised acting, running and geeking out.", 
-                "image": "sam_jarman.png", 
-                "organisation": "BNZ", 
-                "name": "Sam Jarman"
-            }, 
-            "location": "Room 2", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 33
+            "duration": "45m", 
+            "type": "keynote", 
+            "id": 1
         }, 
         {
             "end": "10:50", 
@@ -541,6 +156,22 @@
             "id": 34
         }, 
         {
+            "end": "10:50", 
+            "description": "MVC is known for being an architectural pattern taught in universities that doesn't scale well in the face of iOS Development; in many situations, teams will quickly jump into using architectures that have become known by buzzwords, such as MVVM, VIPER, or Clean. This session will have everyone look at an existing project which is based on MVC, and explore some code changes and ideas whilst on the journey to discussing a wider-scale architecture shift/decision.", 
+            "title": "The State of MVC", 
+            "start": "10:10", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Sande has worked as an iOS developer since January 2015. He started his career at Outware Mobile, working on various projects for many clients. Currently, he\u2019s a mobile developer at REA Group, responsible for iOS and Android apps. He\u2019s really keen on sharing his knowledge and looks forward to do so at dev/world.\n\nRecently graduating from RMIT, Gavan has been a mobile developer from the get-go. Initially a developer consulting on multiple projects, and now working with a team on a single project, he is always keen to discuss neat ways to design architecture used in software which encourage resilience, scalability and ease of development.", 
+                "organisation": "REA Group", 
+                "name": "Sande Harsa, Gavan Chan"
+            }, 
+            "location": "Room 2", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 17
+        }, 
+        {
             "end": "11:25", 
             "description": "Have you ever been asked to work on something that seemed technically impossible? \nHave you ever been asked to complete something in half the time you think it's going to take? \nIt's been a wild ride for me working at Canva for the last 4 years, lots of code, lots of features and lots of fun. If I have learned anything it's that your ability ship things on time comes down to how you can work smarter, not harder. \nSo you don't have to learn things the hard way I've compiled a list of UX/UI tips and tricks I use to save precious development time and make sure we are delivering the best experience to our users. \n\nThis talk will cover a variety of practical iOS UX and UI performance tips as well as discuss ways to make sure you make the right tradeoffs for the things you are working on. ", 
             "title": "How To Make It Look Like You Know What You Are Doing", 
@@ -548,14 +179,479 @@
             "date": "Monday, 27 August 2018", 
             "speaker": {
                 "bio": "Nic has been working at Canva for 4 years now where he works on making the Canva iOS experience the best it can be. He has several qualifications, including but not limited to: emails, sending emails, receiving emails, deleting emails, the web, using mice, clicking, double clicking, the computer screen of course, keyboard and the bit that goes on the floor.", 
+                "image": "nic_winton.jpeg", 
                 "organisation": "Canva", 
-                "name": "Nic Wittison",
-                "image": "nic_winton.jpeg"
+                "name": "Nic Wittison"
             }, 
             "location": "Room 1", 
             "duration": "30m", 
             "type": "talk", 
             "id": 35
+        }, 
+        {
+            "end": "11:25", 
+            "description": "This talk covers our experiences with porting Ada code to an iPad using a Third Party cross-compiler from AdaCore in conjunction with Xcode and Swift. The aim is to develop a simulator for existing avionics equipment to be used for training aircrew.", 
+            "title": "Ada on an iPad?", 
+            "start": "10:55", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Simon's early career began in shearing sheds in Western NSW - nothing to do with Apple's or software. He is now a Senior Software Engineer with Airbus Australia Pacific. After gaining a degree and PhD in Electrical Engineering, he worked as a Research Scientist at DSTO in Melbourne and a Vibration Engineer in Brisbane. For the last 18 years he has been involved in software engineering for avionics systems with Boeing and Airbus. More recently establishing an iOS software capability for developing training tools and electronic flight bag apps at Airbus.", 
+                "image": "simon_rofe.jpeg", 
+                "organisation": "Airbus Australia Pacific", 
+                "name": "Simon Rofe"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 25
+        }, 
+        {
+            "end": "12:10", 
+            "description": "Many types of app demand push notifications, such as messengers and social networks. Push notifications are also one of the most tightly controlled functions on Apple's platforms. For \"normal\" development companies everything works fine. For volunteer developers or authors of decentralised software, the assumptions baked into push notifications limit the types of technology that we can create on iOS mobile devices. This talk discusses why push notifications are unusually crucial for new uses, provides examples of real-world workarounds, and invites the audience to see the mobile app ecosystem as more than the specific services Apple provides.", 
+            "title": "Push Notifications and the Limits of Innovation", 
+            "start": "11:30", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Tom is a generalist software developer who worked primarily on the enterprise mobile apps AsdeqDocs and AsdeqForms in the past few years. Before that he was a system administrator and programmed embedded automation systems. He is now working in computer security.", 
+                "name": "Thomas Karpiniec"
+            }, 
+            "location": "Room 1", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 14
+        }, 
+        {
+            "end": "12:10", 
+            "description": "MVC or Model View Controller has been the tried and true way for iOS programmers for years, but nowadays developers find it hard to test, structure and that it violates a few key architecture principles. Enter Model-View-Presenter, a much cleaner architecture that allows for separation of concerns, easier testing, and greater programmer happiness. This talk covers programming a standard iOS use case putting data from the server onto a screen, with the MVP pattern, plus a few other patterns to allow for maintainable and scalable iOS development. ", 
+            "title": "Structuring Your Code with the Model-View-Presenter pattern", 
+            "start": "11:30", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Sam Jarman is an iOS developer at BNZ in Wellington, New Zealand. Sam has been a long time iOS dev since the early days. Sam is passionate about creating products with engaging and delightful user experiences and building those products in large teams. Outside of code, Sam enjoys improvised acting, running and geeking out.", 
+                "image": "sam_jarman.png", 
+                "organisation": "BNZ", 
+                "name": "Sam Jarman"
+            }, 
+            "location": "Room 2", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 33
+        }, 
+        {
+            "end": "13:10", 
+            "start": "12:10", 
+            "title": "Lunch", 
+            "date": "Monday, 27 August 2018", 
+            "location": "Hallway", 
+            "duration": "1h", 
+            "type": "admin", 
+            "id": 44
+        }, 
+        {
+            "end": "13:50", 
+            "start": "13:10", 
+            "title": "Benefits of Visiting the Mothership", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "name": "Peter Wells"
+            }, 
+            "location": "Room 1", 
+            "duration": "40m", 
+            "type": "panel", 
+            "id": 51
+        }, 
+        {
+            "end": "14:35", 
+            "description": "This will cover in app purchases. Specifically:\n\n* Setting up promoted in app purchases\n* Debugging in app purchases - some tips and tricks I learnt around this\n* Getting in app purchases approved - such as providing an option for the user to restore purchases\n* Tips like: don\u2019t cache in app purchases, make sure you use the currency of the current user, etc\n* UX tips around In App Purchases", 
+            "title": "In App Purchases with StoreKit", 
+            "start": "13:55", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Jane is an iOS developer at Canva in the Product Growth team. She has previously worked as an iOS developer at Atlassian and CommBank. ", 
+                "image": "jane_abernethy.jpg", 
+                "organisation": "Canva", 
+                "name": "Jane Abernethy"
+            }, 
+            "location": "Room 1", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 10
+        }, 
+        {
+            "end": "14:35", 
+            "description": "As a tech company grows over time, so too does the codebase for its products. As much as we can try to avoid it, this can lead to growing technical debt, spaghetti code, and of course, the classic massive view controller problem.\n\nThis talk covers how we're solving these problems at Mercari for the company's flagship iOS app. This includes gradually migrating from Objective-C to Swift, network API architectural design, siloing code in frameworks, and a new spin on breaking up large view controllers.", 
+            "title": "Solving the Massive App Problem: Rearchitecting a 5 year old codebase", 
+            "start": "13:55", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Tim's been an iOS fanboy since the iPhone 3G and a full-time iOS engineer since the iPhone 5. He currently works at Mercari out of Tokyo, Japan, and has previously worked at Realm and pixiv. In his free time, he enjoys contributing to the open source iOS community, and playing the occasional game of Splatoon.", 
+                "image": "tim_oliver.jpeg", 
+                "organisation": "Mercari Inc", 
+                "name": "Tim Oliver"
+            }, 
+            "location": "Room 2", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 30
+        }, 
+        {
+            "end": "15:20", 
+            "description": "State Machines are an amazingly powerful but often underutilized tool amongst iOS developers. As iOS apps become more and more complex, the business rules and logic introduced into the apps grows. There's a need to be able to handle all of the rules in an app and make sure that the user experience is amazing and delightful. State Machines are a great tool to use when approaching problems that have intricite rules for navigation between parts of the app. This talk aims to equip the listeners with the knowledge around what a state machine is, how it solves problems and what it looks like in an iOS app.\n\nA State Machine is a pattern that allows for navigation between a finite list of states that are defined. By using a finite list of states, we are able to define precisely the users interaction with a part of an app and make sure that the user doesn't reach a point where they shouldn't be. The State Machine is then responsible for defining the possible transitions between the states. What happens before a state transition and what happens after a state transition. To achieve this, I will demonstrate the code that drives a State Machine and how it allows for and prevents the interactions. There'll be demonstration around how the state machines can be tested. There'll also be discussion around the tradeoffs between compile time and run time checks with regard to the usage of state machines and what the alternatives are.\n\nIn the end, I hope that the listeners will be able to take some of the following away from the talk:\n\n* Knowledge of what a state machine is\n* Knowledge of when a state machine should be used\n* Knowledge of when a state machine shouldn't be used\n* Ability to define a state machine in swift\n* Ability to translate theoretical ideas into solvable problems in iOS apps by using a state machine\n\nThis talk will encourage people to use the pattern appropriately and not be frightened when encountering them in the wild. My existing thoughts on the topic are written up as a blog post at https://mattdelves.com/technical/2018/05/05/state-machines.html\n", 
+            "title": "State Machines are your friend", 
+            "start": "14:40", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Matt is a macOS and iOS developer based in Melbourne Australia. He has a propensity towards creating apps that are magical and delightful to use. His experiences ranges from backend to front end and feels that such breadth grants the ability to understand the intricacies involved in creating apps.", 
+                "image": "matt_delves.jpeg", 
+                "name": "Matthew Delves"
+            }, 
+            "location": "Room 1", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 13
+        }, 
+        {
+            "end": "15:20", 
+            "description": "This talk covers the implementation of a novel authentication mechanism using inexpensive Bluetooth wristbands for an iPad app being developed in partnership with an inpatient brain injury rehabilitation service. The Inpatient Portal app was developed and trialed to provide a mechanism for clients with recent severe brain injuries to independently view videos they had made with their clinicians regarding why they were in rehabilitation, and what their rehabilitation goals were. The authentication mechanism was trialed over several months with a series of six clients of the brain injury service who were part of the initial pilot of the Inpatient Portal app. Using signal strength as an indicator of proximity provided the ability to implement a staged authentication process that would enable a client with a serious brain injury to be firstly identified when they were in the vicinity of the iPad (c. 3-5m) and then automatically logged in to their account within the app when they approached closer to the device (c. 1m). This talk will cover the implementation of this using Core Bluetooth, discuss the pros (accessibility, ease of use) and potential cons (security, reliability) of this approach. The primary take-home message from this presentation is to highlight cognitive accessibility opportunities in the design of mobile apps. The project described in this presentation was supported by a seed grant (#3705718 / A582) from the Medical Technologies Centre of Research Excellence (MedTech CoRE), funded by the Tertiary Education Commission of New Zealand.", 
+            "title": "Mis-using Bluetooth wristbands to enhance cognitive accessibility of an app for inpatients with severe brain injuries", 
+            "start": "14:40", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Duncan Babbage, PhD is Director of the Centre for eHealth and an Associate Professor in Rehabilitation at Auckland University of Technology. Duncan is a recovering clinical psychologist and self-taught iOS developer. He was both developer of the Inpatient Portal app for iPad discussed in this presentation and principal investigator of the underlying research project. Duncan is also developer of Intro, a contacts app on steroids for iPhone (https://intro.app). Intro has a particular focus on helping people learn names, recognize people, and recall information about people you\u2019ve met.", 
+                "organisation": "Auckland University of Technology, Centre for eHealth", 
+                "name": "Duncan Babbage"
+            }, 
+            "location": "Room 2", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 28
+        }, 
+        {
+            "end": "15:50", 
+            "start": "15:20", 
+            "title": "Afternoon Tea", 
+            "date": "Monday, 27 August 2018", 
+            "location": "Hallway", 
+            "duration": "30m", 
+            "type": "admin", 
+            "id": 46
+        }, 
+        {
+            "end": "16:20", 
+            "description": "This talk covers some key Machine Learning concepts including classification, clustering and regression methods that are used in applications such as recommendation, detection and prediction systems. \n\nSound dense? Don't worry. We'll be doing simple demonstrations, and performing tasks on paper. It's crucial to understand the steps being done by a computer when you use tools like CoreML and CreateML in order to make informed decisions in the human-driven design and data selection stages that come before model training.\n\nPen and paper--or Apple Pencil and iPad--recommended. Enthusiasm for mathematics optional.", 
+            "title": "Machine Learning \u2026minus the Machine", 
+            "start": "15:50", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Marina Rose Geldard, more commonly known as Mars, is a Computing Student from Tasmania. Entering the world of technology relatively late as a mature-aged student, she has found her place in the world: an industry where she can apply her lifelong love of mathematics and optimisation. \n\nA compulsive volunteer at industry events, Mars also teaches artificial intelligence to first-year ICT students, hikes around in the Tasmanian wilderness, dabbles in research, and builds Game of Thrones in Minecraft.\n\nMars has been awarded the MJ Rees Prize (for excellence in Information Systems academia) at the University of Tasmania, and was an Apple WWDC Scholarship recipient for 2018. Mars is on the organising committee for /dev/world, after running the registration desk in 2016/17, and serves on the board for her state's branch of the Australian Computer Society (ACS).\n\nMars can be found on Twitter (@TheMartianLife) and at http://www.themartianlife.com ", 
+                "image": "mars_geldard.jpg", 
+                "organisation": "University of Tasmania", 
+                "name": "Mars Geldard"
+            }, 
+            "location": "Room 1", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 15
+        }, 
+        {
+            "end": "16:20", 
+            "description": "This talk covers the design of fuzzy things. We\u2019re all familiar with designing for default, typical, and error states. But how do we design for our users\u2019 state of mind? Or, physical state? Or the state of the art in machine vision? Two powerful trends are pushing design into fuzzier areas: ubiquitous sensors and Machine Learning. Our iPhones and Watches capture more and more about our physical activity and environment. How can we use this data when designing great experiences? The first half of this talk looks at the design of heuristics, with common approaches and tools for fast prototyping. The second half of the talk contains strategies for wrestling with machine vision or machine learning results in your UI design. This includes strategies on mapping \u201cconfidence levels\" to UI, and avoiding Clippy-isms like \u201cIt looks like you\u2019re writing a letter\u201d. It concludes with some real-world app examples to inspire new levels of ML integration.", 
+            "title": "Fun with fudge factors: prototyping vague things", 
+            "start": "15:50", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "I'm an interaction designer and new developer! Previously co-founded plasq (makers of Comic Life) and Skitch, acquired by Evernote. Have designed for all manner of things including iOT, drones. :-)", 
+                "organisation": "Teampurr.com", 
+                "name": "Keith Lang"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 20
+        }, 
+        {
+            "end": "17:05", 
+            "description": "Is it cool these days to say there\u2019s a difference between UI and UX? Or cool to say that there isn\u2019t? It\u2019s so hard to keep up.\n\nIn this session James White dips into the history of UX as a discipline, pop psychology from the noughties, unpop psychology from the thirties, dank memes and a deep well of personal opinion to explore user experience and where it fits in modern development workflows. You\u2019ll learn how designers and developers can benefit from both subjectivity and objectivity in their design decisions, and most importantly, how we can help users to love our apps.", 
+            "title": "Let\u2019s settle this UI/UX thing once and for all", 
+            "start": "16:25", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "James White is a designer and mobile developer who likes to think and talk about the middle part of that particular Venn diagram. He's from Perth and, a bit further back, from New Zealand.", 
+                "image": "james_white.jpeg", 
+                "organisation": "Colourfool Creative", 
+                "name": "James White"
+            }, 
+            "location": "Room 1", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 11
+        }, 
+        {
+            "end": "17:05", 
+            "description": "This session is a detailed how-to on getting started with Mini vMac and HyperCard, setting up a HyperCard stack with different backgrounds and cards, and some basic scripting in HyperTalk.", 
+            "title": "Making a visual novel in HyperCard", 
+            "start": "16:25", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Josh is a Senior Site Reliability Engineer at Google Australia. His current side-project is Shenzhen Go (https://github.com/google/shenzhen-go), a visual Go programming environment. In 2014, Josh graduated with a PhD in mathematics from the University of Tasmania. ", 
+                "image": "josh_deprez.jpg", 
+                "organisation": "Google Australia", 
+                "name": "Josh Deprez"
+            }, 
+            "location": "Room 2", 
+            "duration": "40m", 
+            "type": "talk", 
+            "id": 22
+        }, 
+        {
+            "end": "17:40", 
+            "description": "This talk covers what's new for notifications on iOS 12 and why the changes matter for you and your app. ", 
+            "title": "Sending Better Notifications", 
+            "start": "17:10", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Charlie is a student at UTS studying a Bachelor of Technogy and Innovation & works as an iOS and Web developer for Foreign Brief.", 
+                "organisation": "University of Technology Sydney", 
+                "name": "Charlie Schacher"
+            }, 
+            "location": "Room 1", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 39
+        }, 
+        {
+            "end": "17:40", 
+            "description": "This talk covers taking an app from inception to Featured on the App Store in a week. Covering both technical and design decisions, this talk allows you to spearhead your app's success. We look at using rapid and continuous releases, participatory design, and CloudKit to accelerate the development of your next project. CloudKit is a simple yet powerful service that grows with your app. However, some pitfalls need addressing; we cover allowing your app to scale unconstrained despite these. We explore working with your customers and community to test ideas in public and release continuously to accelerate your next side project. Let's turn that app idea into a reality today!", 
+            "title": "Accelerated App Development Using CloudKit: Idea to Featured in a Week", 
+            "start": "17:10", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "After he started hacking together iOS apps at age fifteen, Patrick has gone on to be a two-time Apple \u2018World Wide Developer Conference\u2019 Scholarship recipient. Patrick is a prize-winning hacker, challenging the best of the best at US collegiate hackathons. He\u2019s a recent marketing and computing graduate of the University of Technology, Sydney and a co-founder of the open source initiative Pride Codes. While not programming, Patrick can either be seen skiing too fast, trying to vlog, or globetrotting; often all three simultaneously.", 
+                "name": "Patrick Murray"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 24
+        }, 
+        {
+            "end": "19:00", 
+            "start": "18:00", 
+            "title": "Pre-dinner Drinks", 
+            "date": "Monday, 27 August 2018", 
+            "location": "Quiz", 
+            "duration": "1h", 
+            "type": "admin", 
+            "id": 48
+        }, 
+        {
+            "end": "22:30", 
+            "description": "Join Paul at the /dev/world/2018 conference dinner, and have your mind blasted with knowledge that you didn't expect, may faintly resent, and will be sure to delight in.", 
+            "title": "Dinner Keynote", 
+            "start": "19:00", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "image": "paul-fenwick.jpg", 
+                "name": "Paul Fenwick"
+            }, 
+            "location": "Quiz", 
+            "duration": "3h 30m", 
+            "merge_key": "quiz", 
+            "type": "special_event", 
+            "id": 3
+        }, 
+        {
+            "end": "22:30", 
+            "description": "Finally, all those nights of reading Wikipedia are going to pay off! Join us at the dinner quiz, a decade-old /dev/world institution. Non-technical, welcoming, and a great way to mark the middle of the conference.", 
+            "title": "The /dev/world/2018 Quiz", 
+            "start": "19:00", 
+            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "image": "quiz.jpg"
+            }, 
+            "location": "Quiz", 
+            "duration": "3h 30m", 
+            "merge_key": "quiz", 
+            "type": "special_event", 
+            "id": 4
+        }, 
+        {
+            "end": "9:30", 
+            "start": "8:30", 
+            "title": "Registration", 
+            "date": "Tuesday, 28 August 2018", 
+            "location": "Hallway", 
+            "duration": "1h", 
+            "type": "admin", 
+            "id": 42
+        }, 
+        {
+            "end": "10:05", 
+            "start": "10:00", 
+            "title": "Welcome and Opening", 
+            "date": "Tuesday, 28 August 2018", 
+            "location": "Room 1", 
+            "duration": "5m", 
+            "type": "admin", 
+            "id": 50
+        }, 
+        {
+            "end": "10:50", 
+            "description": "Macs were at various points in the 1980s and 90s a great bastion of innovation and creativity in game design, a place where genres were born and thinking differently was a doctrine \u2014 not a tagline. Journalist and historian Richard Moss will share the biggest lessons, insights, and tales of developer wizardry from the era that he found while writing his book [The Secret History of Mac Gaming](http://secrethistoryofmacgaming.com/).", 
+            "title": "Tales from the Golden Age of Mac Gaming", 
+            "start": "10:05", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "image": "richard-moss.jpg", 
+                "name": "Richard Moss"
+            }, 
+            "location": "Room 1", 
+            "duration": "45m", 
+            "type": "keynote", 
+            "id": 2
+        }, 
+        {
+            "end": "11:25", 
+            "description": "This talk shows the amazing things you can do when you build outside of Xcode. Let\u2019s go through a journey of building an application and testing it all without launching Xcode. Bonus: complimentary tools, so xcodebuild isn\u2019t the only command line we\u2019ll be using. ", 
+            "title": "xcodebuild for fun and profit", 
+            "start": "10:55", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Patrick is a Staff Devops Engineer at Tokbox and has a passion for automating everything. If he could he\u2019d automate writing his own bio. ", 
+                "image": "patrick_quinn-graham.jpeg", 
+                "organisation": "Tokbox", 
+                "name": "Patrick Quinn-Graham"
+            }, 
+            "location": "Room 1", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 19
+        }, 
+        {
+            "end": "11:25", 
+            "description": "Algorithmic sound is a fascinating field! It's ubiquitous in everyday life, but not many people understand how it works. It's actually quite simple, and the lightswitch moment of understanding something that you previously took to be black magic is glorious.\n\nThis talk focuses primarily on computer sound representation and synthesis, which is relatively simple to implement regardless of language. As such, this talk will be suitable for attendees of all levels of iOS experience. In this session we\u2019ll go back to basics and take a look at the core components of sound, including how we perceive sounds, and how we can represent them within a computer. We\u2019ll go on to look at the theory behind the CoreAudio Framework, and finish up with a live demo, where we use audio units to create our own simple synthesiser.", 
+            "title": "Build your own synthesiser", 
+            "start": "10:55", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Sebastian loves sound. He graduated from the University of Tasmania with Honours in Computing, focusing on artistic computing via evolutionary sound synthesis. He loves listening to and making sounds, and has been played with many ensembles including the Grainger Wind Symphony, Zelman Symphony Orchestra, and Ochre Trio. He has spoken at a number of programming and artistic computing conferences, notably TEDx Hobart and every /dev/world since 2012, and is currently an iOS Developer at Art Processors.", 
+                "organisation": "Art Processors", 
+                "name": "Sebastian Beswick"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 18
+        }, 
+        {
+            "end": "12:00", 
+            "description": "You've got a number of projects? You like working natively in Swift? You have code being re-used between projects? This talk will cover how to put your native Swift code into a framework that can then be shared between other projects and even other developers. The session will cover the drop bears that live in Swift frameworks and the potential benefits of doing this. \n\nTopics to be covered include: why do this as a framework, how to use a Swift framework within an Xcode Workspace, distributing your framework to others, and, most importantly, how a framework could save you you lots of work on your own projects.\n\nA sample Swift framework that you can build on will also be included.", 
+            "title": "Building Frameworks Natively in Swift", 
+            "start": "11:30", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Joel is the General Manager for Orchard & Grove in Austin,Texas the developers of NoMAD and other tools that strive to make Mac admin's lives easier. Previously he was an Enterprise Systems Engineering Manager at Apple doing all kinds of fun things with lots of cool people and solving crazy problems to allow for integrating Macs and iOS devices into enterprise environments.\n\nRecently Joel has been greatly enjoying himself working on projects to help people get into a casual binding environment and removing the need for binding to AD at all. \n\nPrior to Apple Joel was frequently seen speaking at Macworld, WWDC and other conferences and gatherings of Apple-minded admins. Joel has traveled the world helping customers adopt OS X and in 2002 he setup afp548.com and had a lot of fun with that too.", 
+                "image": "joel_rennich.jpeg", 
+                "organisation": "Orchard & Grove", 
+                "name": "Joel Rennich"
+            }, 
+            "location": "Room 1", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 26
+        }, 
+        {
+            "end": "12:00", 
+            "description": "This talk covers design resources every new and experienced iOS developer and designer should know. Where can you get the best icons, fonts, vector assets, and images for your project? What kits are available to help mock up your UI? What software is there to use and what guides can help you perfect your design? Where do you even begin? Learn from South Australian designer, Heidi Helen, who has been designing apps for the last 4 years.", 
+            "title": "Designing for iOS: Resources You Gotta Know", 
+            "start": "11:30", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Heidi Helen has been designing apps for the last 4 years, including Stamp Pack, Boomerang: Double-Check Translations, and Capsicum. She previously studied a Bachelor of Visual Arts at the University of South Australia. Considering herself a creative soul, she finds delight in the small details and pushing her designs to be the best user experience they can be.", 
+                "image": "heidi_helen_pilypas.jpeg", 
+                "organisation": "Illuminated Bits", 
+                "name": "Heidi Helen Pilypas"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 12
+        }, 
+        {
+            "end": "12:35", 
+            "description": "This talk explores Siri Shortcuts. Announced at WWDC 2018, Siri Shortcuts are a new way to interface with your app. This talk covers what Siri Shortcuts are, how and why they make sense to adopt in your app, and includes an example of how to implement Shortcuts and Suggestions in your iOS and watchOS app.", 
+            "title": "Supercharge your app with Siri Shortcuts", 
+            "start": "12:05", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Zach is a student at the University of Technology, Sydney studying Economics and I.T. He works part-time as an iOS developer, and helps run the Sydney CocoaHeads Meetup. When not in front of a screen, he can usually be found out on a run, or at the footy cheering on the Dragons. ", 
+                "image": "zach_simone.jpeg", 
+                "organisation": "University of Technology Sydney", 
+                "name": "Zach Simone"
+            }, 
+            "location": "Room 1", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 38
+        }, 
+        {
+            "end": "12:35", 
+            "description": "Every day functions of your iPhone were first utilised thousands of years ago. Navigation systems were drastically improved by Vikings, who used a \u201csunstone\u201d to tell the location of the sun even on overcast days. Heron of Alexandria is credited for creating is essentially the first reprogrammable robot, programmed by weights and pulleys. The first version of locks, used today as 6 digit codes and fingerprint ID, is first seen in Mesopotamia over 6000 years ago. \n\nIn the past 5000 years, the way that people use technology has not changed. The primary use of phones today - communication, photography, education, games - is a reflection on how people have always utilised technology. Within this talk I am going to be looking at the most common ways that every day people use their devices, and talking about how these patterns of behaviour is reflected in ancient forms of technology. Stretching from the Baghdad Battery to early signalling, I will explore forms of innovation that humanity has developed from our beginnings and comparing them to functions on the average smartphone. \n", 
+            "title": "Batteries and Locks: Modern Tech from Ancient Times", 
+            "start": "12:05", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Claire is an archaeologist and historian with an interest in mobile tech and game development. She currently works as a historical consultant with Melbourne's growing game development community, and for some reason won't shut up about history.", 
+                "image": "claire_manning.jpg", 
+                "name": "Claire Manning"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 21
+        }, 
+        {
+            "end": "13:25", 
+            "start": "12:35", 
+            "title": "Lunch", 
+            "date": "Tuesday, 28 August 2018", 
+            "location": "Hallway", 
+            "duration": "50m", 
+            "type": "admin", 
+            "id": 45
+        }, 
+        {
+            "end": "13:55", 
+            "description": "What is Git? Who is Git? I\u2019ll do you one better\u2026 Why is Git? How do I commit to wrangling this beast? What is a master branch and why do I always feel like a slave? How do I sooth the merge conflicts inside of me and why am I always missing my head? What information will I fetch and cherry pick, and what will I push remotely? Does everyone find it this hard, or do they achieve this with some sort of git flow? Whether you\u2019re a beginner using a Git GUI (SourceTree, Github Desktop, GitKraken) or an intermediate with a CLI, join Louis (@proxyblue) as we look at the foundations, best practices, cheeky tips and additional resources to help us Git good.", 
+            "title": "How to Git Good: A Primer", 
+            "start": "13:25", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Louis is an AUC and /dev/world veteran, one of three \"Devery-worlders\" who loves the Apple iOS development community. For the past ten years, he has galavanted around the world making apps, implementing mobile security systems and teaching development and security. He regularly tours the internet, helping hackers in The Many Hats Club, behind the scenes on a security podcast,  and can frequently be found on Twitter retweeting new defence and attack tools making the world simultaneously safer and more dangerous.", 
+                "organisation": "tappON", 
+                "name": "Louis Cremen"
+            }, 
+            "location": "Room 1", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 16
+        }, 
+        {
+            "end": "13:55", 
+            "description": "So, you\u2019ve submitted your app to the App Store, and you\u2019re sitting back waiting for the fame and fortune to roll in.  Maybe now\u2019s a good time to do all that boring stuff, like adding proper logging, analytics, and testing to your code.  This session will cover some tools that you can use to make your app more resilient once the real users arrive.  We\u2019ll talk about Splunk, Jenkins, Test Fairy and TestFlight among others.  ", 
+            "title": "Tools for testing, logging, and analytics-ing your code", 
+            "start": "13:25", 
+            "date": "Tuesday, 28 August 2018", 
+            "speaker": {
+                "bio": "Matt works part time as an iOS, Android and Java developer in Canberra. He spends the rest of his time in Hyrule.", 
+                "image": "matt_gray.jpeg", 
+                "organisation": "Vix Verify", 
+                "name": "Matt Gray"
+            }, 
+            "location": "Room 2", 
+            "duration": "30m", 
+            "type": "talk", 
+            "id": 32
         }, 
         {
             "end": "14:30", 
@@ -592,107 +688,35 @@
             "id": 37
         }, 
         {
-            "end": "12:35", 
-            "description": "This talk explores Siri Shortcuts. Announced at WWDC 2018, Siri Shortcuts are a new way to interface with your app. This talk covers what Siri Shortcuts are, how and why they make sense to adopt in your app, and includes an example of how to implement Shortcuts and Suggestions in your iOS and watchOS app.", 
-            "title": "Supercharge your app with Siri Shortcuts", 
-            "start": "12:05", 
+            "end": "15:15", 
+            "description": "Unity is and extremely popular tool for iOS development in part due to it's extensive built-in functionality and ease of development. However, the complexity of the underlying frameworks necessary to provide that functionality can make for unintuitive performance quirks, especially when used to developing in Objective C, Swift, or targeting desktop devices.\nThis talk covers how to identify & correct performance issues in Unity apps targeting iOS, examples of common performance pitfalls and how to mitigate them.\nThis talk mixes a presentation of a variety of tips and tricks learned over almost a decade of iOS development in Unity with live demonstration of various profiling tools.", 
+            "title": "Performance Tips & Tricks with Unity on iOS", 
+            "start": "14:35", 
             "date": "Tuesday, 28 August 2018", 
             "speaker": {
-                "bio": "Zach is a student at the University of Technology, Sydney studying Economics and I.T. He works part-time as an iOS developer, and helps run the Sydney CocoaHeads Meetup. When not in front of a screen, he can usually be found out on a run, or at the footy cheering on the Dragons. ", 
-                "organisation": "University of Technology Sydney", 
-                "name": "Zach Simone",
-                "image": "zach_simone.jpeg"
+                "bio": "Maya is a freelance Developer & Technical Artist with almost a decade of experience focused on graphics development & performance optimisation for mobile games and apps. She's been squeezing performance out of Unity on iOS since the original iPhone and lead development on multiple award-winning iOS games.", 
+                "name": "Maya Kerr"
             }, 
             "location": "Room 1", 
-            "duration": "30m", 
+            "duration": "40m", 
             "type": "talk", 
-            "id": 38
+            "id": 23
         }, 
         {
-            "end": "17:30", 
-            "description": "This talk covers what's new for notifications on iOS 12 and why the changes matter for you and your app. ", 
-            "title": "Sending Better Notifications", 
-            "start": "17:00", 
-            "date": "Monday, 27 August 2018", 
+            "end": "15:15", 
+            "description": "The devices in our pockets and on our wrists are full of a vast array of sensors that are rarely used to their full potential.\n\nThis talk will deep dive in to creating a fun experience with Apple's CoreMotion framework on iOS and watchOS through the example of a rhythm game that uses real world movements in time to music.\n\nIn this talk you'll learn the basics of core motion, how to convert sensor data to actual movements and get to see me make a fool of myself on stage (and maybe even have a go yourself!).\n\nThis talk is aimed at developers with basic knowledge of iOS and Swift, but no prior CoreMotion experience is required.", 
+            "title": "Dancing with Attitude - Building experiences with CoreMotion", 
+            "start": "14:35", 
+            "date": "Tuesday, 28 August 2018", 
             "speaker": {
-                "bio": "Charlie is a student at UTS studying a Bachelor of Technogy and Innovation & works as an iOS and Web developer for Foreign Brief.", 
-                "organisation": "University of Technology Sydney", 
-                "name": "Charlie Schacher"
+                "bio": "Jeames has been developing for iOS devices for the better part of the last decade, and is currently helping the world create beautiful designs at Canva. He has a passion for things that start with the letter C including Climbing, Circus, Calisthenics and Coding.", 
+                "organisation": "Canva", 
+                "name": "Jeames Bone"
             }, 
-            "location": "Room 1", 
-            "duration": "30m", 
+            "location": "Room 2", 
+            "duration": "40m", 
             "type": "talk", 
-            "id": 39
-        }, 
-        {
-            "end": "9:00", 
-            "start": "8:15", 
-            "title": "Registration", 
-            "date": "Sunday, 26 August 2018", 
-            "location": "Hallway", 
-            "duration": "45m", 
-            "type": "admin", 
-            "id": 40
-        }, 
-        {
-            "end": "9:00", 
-            "start": "8:00", 
-            "title": "Registration", 
-            "date": "Monday, 27 August 2018", 
-            "location": "Hallway", 
-            "duration": "1h", 
-            "type": "admin", 
-            "id": 41
-        }, 
-        {
-            "end": "9:30", 
-            "start": "8:30", 
-            "title": "Registration", 
-            "date": "Tuesday, 28 August 2018", 
-            "location": "Hallway", 
-            "duration": "1h", 
-            "type": "admin", 
-            "id": 42
-        }, 
-        {
-            "end": "12:30", 
-            "start": "12:00", 
-            "title": "Lunch", 
-            "date": "Sunday, 26 August 2018", 
-            "location": "Hallway", 
-            "duration": "30m", 
-            "type": "admin", 
-            "id": 43
-        }, 
-        {
-            "end": "13:10", 
-            "start": "12:10", 
-            "title": "Lunch", 
-            "date": "Monday, 27 August 2018", 
-            "location": "Hallway", 
-            "duration": "1h", 
-            "type": "admin", 
-            "id": 44
-        }, 
-        {
-            "end": "13:25", 
-            "start": "12:35", 
-            "title": "Lunch", 
-            "date": "Tuesday, 28 August 2018", 
-            "location": "Hallway", 
-            "duration": "50m", 
-            "type": "admin", 
-            "id": 45
-        }, 
-        {
-            "end": "15:40", 
-            "start": "15:20", 
-            "title": "Afternoon Tea", 
-            "date": "Monday, 27 August 2018", 
-            "location": "Hallway", 
-            "duration": "20m", 
-            "type": "admin", 
-            "id": 46
+            "id": 29
         }, 
         {
             "end": "15:45", 
@@ -705,48 +729,21 @@
             "id": 47
         }, 
         {
-            "end": "19:30", 
-            "start": "19:00", 
-            "title": "Pre-dinner Drinks", 
-            "date": "Monday, 27 August 2018", 
-            "location": "Quiz", 
-            "duration": "30m", 
-            "type": "admin", 
-            "id": 48
-        }, 
-        {
-            "end": "9:15", 
-            "start": "9:00", 
-            "title": "Welcome and Opening", 
-            "date": "Monday, 27 August 2018", 
-            "location": "Room 1", 
-            "duration": "15m", 
-            "type": "admin", 
-            "id": 49
-        }, 
-        {
-            "end": "10:05", 
-            "start": "10:00", 
-            "title": "Welcome and Opening", 
+            "end": "16:25", 
+            "description": "Since its first release in 2015, Alamofire has become one of the most popular Swift frameworks. In the three years since that 1.0.0 release, it has gained more and more features, and the internal complexity to go along with them. For version 5, however, we realized it was time to rewrite the core of the library to enable further growth, new features, and greater scalability. In this presentation I will explore the reasoning behind this risky decision and how we were able to use our existing test suite to replace the core of the framework while largely maintaining compatibility for existing Alamofire users.", 
+            "title": "Rewriting Alamofire: Into the Core", 
+            "start": "15:45", 
             "date": "Tuesday, 28 August 2018", 
-            "location": "Room 1", 
-            "duration": "5m", 
-            "type": "admin", 
-            "id": 50
-        }, 
-        {
-            "end": "13:50", 
-            "start": "13:10", 
-            "title": "Benefits of Visiting the Mothership", 
-            "date": "Monday, 27 August 2018", 
+            "speaker": {
+                "bio": "Jon has been programming on Apple platforms since learning Objective-C on the Mac OS X Public Beta. He joined Detroit Labs in Detroit, Michigan in 2013, where he works with smart and talented people to bring app ideas to life. Outside of work he is a contributor to the Alamofire networking library, among others, and sits on the board of directors of the Alamofire Foundation.", 
+                "image": "jon_shier.jpeg", 
+                "organisation": "Detroit Labs", 
+                "name": "Jon Shier"
+            }, 
             "location": "Room 1", 
             "duration": "40m", 
-            "type": "panel", 
-
-            "speaker": {
-                "name": "Peter Wells"
-            },
-            "id": 51
+            "type": "talk", 
+            "id": 31
         }, 
         {
             "end": "17:05", 
