@@ -431,7 +431,9 @@ span.old-cfp-date {
     background-color: #FFF1E0;
 }
 
-.timetable-event[data-type="special_event"], .timetable-event[data-type="panel"] {
+.timetable-event[data-type="keynote"], 
+.timetable-event[data-type="special_event"], 
+.timetable-event[data-type="panel"] {
     background-color: #D7F5ED;
 }
 
@@ -440,7 +442,10 @@ span.old-cfp-date {
 }
 
 /* Vertically center panels, special events, admin */
-.timetable-event[data-type="special_event"], .timetable-event[data-type="panel"], .timetable-event[data-type="admin"] {
+.timetable-event[data-type="keynote"], 
+.timetable-event[data-type="special_event"], 
+.timetable-event[data-type="panel"], 
+.timetable-event[data-type="admin"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
