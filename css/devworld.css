@@ -450,3 +450,7 @@ span.old-cfp-date {
 .strong {
     font-weight: bold;
 }
+
+.timetable-event-container {
+    margin-top: 10px;
+}
