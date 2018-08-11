@@ -17,7 +17,7 @@
         {# Time Blocks #}
         {% for group in item[1]|dictsort %}
         <div class="row timetable-time-group">
-            <div class="col-12 col-md-2 text-md-right text-center timetable-time">{{group[0]|parsedate("%-I:%M %p")}}</div>
+            <div class="col-12 col-md-2  text-center timetable-time"><span class="nowrap strong">{{group[0]|parsedate("%-I:%M %p")}}</span> to <span class="nowrap">{{group[1][0].end|parsedate("%-I:%M %p")}}</span></div>
        
         {# Events at this time #}
         {% for event in group[1]|sort(attribute="location") %}

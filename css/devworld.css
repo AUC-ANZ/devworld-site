@@ -446,3 +446,7 @@ span.old-cfp-date {
 #talk-time {
     font-size:  15px;
 }
+
+.strong {
+    font-weight: bold;
+}
