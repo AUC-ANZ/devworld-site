@@ -695,7 +695,8 @@
             "date": "Tuesday, 28 August 2018", 
             "speaker": {
                 "bio": "Maya is a freelance Developer & Technical Artist with almost a decade of experience focused on graphics development & performance optimisation for mobile games and apps. She's been squeezing performance out of Unity on iOS since the original iPhone and lead development on multiple award-winning iOS games.", 
-                "name": "Maya Kerr"
+                "name": "Maya Kerr",
+                "image": "maya_kerr.jpg"
             }, 
             "location": "Room 1", 
             "duration": "40m", 
@@ -815,6 +816,20 @@
             "url": "http://twitter.com/desplesda", 
             "image": "jon.jpg", 
             "name": "Jon Manning"
+        }
+    ],
+    "locations": [
+        {
+            "name": "Lecture Theatre 80.6.1",
+            "note": "Room 1"
+        },
+        {
+            "name": "Lectorial 80.6.5",
+            "note": "Room 2 (Sunday, Tuesday)"            
+        },
+        {
+            "name": "Lecture Theatre 80.4.11",
+            "note": "Room 2 (Monday)"
         }
     ]
 }
