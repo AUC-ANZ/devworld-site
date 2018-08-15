@@ -427,7 +427,8 @@
             "date": "Monday, 27 August 2018", 
             "speaker": {
                 "bio": "After he started hacking together iOS apps at age fifteen, Patrick has gone on to be a two-time Apple \u2018World Wide Developer Conference\u2019 Scholarship recipient. Patrick is a prize-winning hacker, challenging the best of the best at US collegiate hackathons. He\u2019s a recent marketing and computing graduate of the University of Technology, Sydney and a co-founder of the open source initiative Pride Codes. While not programming, Patrick can either be seen skiing too fast, trying to vlog, or globetrotting; often all three simultaneously.", 
-                "name": "Patrick Murray"
+                "name": "Patrick Murray",
+                "image": "pat_murray.jpg"
             }, 
             "location": "Room 2", 
             "duration": "30m", 
