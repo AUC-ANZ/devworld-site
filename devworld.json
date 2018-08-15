@@ -690,7 +690,7 @@
         }, 
         {
             "end": "15:15", 
-            "description": "Unity is and extremely popular tool for iOS development in part due to it's extensive built-in functionality and ease of development. However, the complexity of the underlying frameworks necessary to provide that functionality can make for unintuitive performance quirks, especially when used to developing in Objective C, Swift, or targeting desktop devices.\nThis talk covers how to identify & correct performance issues in Unity apps targeting iOS, examples of common performance pitfalls and how to mitigate them.\nThis talk mixes a presentation of a variety of tips and tricks learned over almost a decade of iOS development in Unity with live demonstration of various profiling tools.", 
+            "description": "Unity is an extremely popular tool for iOS development in part due to it's extensive built-in functionality and ease of development. However, the complexity of the underlying frameworks necessary to provide that functionality can make for unintuitive performance quirks, especially when used to developing in Objective C, Swift, or targeting desktop devices.\nThis talk covers how to identify & correct performance issues in Unity apps targeting iOS, examples of common performance pitfalls and how to mitigate them.\nThis talk mixes a presentation of a variety of tips and tricks learned over almost a decade of iOS development in Unity with live demonstration of various profiling tools.", 
             "title": "Performance Tips & Tricks with Unity on iOS", 
             "start": "14:35", 
             "date": "Tuesday, 28 August 2018", 
