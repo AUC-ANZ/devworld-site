@@ -690,22 +690,6 @@
         }, 
         {
             "end": "15:15", 
-            "description": "Unity is an extremely popular tool for iOS development in part due to it's extensive built-in functionality and ease of development. However, the complexity of the underlying frameworks necessary to provide that functionality can make for unintuitive performance quirks, especially when used to developing in Objective C, Swift, or targeting desktop devices.\nThis talk covers how to identify & correct performance issues in Unity apps targeting iOS, examples of common performance pitfalls and how to mitigate them.\nThis talk mixes a presentation of a variety of tips and tricks learned over almost a decade of iOS development in Unity with live demonstration of various profiling tools.", 
-            "title": "Performance Tips & Tricks with Unity on iOS", 
-            "start": "14:35", 
-            "date": "Tuesday, 28 August 2018", 
-            "speaker": {
-                "bio": "Maya is a freelance Developer & Technical Artist with almost a decade of experience focused on graphics development & performance optimisation for mobile games and apps. She's been squeezing performance out of Unity on iOS since the original iPhone and lead development on multiple award-winning iOS games.", 
-                "name": "Maya Kerr",
-                "image": "maya_kerr.jpg"
-            }, 
-            "location": "Room 1", 
-            "duration": "40m", 
-            "type": "talk", 
-            "id": 23
-        }, 
-        {
-            "end": "15:15", 
             "description": "The devices in our pockets and on our wrists are full of a vast array of sensors that are rarely used to their full potential.\n\nThis talk will deep dive in to creating a fun experience with Apple's CoreMotion framework on iOS and watchOS through the example of a rhythm game that uses real world movements in time to music.\n\nIn this talk you'll learn the basics of core motion, how to convert sensor data to actual movements and get to see me make a fool of myself on stage (and maybe even have a go yourself!).\n\nThis talk is aimed at developers with basic knowledge of iOS and Swift, but no prior CoreMotion experience is required.", 
             "title": "Dancing with Attitude - Building experiences with CoreMotion", 
             "start": "14:35", 
