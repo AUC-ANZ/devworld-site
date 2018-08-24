@@ -119,6 +119,26 @@ def generate_schedule(events):
 
     return final_groups
 
+def update_events():
+    import dateutil.tz
+    data = json.load(open("devworld.json"))
+
+    def update_event(event):
+        start = parsedate(event["date"] + " " + event["start"])
+        end = parsedate(event["date"] + " " + event["end"])
+
+        timezone = dateutil.tz.gettz("Australia/Melbourne")
+
+        start = start.replace(tzinfo=timezone)
+        end = end.replace(tzinfo=timezone)
+
+        return {**event, **{"start_iso": start.isoformat(), "end_iso": end.isoformat()}}
+    
+    data["talks"] = [update_event(e) for e in data["talks"]]
+
+    json.dump(data, open("devworld.json", "w"), indent=4)
+
+
 
 if __name__ == '__main__':
     main()

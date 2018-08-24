@@ -23,7 +23,7 @@
                 "organisation": "NAB",
                 "name": "Patrick Haralabidis"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "3h",
             "type": "workshop",
             "id": 7,
@@ -41,7 +41,7 @@
                 "organisation": "iflix",
                 "name": "Giovanni Lodi"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "3h",
             "type": "workshop",
             "id": 6,
@@ -72,7 +72,7 @@
                 "organisation": "The Machine QA",
                 "name": "Jason Imms"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "3h",
             "type": "workshop",
             "id": 5,
@@ -91,7 +91,7 @@
                 "organisation": "Canva",
                 "name": "Sebastian Grail"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "3h",
             "type": "workshop",
             "id": 8,
@@ -108,7 +108,7 @@
                 "bio": "Laura is a multi-disciplinary designer working across user experience research, design and front-end development for startups. Asking questions, unpacking assumptions and trying to get to the bottom of things are some of her favourite activities - supported by methodologies all the cool kids are using, such as Lean, Agile and Design Thinking. She's a passionate advocate for improving diversity in technology and ensuring our workplaces are welcoming and inclusive. Also: cats rule, dogs drool.",
                 "name": "Laura Summers"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "3h",
             "type": "workshop",
             "id": 9,
@@ -132,7 +132,7 @@
             "start": "9:00",
             "title": "Welcome and Opening",
             "date": "Monday, 27 August 2018",
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "15m",
             "type": "admin",
             "id": 49,
@@ -151,7 +151,7 @@
                 "organisation": "Savage Interactive",
                 "name": "Michael Shaw"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "45m",
             "type": "keynote",
             "id": 1,
@@ -170,7 +170,7 @@
                 "organisation": "Mercari",
                 "name": "Yusuke Kita"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "talk",
             "id": 34,
@@ -188,7 +188,7 @@
                 "organisation": "REA Group",
                 "name": "Sande Harsa, Gavan Chan"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "40m",
             "type": "talk",
             "id": 17,
@@ -207,7 +207,7 @@
                 "organisation": "Canva",
                 "name": "Nic Wittison"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 35,
@@ -226,7 +226,7 @@
                 "organisation": "Airbus Australia Pacific",
                 "name": "Simon Rofe"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "30m",
             "type": "talk",
             "id": 25,
@@ -243,7 +243,7 @@
                 "bio": "Tom is a generalist software developer who worked primarily on the enterprise mobile apps AsdeqDocs and AsdeqForms in the past few years. Before that he was a system administrator and programmed embedded automation systems. He is now working in computer security.",
                 "name": "Thomas Karpiniec"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "talk",
             "id": 14,
@@ -262,7 +262,7 @@
                 "organisation": "BNZ",
                 "name": "Sam Jarman"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "40m",
             "type": "talk",
             "id": 33,
@@ -289,7 +289,7 @@
             "speaker": {
                 "name": "Peter Wells"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "panel",
             "id": 51,
@@ -308,7 +308,7 @@
                 "organisation": "Canva",
                 "name": "Jane Abernethy"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "talk",
             "id": 10,
@@ -327,7 +327,7 @@
                 "organisation": "Mercari Inc",
                 "name": "Tim Oliver"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "40m",
             "type": "talk",
             "id": 30,
@@ -345,7 +345,7 @@
                 "image": "matt_delves.jpeg",
                 "name": "Matthew Delves"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "talk",
             "id": 13,
@@ -354,8 +354,8 @@
         },
         {
             "end": "15:20",
-            "description": "This talk covers the implementation of a novel authentication mechanism using inexpensive Bluetooth wristbands for an iPad app being developed in partnership with an inpatient brain injury rehabilitation service. The Inpatient Portal app was developed and trialed to provide a mechanism for clients with recent severe brain injuries to independently view videos they had made with their clinicians regarding why they were in rehabilitation, and what their rehabilitation goals were. The authentication mechanism was trialed over several months with a series of six clients of the brain injury service who were part of the initial pilot of the Inpatient Portal app. Using signal strength as an indicator of proximity provided the ability to implement a staged authentication process that would enable a client with a serious brain injury to be firstly identified when they were in the vicinity of the iPad (c. 3-5m) and then automatically logged in to their account within the app when they approached closer to the device (c. 1m). This talk will cover the implementation of this using Core Bluetooth, discuss the pros (accessibility, ease of use) and potential cons (security, reliability) of this approach. The primary take-home message from this presentation is to highlight cognitive accessibility opportunities in the design of mobile apps. The project described in this presentation was supported by a seed grant (#3705718 / A582) from the Medical Technologies Centre of Research Excellence (MedTech CoRE), funded by the Tertiary Education Commission of New Zealand.",
-            "title": "Mis-using Bluetooth wristbands to enhance cognitive accessibility of an app for inpatients with severe brain injuries",
+            "description": "Cognitive accessibility has been described as the ‘last great frontier’ in accessibility and universal design. Aiming for a clean and simple design is commonly valued already in mobile software, and often this is probably the only step that is taken towards cognitive accessibility. This talk will cover two practical approaches to enhance cognitive accessibility in mobile software. Firstly, it will propose that instead of a one-size-fits-all approach, apps could provide a user setting that gives an overall control of the degree of complexity that an app will present. The talk will outline a practical example of this, including the app architecture decisions and code required to implement this into an existing app. A second approach to cognitive accessibility was used in an iPad app for inpatients in a brain injury rehabilitation service, where we implemented a novel authentication mechanism using inexpensive Bluetooth wristbands. The authentication mechanism was trialed over several months with a series of six clients of the brain injury service who were part of the initial pilot of this Rehab Portal app, using signal strength information from the wristband as an indicator of proximity to iPads mounted to the wall in a client’s bedroom. The primary take-home message from this presentation is there are practical cognitive accessibility opportunities in the design of mobile apps. The Rehab Portal project discussed in this presentation was supported by a seed grant (#3705718 / A582) from the Medical Technologies Centre of Research Excellence (MedTech CoRE), funded by the Tertiary Education Commission of New Zealand.",
+            "title": "Practical approaches to cognitive accessibility ",
             "start": "14:40",
             "date": "Monday, 27 August 2018",
             "speaker": {
@@ -363,7 +363,7 @@
                 "organisation": "Auckland University of Technology, Centre for eHealth",
                 "name": "Duncan Babbage"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "40m",
             "type": "talk",
             "id": 28,
@@ -394,7 +394,7 @@
                 "organisation": "University of Tasmania",
                 "name": "Mars Geldard"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 15,
@@ -412,7 +412,7 @@
                 "organisation": "Teampurr.com",
                 "name": "Keith Lang"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "30m",
             "type": "talk",
             "id": 20,
@@ -431,7 +431,7 @@
                 "organisation": "Colourfool Creative",
                 "name": "James White"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "talk",
             "id": 11,
@@ -450,7 +450,7 @@
                 "organisation": "Google Australia",
                 "name": "Josh Deprez"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "40m",
             "type": "talk",
             "id": 22,
@@ -468,7 +468,7 @@
                 "organisation": "University of Technology Sydney",
                 "name": "Charlie Schacher"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 39,
@@ -486,7 +486,7 @@
                 "name": "Patrick Murray",
                 "image": "pat_murray.jpg"
             },
-            "location": "Room 2",
+            "location": "Lectorial 80.6.5",
             "duration": "30m",
             "type": "talk",
             "id": 24,
@@ -557,7 +557,7 @@
             "start": "10:00",
             "title": "Welcome and Opening",
             "date": "Tuesday, 28 August 2018",
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "5m",
             "type": "admin",
             "id": 50,
@@ -574,7 +574,7 @@
                 "image": "richard-moss.jpg",
                 "name": "Richard Moss"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "45m",
             "type": "keynote",
             "id": 2,
@@ -593,7 +593,7 @@
                 "organisation": "Tokbox",
                 "name": "Patrick Quinn-Graham"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 19,
@@ -611,7 +611,7 @@
                 "organisation": "Art Processors",
                 "name": "Sebastian Beswick"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "30m",
             "type": "talk",
             "id": 18,
@@ -630,7 +630,7 @@
                 "organisation": "Orchard & Grove",
                 "name": "Joel Rennich"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 26,
@@ -649,7 +649,7 @@
                 "organisation": "Illuminated Bits",
                 "name": "Heidi Helen Pilypas"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "30m",
             "type": "talk",
             "id": 12,
@@ -668,7 +668,7 @@
                 "organisation": "University of Technology Sydney",
                 "name": "Zach Simone"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 38,
@@ -686,7 +686,7 @@
                 "image": "claire_manning.jpg",
                 "name": "Claire Manning"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "30m",
             "type": "talk",
             "id": 21,
@@ -716,7 +716,7 @@
                 "organisation": "tappON",
                 "name": "Louis Cremen"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 16,
@@ -735,7 +735,7 @@
                 "organisation": "Vix Verify",
                 "name": "Matt Gray"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "30m",
             "type": "talk",
             "id": 32,
@@ -754,7 +754,7 @@
                 "organisation": "Eat More Pixels",
                 "name": "Jimmy Ti"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "30m",
             "type": "talk",
             "id": 36,
@@ -773,7 +773,7 @@
                 "organisation": "Xero",
                 "name": "Thomas Verbeek"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "30m",
             "type": "talk",
             "id": 37,
@@ -791,7 +791,7 @@
                 "organisation": "Canva",
                 "name": "Jeames Bone"
             },
-            "location": "Room 2",
+            "location": "Lecture Theatre 80.4.11",
             "duration": "40m",
             "type": "talk",
             "id": 29,
@@ -822,7 +822,7 @@
                 "organisation": "Detroit Labs",
                 "name": "Jon Shier"
             },
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "talk",
             "id": 31,
@@ -834,7 +834,7 @@
             "start": "16:25",
             "title": "Lightning Talks and Closing",
             "date": "Tuesday, 28 August 2018",
-            "location": "Room 1",
+            "location": "Lecture Theatre 80.6.1",
             "duration": "40m",
             "type": "admin",
             "id": 52,
@@ -906,15 +906,19 @@
     "locations": [
         {
             "name": "Lecture Theatre 80.6.1",
-            "note": "Room 1"
+            "note": "Room 1",
+            "objectId": "uA5njsb9cj"
         },
         {
             "name": "Lectorial 80.6.5",
-            "note": "Room 2 (Sunday, Tuesday)"
+            "note": "Room 2 (Monday)",
+            "objectId": "GcElNw1ZOI"
+            
         },
         {
             "name": "Lecture Theatre 80.4.11",
-            "note": "Room 2 (Monday)"
+            "note": "Room 2 (Sunday, Tuesday)",
+            "objectId": "B9mID7vrfO"
         }
     ]
 }
