@@ -32,7 +32,7 @@ a {
     font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif
 }
 
-.block:nth-of-type(even) {
+.block:nth-of-type(odd) {
     background-color: #E7F9FF;
 }
 
