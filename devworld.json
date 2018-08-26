@@ -811,10 +811,10 @@
             "end_iso": "2018-08-28T15:45:00+10:00"
         },
         {
-            "end": "16:25",
+            "end": "15:15",
             "description": "Since its first release in 2015, Alamofire has become one of the most popular Swift frameworks. In the three years since that 1.0.0 release, it has gained more and more features, and the internal complexity to go along with them. For version 5, however, we realized it was time to rewrite the core of the library to enable further growth, new features, and greater scalability. In this presentation I will explore the reasoning behind this risky decision and how we were able to use our existing test suite to replace the core of the framework while largely maintaining compatibility for existing Alamofire users.",
             "title": "Rewriting Alamofire: Into the Core",
-            "start": "15:45",
+            "start": "14:35",
             "date": "Tuesday, 28 August 2018",
             "speaker": {
                 "bio": "Jon has been programming on Apple platforms since learning Objective-C on the Mac OS X Public Beta. He joined Detroit Labs in Detroit, Michigan in 2013, where he works with smart and talented people to bring app ideas to life. Outside of work he is a contributor to the Alamofire networking library, among others, and sits on the board of directors of the Alamofire Foundation.",
@@ -826,12 +826,12 @@
             "duration": "40m",
             "type": "talk",
             "id": 31,
-            "start_iso": "2018-08-28T15:45:00+10:00",
-            "end_iso": "2018-08-28T16:25:00+10:00"
+            "start_iso": "2018-08-28T14:35:00+10:00",
+            "end_iso": "2018-08-28T15:15:00+10:00"
         },
         {
             "end": "17:05",
-            "start": "16:25",
+            "start": "15:45",
             "title": "Lightning Talks and Closing",
             "date": "Tuesday, 28 August 2018",
             "location": "Lecture Theatre 80.6.1",
