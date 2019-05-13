@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"jinja2" = "*"
+"Jinja2" = ">=2.10.1"
 markdown = "*"
 python-dateutil = "*"
 parsepy = {git = "https://github.com/milesrichardson/ParsePy.git"}
