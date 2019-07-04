@@ -13,15 +13,302 @@
     </div>
   </div>
 
-    <!-- CFP -->
-  <a class="anchor" id="cfp"></a>
+<div class="container-fluid block" id="conf-description">
+    <div class="container">
+      <p class="blurb">
+        <strong class="nowrap">/dev/world/2019</strong> is Australia's longest running conference for macOS and iOS developers and designers, and
+        returns to Melbourne on
+        <strong>
+          <span class="nowrap">2-4 September</span> 2019</strong>.
+      </p>
+      <p class="blurb">Celebrating our twelfth year, we're still working to build an inclusive community of enthusiasts; from creatives to
+        scientists, from hobbyists to die-hards,
+        <span class="nowrap">/dev/world/2019</span> is about coming together to
+        <strong class="nowrap">share and learn</strong>.
+      </p>
+      <p>
+        <font size=180%>
+          <a href="https://twitter.com/AUC_ANZ">
+            <i class="fab fa-twitter-square" alt="Button link to Twitter profile" title="Button link to Twitter profile"></i>
+          </a>
+          <a href="https://auc.edu.au/devworld/about/">
+            <i class="fa fa-home" alt="Button link to Website" title="Button link to Website"></i>
+          </a>
+          <a href="https://twitter.com/search?q=%23devworld">
+            <i class="fa fa-hashtag" alt="Button link to Hashtag on Twitter" title="Button link to Hashtag on Twitter"></i>
+          </a>
+          <a href="https://www.flickr.com/photos/154890106@N06/">
+            <i class="fab fa-flickr" alt="Button link to Flickr profile" title="Button link to Flickr profile"></i>
+          </a>
+        </font>
+      </p>
+
+
+    </div>
+  </div>
+
+  <!-- Tickets -->
+  <a class="anchor" id="tickets"></a>
   <div class="container-fluid block">
     <div class="container" id="cfp">
-      <h1>Call for Presentations</h1>
-      <p>
-        Our call for presentations has closed. We'll be in touch with those who submitted a talk soon!
+        <p id="submit-btn">
+            <a class="btn btn-primary btn-lg" href="https://devworld.eventbrite.com/?aff=mainsite" role="button" style="
+    font-size: 1.5em;">Get Your Ticket</a>
+        </p>       
       </p>
-      <p>Our late-breaking CFP, for talks on newer technologies, or developments arising after Apple's WWDC conference June, will be open in July.</p>      
+      <p class="cfp-note" style="margin-top:20px">Students get discounted tickets, and student <a href="https://auc.edu.au/membership/">AUC members</a> are eligible for complimentary tickets. Group discounts are also available.</p>
+      
+
+    </div>
+  </div>
+
+  {% if talks|selectattr("type", "eq", "keynote")|list|length > 0 %}
+  <a class="anchor" id="keynote"></a>
+  <!-- Keynote -->
+  <div class="container-fluid block">
+    <div class="container" id="speakers">
+
+      <h1>Featured Talks</h1>
+      {% for talk in talks|selectattr("type", "eq", "keynote") %}
+      <div class="row">
+        <div class="col-md-2 col-sm-6">
+            {% if "url" in talk.speaker %}<a href="{{talk.speaker.url}}">{%endif%}
+            <img class="speaker-image" src="/images/speakers/{{talk.speaker.image}}" />
+            {% if "url" in talk.speaker %}</a>{%endif%}
+        </div>
+        <div class="col-md-10 col-sm-6 ">
+          {% if "name" in talk.speaker %}
+          <div class="speaker-name">
+          {{talk.speaker.name}}{% if "url" in talk.speaker %}, <a href="{{talk.speaker.url}}">{{talk.speaker.organisation}}</a>{% endif %}          
+          </div>
+          {% endif %}
+          <div class="speaker-description">
+            <span class="speaker-description-title">{{talk.title}}</span>
+            {{talk.description|markdown}} 
+          </div>
+        </div>
+      </div>
+      {% endfor %}      
+    </div>
+  </div>
+  {% endif %}
+
+  {% if talks|selectattr("type", "eq", "keynote")|list|length > 0 %}
+  <a class="anchor" id="special-events"></a>
+  <!-- Keynote -->
+  <div class="container-fluid block">
+    <div class="container" id="speakers">      
+      <h1>Special Events</h1>
+      {% for talk in talks|selectattr("type", "eq", "special_event")|selectattr("speaker", "defined") %}
+      <div class="row">
+        <div class="col-md-2 col-sm-6">
+          <img class="speaker-image" src="/images/speakers/{{talk.speaker.image}}" />
+        </div>
+        <div class="col-md-10 col-sm-6 ">
+          {% if "name" in talk.speaker %}
+          <div class="speaker-name">{{talk.speaker.name}}</div>
+          {% if "url" in talk.speaker %}
+          <div class="speaker-organisation">
+            <a href="{{talk.speaker.url}}">{{talk.speaker.organisation}}</a>
+          </div>
+          {% endif %}
+          {% endif %}
+          <div class="speaker-description">
+            <span class="speaker-description-title">{{talk.title}}</span>
+            {{talk.description|markdown}} 
+          </div>
+        </div>
+      </div>
+      {% endfor %}      
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Sessions -->
+  <a class="anchor" id="sessions"></a>
+  <div class="container-fluid block">
+    <div class="container">
+
+        <h1>Outline</h1>
+        <div class="row schedule-outline justify-content-center">
+            <div class="col-md-6 col-sm-1 text-right"><strong>Monday, September 2nd</strong></div>
+            <div class="col-md-6 col-sm-1 text-left">Workshops</div>
+        </div>
+        <div class="row schedule-outline justify-content-center">
+            <div class="col-md-6 col-sm-1 text-right"><strong>Tuesday, September 3rd</strong></div>
+            <div class="col-md-6 col-sm-1 text-left">Keynote, Sessions, Dinner Keynote</div>
+        </div>
+        <div class="row schedule-outline justify-content-center">
+            <div class="col-md-6 col-sm-1 text-right"><strong>Wednesday, September 4th</strong></div>
+            <div class="col-md-6 col-sm-1 text-left">Keynote and Sessions</div>
+        </div>
+        
+        
+
+      <h1>Sessions</h1>
+      <div class="row" id="sessions">
+      {% for column in talks|selectattr("type", "equalto", "talk")|selectattr("status", "equalto", "Confirmed")|sort(attribute='title')|slice(2) %}
+        <div class="col-md-6 col-sm-6">
+          <ul>
+          {% for item in column %}
+            <li><a href="/sessions/{{item.id}}.html">{{item.title | escape}}</a></li>
+          {% endfor %}
+          {% if loop.last %} <li>And more to come...</li> {% endif %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+  
+      <h1>Workshops</h1>
+  
+      <div class="row" id="sessions">
+        {% for column in talks|selectattr("type", "equalto", "workshop")|slice(2) %}
+        <div class="col-md-6 col-sm-6">
+          <ul>
+            {% for item in column %}
+            <li><a href="/sessions/{{item.id}}.html">{{item.title | escape}}</a></li>
+            {% endfor %}            
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+  <!-- Venue -->
+  <a class="anchor" id="venue"></a>
+  <div class="container-fluid block">
+    <div class="container">
+      <div class="row align-items-start" id="venue">
+        <div class="col-md-6 col-sm-12">
+          <h1>Venue</h1>
+          <p>We're thrilled to be hosting /dev/world/2019 at
+            <strong style="white-space: nowrap">RMIT University</strong>, right in the middle of Melbourne.
+            <div class="venue-address">
+              <p>Swanston Academic Building (Building 80)</p>
+              <p>445 Swanston Street</p>
+              <p>Melbourne</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+
+          <a href="https://goo.gl/maps/9CTqr2BCUDq">
+            <div id='map' style='width: 100%; height: 300px;'></div>
+          </a>
+          <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZGVzcGxlc2RhIiwiYSI6ImNqZml5aXNyczBqbXoyenBndW1lZ3BzbnoifQ.63mMG4EF4O_GaXJItKtaDA';
+            var map = new mapboxgl.Map({
+              container: 'map',
+              center: [144.9627511, -37.808201], // long, lat (not lat-long!)
+              zoom: 12,
+              interactive: false,
+              style: 'mapbox://styles/mapbox/light-v9'
+
+            });
+
+            var popup = new mapboxgl.Popup({
+              closeOnClick: false,
+              closeButton: false,
+              anchor: 'bottom'
+            })
+              .setLngLat([144.9627511, -37.808201])
+              .setHTML('<h1>RMIT University</h1><h2>Melbourne, Victoria, Australia</h2>')
+              .addTo(map);
+          </script>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <a class="anchor" id="gallery"></a>
+  <div class="container-fluid block">
+    <div class="container gallery">
+
+ <h1>Gallery</h1>
+
+ <div class="row">
+
+{% for image in images %}
+    {% if loop.index <= 4 %}
+    {% set display_class = "d-none d-md-inline-block" %}
+    {% endif %}
+    <div class="col-6 col-md-3 {{display_class}}">
+
+    {% if "url" in image %}
+    <a href="{{image.url}}">
+    {% endif %}
+    <img src="/images/gallery/final/{{image.image}}" />
+    {% if "url" in image %}
+    </a>
+    {% endif %}
+    </div>
+{% endfor %}
+</div>
+     
+     
+
+    </div>
+  </div>
+
+  <!-- Sponsors -->
+  <a class="anchor" id="partners"></a>
+  <div class="container-fluid block">
+    <div class="container">
+      <h1>Presented By</h1>
+      <div class="row align-items-center" id="sponsors-wide">
+        <div class="col col-md-12">
+          <img src="/images/sponsors/auc_rmit_large.png" />
+        </div>
+      </div>
+      <h1>Supporters</h1>
+      <div class="row align-items-start justify-content-center" id="sponsors">
+        <div class="col col-md-12">
+          <a href="http://secretlab.com.au">
+            <img src="/images/sponsors/SecretLab.png" />
+          </a>
+        </div>
+        <div class="col col-md-12">
+          <a href="http://oreilly.com">
+            <img src="/images/sponsors/OReilly.png" />
+          </a>
+        </div>
+        <div class="col col-md-12">
+          <a href="https://www.bugsee.com/">
+            <img src="/images/sponsors/BugSee.svg" />
+          </a>
+        </div>
+      </div>
+      <p class="sponsor-note">
+        /dev/world sponsors and supporters are highly valued members of the community, and the event would not be possible without
+        them. Please note that our sponsors do not necessarily endorse each other.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="container-fluid block">
+    <div class="container">
+      <div class="row" id="team">
+        <h1>The Team</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+        {% for member in team %}
+            <div class="col-md-2  col-sm-3 speaker">
+                <a href="https://twitter.com/{{member.twitter}}">
+                <img class="speaker-image" src="/images/speakers/{{member.image}}" />
+                <div class="speaker-name">{{member.name}}</div></a>
+            </div>
+        {% endfor %}
+        </div>
+      </div>
     </div>
   </div>		
 

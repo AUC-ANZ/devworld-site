@@ -127,6 +127,10 @@ def fetch_data():
         speakers = c.execute("Select speakers.* from speakers_talks st inner join speakers on speakers.id = st.speaker_id where st.talk_id = \"{0}\"".format(talk["id"])).fetchall();
 
         talk["speakers"] = speakers
+    
+    data["images"] = c.execute("SELECT * FROM images ORDER BY image;").fetchall()
+
+    data["team"] = c.execute("SELECT * FROM speakers WHERE is_team = 1").fetchall()
 
     conn.close()
 
