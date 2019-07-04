@@ -7,6 +7,8 @@ import markdown
 import os
 from os import path as op
 
+import sqlite3
+
 from jinja2 import Template
 
 import dateutil
@@ -14,6 +16,8 @@ import dateutil
 from collections import defaultdict
 
 from  dateutil.parser import parse as parsedate
+
+from pprint import pprint
 
 DATA_PATH="devworld.json"
 CSS_PATH="css/devworld.css"
@@ -47,7 +51,9 @@ def main():
 
     # load the data we got
 
-    data = json.load(open(DATA_PATH))
+    data = fetch_data()
+
+    pprint(data)
 
     # We want to ensure that browsers don't cache old versions of the CSS,
     # so we hash it every time we generate the index and include that at
@@ -61,9 +67,9 @@ def main():
     
     data["css_version"] = sha1.hexdigest()[:7]
 
-    schedule_data = generate_schedule(data["talks"])
+    #schedule_data = generate_schedule(data["talks"])
 
-    data["schedule"] = schedule_data
+    #data["schedule"] = schedule_data
 
     # render the template
     index_template = templateEnv.get_template( "index.html" )
@@ -89,14 +95,42 @@ def main():
             f.write(talk_document)
             print("Wrote {} for talk {}".format(path, talk["title"]))
     
-    schedule_template = templateEnv.get_template("schedule.html")
+    # schedule_template = templateEnv.get_template("schedule.html")
 
-    schedule_document = schedule_template.render(data)
+    # schedule_document = schedule_template.render(data)
 
-    with open(SCHEDULE_PATH, "w") as f:
-        f.write(schedule_document)
+    # with open(SCHEDULE_PATH, "w") as f:
+    #     f.write(schedule_document)
 
-    print("Wrote schedule to {}".format(SCHEDULE_PATH))
+    # print("Wrote schedule to {}".format(SCHEDULE_PATH))
+
+def fetch_data():
+    conn = sqlite3.connect('data/devworld.db')
+
+    def dict_factory(cursor, row):
+        d = {}
+        for idx, col in enumerate(cursor.description):
+            d[col[0]] = row[idx]
+        return d
+
+    conn.row_factory = dict_factory
+
+    c = conn.cursor()
+
+
+
+    data = {}
+
+    data["talks"] = c.execute("SELECT * FROM talks;").fetchall()
+
+    for talk in data["talks"]:        
+        speakers = c.execute("Select speakers.* from speakers_talks st inner join speakers on speakers.id = st.speaker_id where st.talk_id = \"{0}\"".format(talk["id"])).fetchall();
+
+        talk["speakers"] = speakers
+
+    conn.close()
+
+    return data
 
 def generate_schedule(events):
 

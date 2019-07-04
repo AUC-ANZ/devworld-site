@@ -13,40 +13,44 @@
               
         <div class="col col-md-12 col-sm-6">
           <h1>{{title}}</h1>
-          <div id="talk-time">{{date|parsedate("<strong>%A</strong>, %d %B")}}, <strong>{{start|parsedate("%-I:%M %p")}}</strong> to {{end|parsedate("%-I:%M %p")}}</div>
+          {# <div id="talk-time">{{date|parsedate("<strong>%A</strong>, %d %B")}}, <strong>{{start|parsedate("%-I:%M %p")}}</strong> to {{end|parsedate("%-I:%M %p")}}</div> #}
+          {% for speaker in speakers %}
           {% if speaker %}
-          <div id="session-speaker">{{speaker.name}}{% if "organisation" in speaker %}, {{speaker.organisation}}{% endif %}</div>
+          <div id="session-speaker">{{speaker.name}}{% if "affiliation" in speaker %}, {{speaker.affiliation}}{% endif %}</div>
           {% endif %}
           {% if description %}
           {{description | markdown}}
-          {% endif %}
-          {% if "bio" in speaker %}
-        </div>
-        </div>
-        {% if speaker %}
-        
-        <div class="row">
-          <div class="col col-md-12 col-sm-6">
-            <h4 id="speaker-about-heading">About {{speaker.name}}</h4>
-          </div>
-        </div>
-        <div class="row">
-          {% if "image" in speaker %}
-          <div class="col-md-3 order-2 order-md-2 col-sm-6">
-            <img class="speaker-image" src="/images/speakers/{{speaker.image}}" />
-          </div>
-          <div class="col-md-9 order-1 order-md-1 col-sm-6">
-            <div id="session-speaker-bio">{{speaker.bio | markdown | urlize}}</div>
-          </div>
-          {% else %}
-          <div class="col">
-            <div id="session-speaker-bio">{{speaker.bio | markdown | urlize}}</div>
-          </div>
-          {% endif %}
+          {% endif %} 
+          {%endfor%}         
+        </div>        
+
+        {% for speaker in speakers %}
+          {% if speaker %}
           
+          <div class="row">
+            <div class="col col-md-12 col-sm-6">
+              <h4 id="speaker-about-heading">About {{speaker.name}}</h4>
+            </div>
+          </div>
+          <div class="row">
+            {% if "image" in speaker %}
+            <div class="col-md-3 order-2 order-md-2 col-sm-6">
+              <img class="speaker-image" src="/images/speakers/{{speaker.image}}" />
+            </div>
+            <div class="col-md-9 order-1 order-md-1 col-sm-6">
+              <div id="session-speaker-bio">{{speaker.bio | markdown | urlize}}</div>
+            </div>
+            {% else %}
+            <div class="col">
+              <div id="session-speaker-bio">{{speaker.bio | markdown | urlize}}</div>
+            </div>
+            {% endif %}
+            
+            
+          </div>          
           {% endif %}
-        </div>
-        {% endif %}
+
+        {% endfor %}
         
         {#<div class="col col-md-2 col-sm-6">
           <h2>Info</h2>
