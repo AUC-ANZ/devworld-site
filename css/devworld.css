@@ -89,6 +89,19 @@ body.index .block:nth-of-type(odd) {
         font-size: 18px;
         text-align: left;
     }
+
+
+    
+   
+}
+
+@media only screen and (max-width: 1005px) {
+
+.navbar #call-to-action {
+    margin: 0 -10px;
+    padding: 5px 10px;
+}
+
 }
 
 @media only screen and (min-width: 450px) {
@@ -305,6 +318,8 @@ a.anchor {
     background-color: #05aaff;
     border-radius: 10px;
 }
+
+
 
 /* Map popup */
 
