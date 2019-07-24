@@ -89,18 +89,24 @@
       {% for talk in talks|selectattr("type", "eq", "keynote") %}
       <div class="row">
         <div class="col-md-2 col-sm-6">
-            {% if "url" in talk.speaker %}<a href="{{talk.speaker.url}}">{%endif%}
-            <img class="speaker-image" src="/images/speakers/{{talk.speaker.image}}" />
-            {% if "url" in talk.speaker %}</a>{%endif%}
+            {% for speaker in talk.speakers %}
+            {% if "url" in speaker %}<a href="{{speaker.url}}">{%endif%}
+            <img class="speaker-image" src="/images/speakers/{{speaker.image}}" />
+            {% if "url" in speaker %}</a>{%endif%}
+            {% endfor %}
         </div>
         <div class="col-md-10 col-sm-6 ">
-          {% if "name" in talk.speaker %}
-          <div class="speaker-name">
-          {{talk.speaker.name}}{% if "url" in talk.speaker %}, <a href="{{talk.speaker.url}}">{{talk.speaker.organisation}}</a>{% endif %}          
-          </div>
-          {% endif %}
+          {% for speaker in talk.speakers %}
+            {% if "name" in speaker %}
+            <div class="speaker-name">
+            {{speaker.name}}{% if "url" in speaker %}, <a href="{{speaker.url}}">{{speaker.affiliation}}</a>{% endif %}         
+            </div>
+            {% endif %}
+          {% endfor %}
           <div class="speaker-description">
+            {% if "title" in talk and talk.title %}
             <span class="speaker-description-title">{{talk.title}}</span>
+            {% endif %}
             {{talk.description|markdown}} 
           </div>
         </div>
@@ -110,7 +116,7 @@
   </div>
   {% endif %}
 
-  {% if talks|selectattr("type", "eq", "keynote")|list|length > 0 %}
+  {% if talks|selectattr("type", "eq", "special_event")|list|length > 0 %}
   <a class="anchor" id="special-events"></a>
   <!-- Keynote -->
   <div class="container-fluid block">
