@@ -95,12 +95,12 @@ def main():
             f.write(talk_document)
             print("Wrote {} for talk {}".format(path, talk["title"]))
     
-    # schedule_template = templateEnv.get_template("schedule.html")
+    schedule_template = templateEnv.get_template("schedule.html")
 
-    # schedule_document = schedule_template.render(data)
+    schedule_document = schedule_template.render(data)
 
-    # with open(SCHEDULE_PATH, "w") as f:
-    #     f.write(schedule_document)
+    with open(SCHEDULE_PATH, "w") as f:
+         f.write(schedule_document)
 
     # print("Wrote schedule to {}".format(SCHEDULE_PATH))
 

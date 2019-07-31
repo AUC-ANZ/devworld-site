@@ -6,20 +6,24 @@
 <div class="container-fluid offset-block block">
     <div class="container" id="timetable">
     <div class="row">
-    <h1>Schedule</h1>
-    </div>
+        <h1>Schedule</h1>
+    </div>  
+
+    <p>The schedule for /dev/world/2019 will be released soon! In the meantime, why not <a href="https://devworld.eventbrite.com/?aff=mainsite_schedule">get your ticket?</a></p>
+
+    {#
 
         {% for item in schedule|dictsort %}
         <div class="row row-equal">
             <h2>{{item[0]|parsedate("%A, %d %B")}}</h2>            
         </div>
 
-        {# Time Blocks #}
+        {# Time Blocks # }
         {% for group in item[1]|dictsort %}
         <div class="row timetable-time-group">
             <div class="col-12 col-md-2 text-center timetable-time"><span class="nowrap strong">{{group[0]|parsedate("%-I:%M %p")}}</span> to <span class="nowrap">{{group[1][0].end|parsedate("%-I:%M %p")}}</span></div>
        
-        {# Events at this time #}
+        {# Events at this time # }
         {% for event in group[1]|sort(attribute="location") %}
         
             {% if event.type == "talk" or event.type == "workshop" %}
@@ -39,7 +43,7 @@
 
                 <div class="timetable-event-name">
 
-                {# Show labels for all events that aren't regular talks or admin #}
+                {# Show labels for all events that aren't regular talks or admin # }
                 {% if event.type != "talk" and event.type != "admin" %}
                 {{event.type | replace("_", " ") | title}}:
                 {% endif %}
@@ -68,6 +72,8 @@
         {% endfor %}
 
         {% endfor %}
+
+        #}
     
     </div>
 </div>
