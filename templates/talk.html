@@ -18,7 +18,7 @@
           {% if speakers|length > 0 %}
           <div id="session-speaker">
             {% for speaker in speakers %}
-              {% if not loop.first %}; {%endif%}{{speaker.name}}{% if speaker["affiliation"] %}, {{speaker.affiliation}}{% endif %}
+              {% if not loop.first %}; {%endif%}{{speaker.name}}{% if speaker["affiliation"] %}, {{speaker.affiliation}}{% endif %}{% if speaker["twitter"] %} (<a href="https://twitter.com/{{speaker.twitter}}">@{{speaker.twitter}}</a>){% endif %}
             {% endfor %}         
             </div>
           {% endif %}

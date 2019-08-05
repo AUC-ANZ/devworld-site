@@ -102,7 +102,7 @@ def main():
     with open(SCHEDULE_PATH, "w") as f:
          f.write(schedule_document)
 
-    # print("Wrote schedule to {}".format(SCHEDULE_PATH))
+    print("Wrote schedule to {}".format(SCHEDULE_PATH))
 
 def fetch_data():
     conn = sqlite3.connect('data/devworld.db')
