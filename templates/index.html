@@ -175,7 +175,7 @@
         <div class="col-md-6 col-sm-6">
           <ul>
           {% for item in column %}
-            <li><a href="/sessions/{{item.id}}.html">{{item.title | escape}}</a></li>
+            <li><a href="/sessions/CFPA{{item.id}}.html">{{item.title | escape}}</a></li>
           {% endfor %}
           {% if loop.last %} <li>And more to come...</li> {% endif %}
           </ul>
@@ -186,11 +186,11 @@
       <h1>Workshops</h1>
   
       <div class="row" id="sessions">
-        {% for column in talks|selectattr("type", "equalto", "workshop")|slice(2) %}
+        {% for column in talks|selectattr("type", "equalto", "workshop")|sort(attribute='title')|slice(2) %}
         <div class="col-md-6 col-sm-6">
           <ul>
             {% for item in column %}
-            <li><a href="/sessions/{{item.id}}.html">{{item.title | escape}}</a></li>
+            <li><a href="/sessions/CFPA{{item.id}}.html">{{item.title | escape}}</a></li>
             {% endfor %}            
           </ul>
         </div>

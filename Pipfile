@@ -10,9 +10,13 @@ python-dateutil = "*"
 parsepy = {git = "https://github.com/milesrichardson/ParsePy.git"}
 python-dotenv = "*"
 tqdm = "*"
+flask = "*"
+flask-admin = "*"
+sqlalchemy = "*"
 
 [dev-packages]
-python-dotenv = {version = "*", extras = ["cli"]}
+python-dotenv = {version = "*",extras = ["cli"]}
+sqlacodegen = "*"
 
 [requires]
 python_version = "3.7"

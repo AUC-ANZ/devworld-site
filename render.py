@@ -89,7 +89,7 @@ def main():
     for talk in talks:
         if talk["type"] == "admin":
             continue
-        path = op.join(TALKS_DIR_PATH, "{0}.html".format(talk["id"]))
+        path = op.join(TALKS_DIR_PATH, "CFPA{0}.html".format(talk["id"]))
         talk_document = talk_template.render({"css_version": data["css_version"], **talk})
         with open(path, "w") as f:
             f.write(talk_document)
