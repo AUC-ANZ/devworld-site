@@ -177,7 +177,7 @@
           {% for item in column %}
             <li><a href="/sessions/CFPA{{item.id}}.html">{{item.title | escape}}</a></li>
           {% endfor %}
-          {% if loop.last %} <li>And more to come...</li> {% endif %}
+          {# {% if loop.last %} <li>And more to come...</li> {% endif %} #}
           </ul>
         </div>
         {% endfor %}

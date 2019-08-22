@@ -13,6 +13,7 @@ tqdm = "*"
 flask = "*"
 flask-admin = "*"
 sqlalchemy = "*"
+icalendar = "*"
 
 [dev-packages]
 python-dotenv = {version = "*",extras = ["cli"]}
