@@ -7,7 +7,6 @@ import markdown
 import os
 from os import path as op
 
-import sqlite3
 
 from jinja2 import Template
 
@@ -18,6 +17,8 @@ from collections import defaultdict
 from  dateutil.parser import parse as parsedate
 
 from pprint import pprint
+
+import devworld
 
 DATA_PATH="devworld.json"
 CSS_PATH="css/devworld.css"
@@ -51,7 +52,7 @@ def main():
 
     # load the data we got
 
-    data = fetch_data()
+    data = devworld.fetch_data()
 
     pprint(data)
 
@@ -104,37 +105,7 @@ def main():
 
     print("Wrote schedule to {}".format(SCHEDULE_PATH))
 
-def fetch_data():
-    conn = sqlite3.connect('data/devworld.db')
 
-    def dict_factory(cursor, row):
-        d = {}
-        for idx, col in enumerate(cursor.description):
-            d[col[0]] = row[idx]
-        return d
-
-    conn.row_factory = dict_factory
-
-    c = conn.cursor()
-
-
-
-    data = {}
-
-    data["talks"] = c.execute("SELECT * FROM talks;").fetchall()
-
-    for talk in data["talks"]:        
-        speakers = c.execute("Select speakers.* from speakers_talks st inner join speakers on speakers.id = st.speaker_id where st.talk_id = \"{0}\"".format(talk["id"])).fetchall();
-
-        talk["speakers"] = speakers
-    
-    data["images"] = c.execute("SELECT * FROM images ORDER BY image;").fetchall()
-
-    data["team"] = c.execute("SELECT * FROM speakers WHERE is_team = 1").fetchall()
-
-    conn.close()
-
-    return data
 
 def generate_schedule(events):
 
