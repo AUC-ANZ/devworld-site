@@ -24,6 +24,7 @@ DATA_PATH="devworld.json"
 CSS_PATH="css/devworld.css"
 
 INDEX_PATH="index.html"
+MOBILE_PATH="mobile_landing.html"
 TALKS_DIR_PATH="sessions"
 SCHEDULE_PATH="schedule.html"
 
@@ -80,6 +81,13 @@ def main():
     with open(INDEX_PATH, "w") as f:
         f.write(document)
         print("Wrote {}".format(INDEX_PATH))
+
+    # render the mobile landing page
+    mobile_template = templateEnv.get_template("mobile.html")
+    mobile_document = mobile_template.render(data)
+    with open(MOBILE_PATH, "w") as f:
+        f.write(mobile_document)
+        print("Wrote {}".format(MOBILE_PATH))
     
     talks = data["talks"]
 

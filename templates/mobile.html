@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block navbar %}{% endblock %}
+{% block content %}
+
+
+
+<!-- Session -->
+<div class="container-fluid offset-block block">
+    <div class="container">
+        <div class="row">
+        <h1>Welcome to /dev/world/2019!</h1>
+        
+        <p>It's our thirteenth year of running the event, and we're thrilled that you're here.</p>
+        <p>Here's some additional information about the conference, including how to get in touch with the organising team.</p>
+        </div>
+        
+        <div class="row" id="team">
+            <h2>Contact Details</h1>
+            <p>Please don't hesitate to call or text the organising team if you need to speak with us. We're here to help.</p>
+            <p>We're also available <a href="https://twitter.com/AUC_ANZ">on Twitter</a></p>.
+        </div>
+            
+            {% for member in team %}
+
+            {% if member.phone != None %}
+            
+            <div class="row d-flex">
+                <div class="col-md-2  col-sm-3">
+                    <img class="speaker-image" src="/images/speakers/{{member.image}}" />
+                    
+                </div>
+                <div class="col-md-10">
+                <div><strong>{{member.name}}</strong></div>
+                <div><a href="tel:{{member.phone}}">{{member.phone}}</a></div>
+                </div>
+            </div>
+            
+            {% endif %}
+            
+            {% endfor %}
+        
+        <div class="row">
+            <h2>Code of Conduct</h2>
+        </div>
+
+        <div class="row">
+            <p>We take our <a href="https://auc.edu.au/policies/code-of-conduct/">code of conduct</a> very seriously. Please read it.</p>
+            <p>If you have a question or concern, please approach one of the organisers, or any of the volunteers.</a>
+        </div>
+
+        <div class="row">
+            <h2>Dinner Logistics</h2>    
+        </div>
+        
+        <div class="row">
+            <p>The /dev/world/2019 dinner will be held at the 
+            <a href="https://maps.apple.com/?address=Corner%20Exhibition%20%26%20Lonsdale%20Streets,%20Melbourne%20VIC%203000,%20Australia&auid=10041300666076149129&ll=-37.809852,144.969159&lsp=9902&q=Melbourne%20Marriott%20Hotel&_ext=ChgKBAgEEBYKBAgFEAMKBAgGEAsKBAgKEAASJCmJBs7NQehCwDEmdDKN1R5iQDkLMahxG+dCwEEAjqKyMh9iQA%3D%3D&t=r">Melbourne Marriott hotel</a>.</p>
+            <p>We'll be leading a group walk from the conference venue to the dinner at 6:10PM. Please meet at the conference desk between 6 and 6:10 PM on Tuesday to join the walk. It is an easy 15 minute walk from the conference venue, with minimal incline change.</p>
+            <p>If you'd prefer to make your own way there, please arrive by 6:30 PM.</p>
+        </div>
+    
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
