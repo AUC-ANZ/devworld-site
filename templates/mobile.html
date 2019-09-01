@@ -11,7 +11,7 @@
 <div class="container-fluid offset-block block">
     <div class="container">
         <div class="row">
-        <h1>Welcome to /dev/world/2019!</h1>
+        <h1>Welcome!</h1>
         
         <p>It's our thirteenth year of running the event, and we're thrilled that you're here.</p>
         <p>Here's some additional information about the conference, including how to get in touch with the organising team.</p>
@@ -28,11 +28,11 @@
             {% if member.phone != None %}
             
             <div class="row d-flex">
-                <div class="col-md-2  col-sm-3">
+                <div class="col-4">
                     <img class="speaker-image" src="/images/speakers/{{member.image}}" />
                     
                 </div>
-                <div class="col-md-10">
+                <div class="col-8">
                 <div><strong>{{member.name}}</strong></div>
                 <div>
                     {% if member.twitter != None %}
