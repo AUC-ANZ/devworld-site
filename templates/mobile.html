@@ -34,7 +34,12 @@
                 </div>
                 <div class="col-md-10">
                 <div><strong>{{member.name}}</strong></div>
-                <div><a href="tel:{{member.phone}}">{{member.phone}}</a></div>
+                <div>
+                    {% if member.twitter != None %}
+                    <a href="https://twitter.com/{{member.twitter}}">@{{member.twitter}}</a> | 
+                    {% endif %}
+                    <a href="tel:{{member.phone}}">{{member.phone}}</a>
+                </div>
                 </div>
             </div>
             
